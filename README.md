@@ -8,19 +8,21 @@ A playful, claim-disciplined symbolic formula atlas for writers, game designers,
 
 This repository is in a **v0.4 release-readiness pass**.
 
-The interactive React/Vite atlas is implemented, and the GitHub Pages workflow is green based on the latest maintainer check. The final public release still depends on live smoke testing, final dataset/release decisions, and the final README/release-notes accuracy pass.
+The interactive React/Vite atlas is implemented. Validation, app build, GitHub Pages deployment, and the deployed-app live smoke test are green based on the latest maintainer checks.
 
-The current formula dataset is a starter/candidate app dataset. The original full 52-card dataset confirmation/import is tracked separately in Issue #1.
+The current formula dataset is intentionally treated as a starter/candidate v0.4 app dataset. The original full 52-card dataset confirmation/import remains tracked separately in Issue #1 and can proceed as a post-v0.4 data/content milestone.
+
+A tagged GitHub release and Zenodo/DOI path have not been completed yet.
 
 ## GitHub Pages target
 
-The intended Pages URL is:
+The live Pages URL is:
 
 ```txt
 https://michaelwave369.github.io/hidden-equations-of-feeling/
 ```
 
-GitHub Pages should be set to **GitHub Actions**. The latest Pages workflow has been reported green, but the deployed app should still pass the live smoke test before being treated as release-ready.
+GitHub Pages should be set to **GitHub Actions**. The latest Pages workflow has been reported green, and the deployed app has passed the live smoke test.
 
 Live smoke-test checklist:
 
@@ -76,7 +78,7 @@ Favorites are stored locally in the browser only. They are not uploaded, synced,
 
 ### Data
 
-- `src/data/formula_cards.json` — current formula card dataset
+- `src/data/formula_cards.json` — current starter/candidate v0.4 formula card dataset
 - `src/data/example_gallery.json` — worked examples
 - `src/data/cross_reference_map.json` — compare-mode relationships and learning paths
 - `src/data/formula_schema.json` — formula-card schema support
@@ -116,7 +118,7 @@ npm run build
 
 `npm run build` runs data validation before building the app.
 
-The Pages workflow also separates validation from app build so GitHub Actions logs clearly show whether a failure came from data validation or Vite build. The Pages workflow uses `npm run build:app` so the local Vite binary resolves correctly in GitHub Actions.
+The Pages workflow separates validation from app build so GitHub Actions logs clearly show whether a failure came from data validation or Vite build. The Pages workflow uses `npm run build:app` so the local Vite binary resolves correctly in GitHub Actions.
 
 ## Data validation
 
@@ -151,12 +153,20 @@ Current public-release tracking is split across two issues:
 - **Issue #1** — original v0.3/full-dataset/Zenodo path
 - **Issue #2** — v0.4 app release readiness: validation, build, Pages, live checks, README/release notes
 
+Current v0.4 app-readiness state:
+
+- validation: green
+- app build: green
+- GitHub Pages deploy: green
+- deployed-app smoke test: green
+- full 52-card dataset: deferred/tracked separately in Issue #1
+- tagged GitHub release: not yet completed
+- Zenodo/DOI: not yet completed
+
 Before tagging `v0.4.0`, confirm:
 
-- live smoke test passes
-- final dataset status is documented
-- README reflects only implemented/verified features
-- release notes distinguish implemented items from deferred items
+- README and release notes still reflect only implemented/verified features
+- final dataset status remains documented as starter/candidate for v0.4
 - release/Zenodo decision is documented
 
 Suggested v0.4 release tag:
