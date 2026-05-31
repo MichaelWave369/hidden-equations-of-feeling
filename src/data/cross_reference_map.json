@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Cross-Reference Map",
+    "version": "0.3.0",
+    "boundary": "This map shows symbolic design relationships, not psychological measurements, diagnosis, prediction, or human scoring."
+  },
+  "relationshipTypes": {
+    "mirror": "Similar structure, different emotional payload.",
+    "buffer": "One formula softens, stabilizes, or repairs another.",
+    "amplifier": "One formula can increase the pressure of another.",
+    "repair_path": "One formula suggests a healthier or clearer next step.",
+    "contrast": "The formulas help define each other by difference.",
+    "sequence": "One formula often leads into the next.",
+    "family_bridge": "The formulas connect two families.",
+    "example_pair": "Strong pair for compare mode or teaching examples."
+  },
+  "edges": [
+    {
+      "source": "comedy_deadpan_delta",
+      "target": "drama_suspicious_silence_delta",
+      "relationship": "mirror",
+      "label": "Same division structure, different emotional payload: absurdity over emotional reaction in comedy, assumptions over evidence in drama.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_giant_hat_disruption",
+      "target": "drama_overreaction_theorem",
+      "relationship": "mirror",
+      "label": "Both model format collapse: one through playful disruption, the other through public emotional escalation.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "fear_threat_forecast_loop",
+      "target": "calm_grounding_loop",
+      "relationship": "buffer",
+      "label": "Calm provides breath, orientation, and safety against threat forecasting and uncertainty spirals.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "anger_boundary_engine",
+      "target": "love_bridge_equation",
+      "relationship": "repair_path",
+      "label": "Anger names harm, violation, and need; love and repair can rebuild trust without erasing the boundary.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "sadness_grief_echo",
+      "target": "joy_wonder_lift",
+      "relationship": "family_bridge",
+      "label": "Memory, witness, safety, and presence can carry both ache and lift without forcing either feeling away.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "shame_exposure_collapse",
+      "target": "love_bridge_equation",
+      "relationship": "repair_path",
+      "label": "Shame pressure can soften through compassion, witness, trust, and repair.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "calm_grounding_loop",
+      "target": "joy_wonder_lift",
+      "relationship": "buffer",
+      "label": "Calm can create enough safety and orientation for joy and wonder to become noticeable.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "drama_suspicious_silence_delta",
+      "target": "fear_threat_forecast_loop",
+      "relationship": "sequence",
+      "label": "Assumptions over evidence can feed uncertainty, imagination, and threat forecasting.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "anger_boundary_engine",
+      "target": "calm_grounding_loop",
+      "relationship": "buffer",
+      "label": "Calm does not erase anger; it can help turn boundary fire into clearer action.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "sadness_grief_echo",
+      "target": "love_bridge_equation",
+      "relationship": "family_bridge",
+      "label": "Grief echoes attachment and memory; love gives witness, repair, and continuity language.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    }
+  ],
+  "learningPaths": [
+    {
+      "id": "fear_to_calm_path",
+      "title": "Fear to Calm Path",
+      "description": "A gentle path from threat forecasting toward safety, orientation, and possible hope.",
+      "formulaIds": [
+        "fear_threat_forecast_loop",
+        "drama_suspicious_silence_delta",
+        "calm_grounding_loop",
+        "joy_wonder_lift"
+      ],
+      "boundaryNote": "This path is a symbolic reflection/design sequence, not clinical anxiety guidance."
+    },
+    {
+      "id": "boundary_to_repair_path",
+      "title": "Boundary to Repair Path",
+      "description": "A path from violated need toward clarity, repair, trust, and compassionate bridging.",
+      "formulaIds": [
+        "anger_boundary_engine",
+        "calm_grounding_loop",
+        "love_bridge_equation",
+        "shame_exposure_collapse"
+      ],
+      "boundaryNote": "This path does not excuse harm or force reconciliation."
+    },
+    {
+      "id": "comedy_drama_mirror_path",
+      "title": "Comedy / Drama Mirror Path",
+      "description": "A path showing how similar structures can become laughter or tension depending on context.",
+      "formulaIds": [
+        "comedy_deadpan_delta",
+        "drama_suspicious_silence_delta",
+        "comedy_giant_hat_disruption",
+        "drama_overreaction_theorem"
+      ],
+      "boundaryNote": "These are craft mirrors, not emotional rankings."
+    },
+    {
+      "id": "grief_to_wonder_path",
+      "title": "Grief to Wonder Path",
+      "description": "A gentle path where memory, witness, presence, and wonder can coexist without forced positivity.",
+      "formulaIds": [
+        "sadness_grief_echo",
+        "love_bridge_equation",
+        "calm_grounding_loop",
+        "joy_wonder_lift"
+      ],
+      "boundaryNote": "Grief has no deadline; this path is not a schedule or solution."
+    }
+  ]
+}
