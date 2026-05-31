@@ -55,6 +55,7 @@ export default function App() {
   const [selectedId, setSelectedId] = useState(getInitialSelectedId);
   const [compareId, setCompareId] = useState(cards[1]?.id ?? getDefaultFormula(cards)?.id ?? '');
   const [favoriteIds, setFavoriteIds] = useState<string[]>(getInitialFavoriteIds);
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [favoritesStatus, setFavoritesStatus] = useState(getFavoritesStatusText(favoriteIds.length));
 
   useEffect(() => {
@@ -73,9 +74,13 @@ export default function App() {
 
   const familyOptions = useMemo(() => getFamilyOptions(cards), []);
   const filtered = useMemo(() => filterFormulaCards(cards, query, family), [query, family]);
+  const visibleCards = useMemo(() => {
+    if (!showFavoritesOnly) return filtered;
+    return filtered.filter(card => isFavoriteFormula(favoriteIds, card.id));
+  }, [filtered, favoriteIds, showFavoritesOnly]);
   const recommendedPairs = useMemo(() => getRecommendedComparePairs(crossReferenceMap), []);
 
-  const selected = findFormulaById(cards, selectedId) ?? filtered[0] ?? getDefaultFormula(cards);
+  const selected = findFormulaById(cards, selectedId) ?? visibleCards[0] ?? filtered[0] ?? getDefaultFormula(cards);
   const compare = findFormulaById(cards, compareId) ?? cards[1] ?? getDefaultFormula(cards);
   const related = getRelatedCards(cards, selected);
   const selectedExamples = getExamplesForFormula(examples, selected?.id);
@@ -91,11 +96,16 @@ export default function App() {
     const result = writeFavoriteFormulaIds(nextFavoriteIds);
     setFavoriteIds(result.value);
     setFavoritesStatus(result.ok ? getFavoritesStatusText(result.value.length) : result.message);
+
+    if (result.value.length === 0) {
+      setShowFavoritesOnly(false);
+    }
   };
 
   const handleClearFavorites = () => {
     const result = clearFavoriteFormulaIds();
     setFavoriteIds([]);
+    setShowFavoritesOnly(false);
     setFavoritesStatus(result.ok ? getFavoritesStatusText(0) : result.message);
   };
 
@@ -124,10 +134,22 @@ export default function App() {
       <FormulaOfTheDay cards={cards} onSelectFormula={handleSelectCard} />
 
       <section className="favorites-panel" aria-label="Local favorites">
-        <p className="copy-status" role="status" aria-live="polite">{favoritesStatus}</p>
-        {favoriteIds.length > 0 && (
-          <button type="button" onClick={handleClearFavorites}>Clear local favorites</button>
-        )}
+        <p className="copy-status" role="status" aria-live="polite">
+          {showFavoritesOnly ? `Showing ${visibleCards.length} matching local favorite${visibleCards.length === 1 ? '' : 's'}. ` : ''}{favoritesStatus}
+        </p>
+        <div className="favorites-actions">
+          <button
+            type="button"
+            disabled={favoriteIds.length === 0}
+            aria-pressed={showFavoritesOnly}
+            onClick={() => setShowFavoritesOnly(current => !current)}
+          >
+            {showFavoritesOnly ? 'Show all formulas' : 'Show favorites only'}
+          </button>
+          {favoriteIds.length > 0 && (
+            <button type="button" onClick={handleClearFavorites}>Clear local favorites</button>
+          )}
+        </div>
       </section>
 
       <section className="toolbar" aria-label="Filter formula cards">
@@ -143,7 +165,7 @@ export default function App() {
 
       <section className="layout">
         <aside className="card-grid">
-          {filtered.map(card => (
+          {visibleCards.map(card => (
             <FormulaCardView
               key={card.id}
               card={card}
@@ -153,6 +175,11 @@ export default function App() {
               onToggleFavorite={handleToggleFavorite}
             />
           ))}
+          {visibleCards.length === 0 && (
+            <p className="footer-note">
+              {showFavoritesOnly ? 'No saved favorites match the current search/filter yet.' : 'No formulas match the current search/filter yet.'}
+            </p>
+          )}
         </aside>
         {selected && (
           <DetailPanel
