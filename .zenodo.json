@@ -1,0 +1,28 @@
+{
+  "title": "The Hidden Equations of Feeling",
+  "upload_type": "software",
+  "description": "A symbolic formula atlas and interactive React app for mapping comedy, drama, emotion, and storytelling patterns as creative design equations. Creative metaphor only; not clinical, diagnostic, empirical, or a human score.",
+  "creators": [
+    {
+      "name": "Hughes, Michael W.",
+      "affiliation": "PHI369 Labs"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "symbolic formulas",
+    "affective design patterns",
+    "comedy writing",
+    "drama writing",
+    "game design",
+    "NPC design",
+    "PHI369 Labs"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/MichaelWave369/hidden-equations-of-feeling",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
