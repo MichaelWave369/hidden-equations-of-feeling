@@ -14,6 +14,26 @@
   margin: 0;
 }
 
+.favorites-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.favorites-actions button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.favorites-actions button[disabled]:hover,
+.favorites-actions button[disabled]:focus-visible {
+  background: rgba(244, 201, 93, 0.14);
+  color: var(--text);
+  outline: none;
+}
+
 .favorite-button {
   display: inline-flex;
   align-items: center;
@@ -83,6 +103,10 @@
   .favorites-panel {
     align-items: stretch;
     display: grid;
+  }
+
+  .favorites-actions {
+    justify-content: flex-start;
   }
 
   .detail-heading-row {
