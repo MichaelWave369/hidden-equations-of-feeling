@@ -2,10 +2,10 @@
 
 ## The Hidden Equations of Feeling v0.4.0
 
-This release is planned as the first major app-experience upgrade after the v0.3 publication scaffold.
+This release upgrades **The Hidden Equations of Feeling** from a v0.3 publication scaffold into a more useful interactive symbolic atlas.
 
-v0.3 makes the project real, documented, runnable, and bounded.
-v0.4 makes it more useful, shareable, and alive.
+v0.3 made the project real, documented, runnable, and bounded.
+v0.4 makes it more useful, shareable, navigable, and release-ready.
 
 ## Core boundary
 
@@ -13,53 +13,63 @@ v0.4 makes it more useful, shareable, and alive.
 
 Long form:
 
-> The Hidden Equations of Feeling is a symbolic formula atlas and creative design-pattern tool. These formulas are not clinical tools, diagnostic models, empirical laws, universal claims, or scores of a person.
+> The Hidden Equations of Feeling is a symbolic formula atlas and creative design-pattern tool. These formulas are not clinical tools, diagnostic models, empirical laws, universal claims, emotional measurements, or scores of a person.
 
-## Planned release focus
+## Release status
 
-v0.4 should improve how users move through the app:
+This is a **release-notes draft** until all closeout checks pass.
 
-- direct links to formula cards
-- smarter compare mode
-- worked examples gallery
-- copy tools for writers/designers/educators
-- Formula of the Day
-- local-only favorites
-- stronger README/app polish
+Do not tag `v0.4.0` until:
 
-## Planned features
+- validation passes
+- production build passes
+- GitHub Pages deploy is green
+- README and release notes match the implemented app
+- no boundary blockers remain
 
-### Shareable formula URLs
+Source checklist:
 
-Each formula card should become directly linkable.
+```txt
+docs/v0_4_closeout_checklist.md
+```
 
-Example route idea:
+## Implemented in the v0.4 app pass
+
+### Shareable formula-card URLs
+
+Formula cards can now be selected with hash routes such as:
 
 ```txt
 /#/card/fear_threat_forecast_loop
 ```
 
-Expected behavior:
+Implemented behavior:
 
 - selecting a card updates the URL
-- opening a formula URL selects that card automatically
-- missing or invalid card IDs fail gently
-- GitHub Pages base path remains compatible
+- opening a valid formula URL selects that card automatically
+- invalid or missing IDs fall back safely
+- GitHub Pages base path remains compatible through Vite config
 
 Boundary:
 
 > Formula links point to creative pattern cards, not user-specific emotional states.
 
-### Cross-reference-powered compare mode
+### Cross-reference-powered Compare Mode
 
-Compare mode should use `src/data/cross_reference_map.json`.
+Compare Mode now uses:
 
-Expected behavior:
+```txt
+src/data/cross_reference_map.json
+src/lib/relationshipSelectors.ts
+```
 
-- show recommended compare pairs
-- show relationship type, such as `mirror`, `buffer`, or `repair_path`
-- explain why the comparison matters
-- help users see Comedy ↔ Drama mirrors and Fear ↔ Calm bridges
+Implemented behavior:
+
+- recommended compare pairs
+- relationship labels such as `mirror`, `buffer`, and `repair_path`
+- relationship explanations
+- compare boundary text from the cross-reference map
+- automatic selected/compare card switching from recommended pairs
 
 Boundary copy:
 
@@ -67,19 +77,27 @@ Boundary copy:
 This comparison shows symbolic design relationships, not psychological measurements.
 ```
 
-### Examples gallery
+### Examples Gallery
 
-Add a gallery powered by `src/data/example_gallery.json`.
+The app now includes an Examples Gallery powered by:
 
-Expected behavior:
+```txt
+src/data/example_gallery.json
+src/components/ExampleGallery.tsx
+src/lib/exampleSelectors.ts
+```
+
+Implemented behavior:
 
 - browse worked examples
-- filter by category
+- search examples
+- filter examples by category
 - link examples back to formula cards
 - show scenario, example text, why it works, and how to use
 - show boundary note and misuse warning
+- copy example as boundary-preserving Markdown
 
-Starter categories:
+Starter categories include:
 
 - comedy writing
 - drama scene
@@ -89,71 +107,177 @@ Starter categories:
 - game mechanic
 - infographic/poster
 
+### Related examples inside formula detail cards
+
+Formula detail panels now show worked examples connected to the selected formula.
+
+Implemented behavior:
+
+- related example title
+- category label
+- summary
+- example text
+- why it works
+- copy example button
+- boundary-preserving Markdown output
+
 ### Copy tools
 
-Add copy buttons that make the atlas useful in real creative workflows.
+The detail panel now includes copy buttons for common creative workflows.
 
-Candidate buttons:
+Implemented buttons:
 
 - Copy formula
 - Copy reflection prompt
 - Copy Markdown card
-- Copy example as Markdown
 - Copy citation snippet
+- Copy example from related examples and gallery
 
-Required rule:
+Required rule preserved:
 
 > Copied Markdown should include a boundary note when the content could be reused out of context.
 
 ### Formula of the Day
 
-Add a simple daily entry point.
+The app now includes a deterministic local Formula of the Day.
 
-Rules:
+Implemented behavior:
 
-- deterministic or local-only
+- featured formula title
+- formula display
+- tagline
+- reflection prompt
+- link/button to open the full card
+- local date key
+- boundary line
+
+Rules preserved:
+
+- deterministic/local-only
 - no tracking
 - no account
 - no emotional profiling
 
-Expected output:
-
-- featured formula title
-- formula
-- tagline
-- reflection prompt
-- link to full card
-- boundary line
-
 ### Local-only favorites
 
-Let users save formula cards in their browser.
+Users can save formula cards locally in their browser.
 
-Rules:
+Implemented behavior:
 
-- local storage only
-- optional
-- no login
-- no upload
-- no analytics
-- user can clear favorites
+- favorite buttons on formula cards
+- favorite button in the detail panel
+- local-only browser storage
+- favorites status message
+- clear local favorites button
+- favorites-only formula filter
+- automatic exit from favorites-only mode when all favorites are cleared
 
-Suggested UI copy:
+Privacy copy:
 
 ```txt
-Favorites are stored locally in this browser only. They are not uploaded or used to score you.
+Favorites are stored locally in this browser only. They are not uploaded, tracked, synced, or used to score you.
 ```
 
-## Data systems included
+### Validation hardening
 
-v0.4 builds on these data systems:
+The data validator has been hardened for release readiness.
+
+Validation now protects:
+
+- formula-card required fields
+- UI-critical fields such as `familyLabel`, `familyColor`, `derivation`, `exampleApplication`, and `useCases`
+- non-empty `formulaSymbols`, `variables`, and `useCases`
+- valid 6-digit hex `familyColor`
+- required `symbol`, `meaning`, and `role` on variables
+- formula symbol/variable alignment
+- duplicate formula IDs
+- example records, categories, difficulties, statuses, tags, and formula references
+- cross-reference map metadata, relationship types, edges, strengths, booleans, duplicate edges, and learning paths
+
+### GitHub Pages workflow hardening
+
+The Pages workflow now separates data validation from Vite build.
+
+Implemented workflow checkpoints:
+
+```yaml
+- name: Validate formula data
+  run: npm run validate-data
+
+- name: Build app
+  run: vite build
+```
+
+Why it matters:
+
+- data/schema problems fail at the validation checkpoint
+- React/Vite build problems fail at the build checkpoint
+- Pages deployment only proceeds after both pass
+
+### README and closeout documentation
+
+The README has been updated for v0.4 release readiness.
+
+It now includes:
+
+- v0.4 status
+- GitHub Pages target URL
+- starter/candidate dataset note
+- v0.4 app feature list
+- local-only favorites privacy note
+- app/data/docs file map
+- validation and deployment workflow notes
+- Issue #1 / Issue #2 tracking split
+- Zenodo/DOI caution
+- boundary language near the top
+
+The closeout checklist now includes:
+
+```txt
+docs/v0_4_closeout_checklist.md
+```
+
+## Data systems used by the app
+
+The v0.4 app currently uses:
 
 - `src/data/formula_cards.json`
 - `src/data/example_gallery.json`
 - `src/data/cross_reference_map.json`
+
+Additional release/support data may include:
+
 - `src/data/variable_glossary.json`
 - `src/data/family_tokens.json`
 - `src/data/expansion_candidates.json`
+- `src/data/formula_schema.json`
+
+## Deferred or not yet confirmed
+
+These items should not be described as complete until verified:
+
+- full 52-card formula dataset confirmation/import
+- final `npm run validate-data` result on the release dataset
+- final `npm run build` result
+- GitHub Pages deploy status
+- live app smoke test
+- broad accessibility testing
+- screenshot/social preview asset
+- tagged GitHub release
+- Zenodo import/DOI metadata
+- ORCID addition, if desired and available
+
+## Known limitations for v0.4.0
+
+Update before tagging if any of these change:
+
+- The current app dataset is still described as starter/candidate until the full 52-card dataset is confirmed.
+- The examples gallery may remain starter-sized.
+- The cross-reference map may need more pairings after full dataset import.
+- Formula of the Day uses simple deterministic local selection.
+- Favorites are browser-local only and not synced across devices.
+- Accessibility has checklist coverage but still needs final live-app spot checks.
+- Zenodo/DOI should not be advertised until a DOI exists.
 
 ## Validation requirements
 
@@ -164,7 +288,7 @@ npm run validate-data
 npm run build
 ```
 
-Validation should check:
+Validation should pass for:
 
 - formula cards
 - example gallery records
@@ -173,6 +297,7 @@ Validation should check:
 - missing formula references
 - duplicate IDs
 - invalid categories/status values
+- UI-critical formula fields
 
 ## Accessibility requirements
 
@@ -185,9 +310,10 @@ Key checks:
 - shareable URLs work with keyboard navigation
 - compare mode has plain text relationship labels
 - example gallery boundary notes are visible
-- copy buttons have accessible labels
+- copy buttons have accessible labels/status messages
 - Formula of the Day is readable on mobile
 - favorites do not rely on color alone
+- favorite buttons expose pressed state
 
 ## Privacy requirements
 
@@ -199,22 +325,21 @@ v0.4 must preserve:
 - no uploaded reflections by default
 - no emotional scoring
 - no diagnostic reports
+- no third-party data collection by default
 
-Reference:
+Local storage is allowed only for formula favorites.
 
-- `docs/security_and_privacy.md`
+## README requirements
 
-## README updates for v0.4
+The README should stay aligned with the actual app and include:
 
-The README should be updated with:
-
-- live app link
-- screenshot or social card preview
-- feature list including examples and compare mode
+- live app target/link
+- feature list including examples, compare mode, Formula of the Day, and favorites
 - quick-start commands
 - documentation map
-- citation section
+- citation/Zenodo caution
 - privacy/boundary language
+- final dataset status
 
 ## Suggested GitHub release title
 
@@ -231,34 +356,24 @@ v0.4.0
 ## Suggested short release summary
 
 ```txt
-v0.4.0 upgrades The Hidden Equations of Feeling from a publication scaffold into a more useful interactive atlas, adding shareable formula URLs, smarter compare-mode planning, examples-gallery support, copy-tool planning, and local-first interaction guidance. Symbolic design patterns only — not diagnosis, measurement, or universal law.
+v0.4.0 upgrades The Hidden Equations of Feeling from a publication scaffold into a more useful interactive symbolic atlas, adding shareable formula URLs, cross-reference compare mode, worked examples, copy tools, Formula of the Day, and local-only favorites. Symbolic design patterns only — not diagnosis, measurement, emotional scoring, or universal law.
 ```
 
 ## Draft changelog bullets
 
-Use these once features are actually implemented:
+Use these only after final validation/build/Pages checks pass:
 
 - Added shareable formula-card URLs.
-- Added cross-reference-powered compare suggestions.
-- Added examples gallery UI.
-- Added copy tools for formulas, prompts, examples, and Markdown cards.
-- Added Formula of the Day.
-- Added local-only favorites.
-- Improved README and app boundary copy.
-- Improved validation and data documentation.
+- Added cross-reference-powered compare suggestions and relationship explanations.
+- Added worked Examples Gallery with search/filter and boundary notes.
+- Added related examples inside formula detail cards.
+- Added copy tools for formulas, prompts, examples, citations, and Markdown cards.
+- Added deterministic local Formula of the Day.
+- Added local-only favorites and favorites-only filtering.
+- Improved README and public boundary copy.
+- Improved Pages workflow with explicit validation/build checkpoints.
+- Improved data validation for UI-critical fields.
 - Preserved local-first, non-diagnostic, non-scoring privacy boundary.
-
-## Known limitations to update before release
-
-Replace this section with real status before tagging.
-
-Potential limitations:
-
-- Examples gallery may still be starter-sized.
-- Cross-reference map may need more pairings.
-- Formula of the Day may use simple deterministic selection.
-- Favorites may be browser-local only and not synced.
-- App may still need broader accessibility testing.
 
 ## Release definition of done
 
@@ -267,15 +382,19 @@ v0.4.0 can be tagged when:
 - [ ] validation passes
 - [ ] production build passes
 - [ ] GitHub Pages deploys successfully
+- [ ] live app opens and loads CSS
 - [ ] shareable formula URLs work
-- [ ] compare mode uses cross-reference data or clearly defers it
-- [ ] examples gallery renders or is clearly deferred
-- [ ] copy tools work or are clearly deferred
-- [ ] local-only privacy language is visible for any saved state
+- [ ] compare mode uses cross-reference data correctly
+- [ ] examples gallery renders
+- [ ] copy tools work
+- [ ] Formula of the Day works
+- [ ] favorites persist locally and can be cleared
+- [ ] favorites-only filtering works
+- [ ] local-only privacy language is visible for saved state
 - [ ] README reflects implemented features
-- [ ] release notes distinguish implemented features from planned ones
+- [ ] release notes distinguish implemented features from planned/deferred ones
 - [ ] no known boundary blockers remain
 
 ## Boundary footer for release notes
 
-> The Hidden Equations of Feeling uses formulas as creative pattern language. It does not diagnose, measure, rank, or score people.
+> The Hidden Equations of Feeling uses formulas as creative pattern language. It does not diagnose, measure, rank, manipulate, or score people.
