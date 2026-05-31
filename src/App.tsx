@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import rawCards from './data/formula_cards.json';
 import type { FormulaCard } from './types/formula';
 import { FormulaCardView } from './components/FormulaCardView';
@@ -11,14 +11,34 @@ import {
   getRelatedCards,
   type FamilyFilter
 } from './lib/formulaSelectors';
+import { getCardIdFromHash, setCardHash } from './lib/hashRouting';
 
 const cards = rawCards as FormulaCard[];
+
+function getInitialSelectedId(): string {
+  const hashCardId = getCardIdFromHash();
+  return findFormulaById(cards, hashCardId)?.id ?? getDefaultFormula(cards)?.id ?? '';
+}
 
 export default function App() {
   const [query, setQuery] = useState('');
   const [family, setFamily] = useState<FamilyFilter>('all');
-  const [selectedId, setSelectedId] = useState(getDefaultFormula(cards)?.id ?? '');
+  const [selectedId, setSelectedId] = useState(getInitialSelectedId);
   const [compareId, setCompareId] = useState(cards[1]?.id ?? getDefaultFormula(cards)?.id ?? '');
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hashCardId = getCardIdFromHash();
+      const hashCard = findFormulaById(cards, hashCardId);
+
+      if (hashCard) {
+        setSelectedId(hashCard.id);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   const familyOptions = useMemo(() => getFamilyOptions(cards), []);
   const filtered = useMemo(() => filterFormulaCards(cards, query, family), [query, family]);
@@ -26,6 +46,11 @@ export default function App() {
   const selected = findFormulaById(cards, selectedId) ?? filtered[0] ?? getDefaultFormula(cards);
   const compare = findFormulaById(cards, compareId) ?? cards[1] ?? getDefaultFormula(cards);
   const related = getRelatedCards(cards, selected);
+
+  const handleSelectCard = (cardId: string) => {
+    setSelectedId(cardId);
+    setCardHash(cardId);
+  };
 
   return (
     <main>
@@ -49,7 +74,7 @@ export default function App() {
 
       <section className="layout">
         <aside className="card-grid">
-          {filtered.map(card => <FormulaCardView key={card.id} card={card} selected={card.id === selected?.id} onSelect={setSelectedId} />)}
+          {filtered.map(card => <FormulaCardView key={card.id} card={card} selected={card.id === selected?.id} onSelect={handleSelectCard} />)}
         </aside>
         {selected && <DetailPanel card={selected} related={related} />}
       </section>
