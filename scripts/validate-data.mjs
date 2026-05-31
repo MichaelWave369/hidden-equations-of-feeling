@@ -20,12 +20,47 @@ function requireFields(record, required, label) {
   }
 }
 
+function requireNonEmptyArray(record, key, label) {
+  if (!Array.isArray(record[key]) || record[key].length === 0) {
+    errors.push(`${label} ${record.id ?? record.title ?? 'unknown'} must include non-empty ${key}`);
+  }
+}
+
+function validateHexColor(value, label) {
+  if (typeof value !== 'string' || !/^#[0-9A-Fa-f]{6}$/.test(value)) {
+    errors.push(`${label} familyColor must be a 6-digit hex color like #F4C95D`);
+  }
+}
+
 function validateFormulaCards() {
-  const required = ['id','title','family','formula','formulaPlaintext','formulaSymbols','variables','tagline','reflectionPrompt','boundaryNote','misuseWarning','version'];
+  const required = [
+    'id',
+    'title',
+    'family',
+    'familyLabel',
+    'familyColor',
+    'formula',
+    'formulaPlaintext',
+    'formulaSymbols',
+    'variables',
+    'tagline',
+    'derivation',
+    'reflectionPrompt',
+    'exampleApplication',
+    'useCases',
+    'boundaryNote',
+    'misuseWarning',
+    'version'
+  ];
   const ids = new Set();
 
   for (const card of cards) {
     requireFields(card, required, 'formula card');
+    requireNonEmptyArray(card, 'formulaSymbols', 'formula card');
+    requireNonEmptyArray(card, 'variables', 'formula card');
+    requireNonEmptyArray(card, 'useCases', 'formula card');
+
+    if (card.familyColor) validateHexColor(card.familyColor, `formula card ${card.id}`);
 
     if (ids.has(card.id)) errors.push(`duplicate formula card id ${card.id}`);
     ids.add(card.id);
@@ -34,6 +69,10 @@ function validateFormulaCards() {
     const hasOutput = (card.variables ?? []).some(v => v.role === 'output');
 
     if (!hasOutput) errors.push(`${card.id} must define at least one output variable`);
+
+    for (const variable of card.variables ?? []) {
+      requireFields(variable, ['symbol', 'meaning', 'role'], `variable in ${card.id}`);
+    }
 
     for (const sym of card.formulaSymbols ?? []) {
       if (!variableSymbols.has(sym)) errors.push(`${card.id} formulaSymbols includes ${sym} but variables does not define it`);
