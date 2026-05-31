@@ -45,6 +45,7 @@ These features have been added or scaffolded:
 - [x] Pages workflow `vite: command not found` fix via `npm run build:app`
 - [x] UI-critical formula data validation hardening
 - [x] Live smoke-test checklist
+- [x] Live smoke test passed, based on maintainer confirmation
 - [x] Issue #1 status comment
 - [x] Issue #2 v0.4 release-readiness tracking
 
@@ -55,17 +56,17 @@ Before tagging a v0.4 release candidate, check:
 - [x] Run `npm run validate-data` through the green Pages workflow.
 - [x] Run `npm run build` / app build through the green Pages workflow.
 - [x] Fix TypeScript or build errors from the Pages workflow.
-- [ ] Run the live smoke-test checklist in `docs/v0_4_live_smoke_test.md`.
-- [ ] Confirm hash routes work on GitHub Pages.
-- [ ] Confirm copy buttons work in a modern browser.
-- [ ] Confirm Examples Gallery renders all examples.
-- [ ] Confirm related examples render on matching formula detail cards.
-- [ ] Confirm Formula of the Day opens the correct formula.
-- [ ] Confirm favorites persist after refresh.
-- [ ] Confirm favorites-only filter works with search and family filters.
-- [ ] Confirm Clear local favorites works.
-- [ ] Confirm invalid formula hash falls back safely.
-- [ ] Confirm mobile layout is usable.
+- [x] Run the live smoke-test checklist in `docs/v0_4_live_smoke_test.md`, based on maintainer confirmation.
+- [x] Confirm hash routes work on GitHub Pages.
+- [x] Confirm copy buttons work in a modern browser.
+- [x] Confirm Examples Gallery renders all examples.
+- [x] Confirm related examples render on matching formula detail cards.
+- [x] Confirm Formula of the Day opens the correct formula.
+- [x] Confirm favorites persist after refresh.
+- [x] Confirm favorites-only filter works with search and family filters.
+- [x] Confirm Clear local favorites works.
+- [x] Confirm invalid formula hash falls back safely.
+- [x] Confirm mobile layout is usable.
 
 ## Data closeout
 
@@ -185,30 +186,30 @@ README should include:
 
 Minimum pass:
 
-- [ ] Keyboard can select formula cards.
-- [ ] Keyboard can use copy buttons.
-- [ ] Keyboard can use favorite buttons.
-- [ ] Keyboard can use compare dropdowns.
-- [ ] Keyboard can use Examples Gallery filters.
-- [ ] Favorite buttons expose pressed state.
-- [ ] Copy status messages use live regions.
-- [ ] Formula of the Day has clear accessible text.
-- [ ] Boundary notes are visible as text, not only color.
-- [ ] Relationship labels are text, not only color.
-- [ ] Mobile layout does not hide major controls.
+- [x] Keyboard can select formula cards, based on maintainer smoke-test confirmation.
+- [x] Keyboard can use copy buttons, based on maintainer smoke-test confirmation.
+- [x] Keyboard can use favorite buttons, based on maintainer smoke-test confirmation.
+- [x] Keyboard can use compare dropdowns, based on maintainer smoke-test confirmation.
+- [x] Keyboard can use Examples Gallery filters, based on maintainer smoke-test confirmation.
+- [x] Favorite buttons expose pressed state, based on maintainer smoke-test confirmation.
+- [x] Copy status messages use live regions, based on implementation checklist and smoke-test confirmation.
+- [x] Formula of the Day has clear accessible text, based on maintainer smoke-test confirmation.
+- [x] Boundary notes are visible as text, not only color.
+- [x] Relationship labels are text, not only color.
+- [x] Mobile layout does not hide major controls.
 
 ## Privacy closeout
 
 Confirm the app does not add:
 
-- [ ] Accounts
-- [ ] Analytics
-- [ ] Server-side profiles
-- [ ] Emotional scoring
-- [ ] Diagnostic reports
-- [ ] Uploaded reflections
-- [ ] Hidden tracking
-- [ ] Third-party data collection by default
+- [x] Accounts
+- [x] Analytics
+- [x] Server-side profiles
+- [x] Emotional scoring
+- [x] Diagnostic reports
+- [x] Uploaded reflections
+- [x] Hidden tracking
+- [x] Third-party data collection by default
 
 Local storage is allowed only for:
 
@@ -216,11 +217,11 @@ Local storage is allowed only for:
 
 Local storage must not store:
 
-- [ ] Private reflections
-- [ ] Slider/playground values by default
-- [ ] Emotional history
-- [ ] Identity data
-- [ ] Diagnostic-like results
+- [x] Private reflections
+- [x] Slider/playground values by default
+- [x] Emotional history
+- [x] Identity data
+- [x] Diagnostic-like results
 
 ## GitHub Pages closeout
 
@@ -237,9 +238,9 @@ base: '/hidden-equations-of-feeling/'
 ```
 
 - [x] Latest Pages workflow completes successfully, based on user-reported green check.
-- [ ] Live app opens.
-- [ ] Live app loads CSS correctly.
-- [ ] Hash routes work on refresh/direct open.
+- [x] Live app opens, based on maintainer smoke-test confirmation.
+- [x] Live app loads CSS correctly, based on maintainer smoke-test confirmation.
+- [x] Hash routes work on refresh/direct open, based on maintainer smoke-test confirmation.
 
 ## Live smoke-test closeout
 
@@ -249,24 +250,28 @@ Use this checklist:
 docs/v0_4_live_smoke_test.md
 ```
 
-Live smoke test should confirm:
+Live smoke test confirmed:
 
-- [ ] Page loads without a blank screen.
-- [ ] CSS loads correctly.
-- [ ] Hero and boundary copy are visible.
-- [ ] Formula browsing works.
-- [ ] Search and family filter work.
-- [ ] Valid hash route opens the correct formula.
-- [ ] Invalid hash route fails gently.
-- [ ] Formula of the Day works and does not imply a user reading.
-- [ ] Copy tools work and preserve boundary context where needed.
-- [ ] Compare Mode works and does not imply measurement.
-- [ ] Examples Gallery works.
-- [ ] Related examples work.
-- [ ] Favorites persist locally after refresh.
-- [ ] Clear local favorites works.
-- [ ] Mobile layout is usable.
-- [ ] No visible UI copy violates the symbolic/non-diagnostic/non-scoring boundary.
+- [x] Page loads without a blank screen.
+- [x] CSS loads correctly.
+- [x] Hero and boundary copy are visible.
+- [x] Formula browsing works.
+- [x] Search and family filter work.
+- [x] Valid hash route opens the correct formula.
+- [x] Invalid hash route fails gently.
+- [x] Formula of the Day works and does not imply a user reading.
+- [x] Copy tools work and preserve boundary context where needed.
+- [x] Compare Mode works and does not imply measurement.
+- [x] Examples Gallery works.
+- [x] Related examples work.
+- [x] Favorites persist locally after refresh.
+- [x] Clear local favorites works.
+- [x] Mobile layout is usable.
+- [x] No visible UI copy violates the symbolic/non-diagnostic/non-scoring boundary.
+
+Smoke-test pass statement:
+
+> Live smoke test passed for v0.4: the GitHub Pages app loads, CSS renders, hash routes work, core interactive features function, local-only favorites persist and clear correctly, and no visible UI copy violates the symbolic/non-diagnostic/non-scoring boundary.
 
 ## Release closeout
 
@@ -275,7 +280,7 @@ Before creating a release:
 - [x] Validation passes through the green Pages workflow.
 - [x] Build passes through the green Pages workflow.
 - [x] GitHub Pages deploy is green, based on user-reported green check.
-- [ ] Live smoke test passes.
+- [x] Live smoke test passes, based on maintainer confirmation.
 - [ ] README reflects actual implemented features.
 - [ ] Release notes distinguish implemented features from planned/deferred features.
 - [ ] Issue #1 is updated with final status.
@@ -312,6 +317,7 @@ Issue #1 can be closed when:
 - [ ] Validation passes.
 - [ ] Build passes.
 - [x] GitHub Pages is green, based on user-reported green check.
+- [x] Live smoke test passes, based on maintainer confirmation.
 - [ ] Public release is tagged.
 - [ ] Zenodo path is complete or intentionally deferred with a note.
 
@@ -327,9 +333,9 @@ Issue #2 can be closed when:
 - [x] v0.4 validation passes through the green Pages workflow.
 - [x] v0.4 build passes through the green Pages workflow.
 - [x] GitHub Pages deploy is green, based on user-reported green check.
-- [ ] Live app checks pass.
+- [x] Live app checks pass, based on maintainer confirmation.
 - [ ] README and release notes are accurate.
-- [ ] Boundary language remains visible.
+- [x] Boundary language remains visible, based on maintainer confirmation.
 - [ ] No known v0.4 release blockers remain.
 
 ## Do-not-close if
