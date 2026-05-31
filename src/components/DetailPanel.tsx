@@ -1,15 +1,24 @@
 import { useState } from 'react';
 import type { FormulaCard } from '../types/formula';
 import { copyToClipboard, type CopyResult } from '../lib/copyToClipboard';
+import { formatExampleCategory } from '../lib/exampleSelectors';
 import {
   formatCitationSnippet,
+  formatExampleMarkdown,
   formatFormulaLine,
   formatFormulaMarkdown,
-  formatReflectionPromptMarkdown
+  formatReflectionPromptMarkdown,
+  type ExampleGalleryRecord
 } from '../lib/formatMarkdown';
 import { FormulaPlayground } from './FormulaPlayground';
 
-export function DetailPanel({ card, related }: { card: FormulaCard; related: FormulaCard[] }) {
+interface DetailPanelProps {
+  card: FormulaCard;
+  related: FormulaCard[];
+  examples: ExampleGalleryRecord[];
+}
+
+export function DetailPanel({ card, related, examples }: DetailPanelProps) {
   const [copyResult, setCopyResult] = useState<CopyResult | null>(null);
 
   const handleCopy = async (label: string, text: string) => {
@@ -49,6 +58,30 @@ export function DetailPanel({ card, related }: { card: FormulaCard; related: For
       <blockquote>{card.reflectionPrompt}</blockquote>
       <h3>Example application</h3>
       <p>{card.exampleApplication}</p>
+
+      {examples.length > 0 && (
+        <section className="related-examples" aria-label="Worked examples for this formula">
+          <h3>Worked examples</h3>
+          <div className="related-example-list">
+            {examples.map(example => (
+              <article className="related-example" key={example.id}>
+                <span className="example-category">{formatExampleCategory(example.category)}</span>
+                <h4>{example.title}</h4>
+                <p>{example.summary}</p>
+                <blockquote>{example.exampleText}</blockquote>
+                <p><strong>Why it works:</strong> {example.whyItWorks}</p>
+                <button
+                  type="button"
+                  onClick={() => handleCopy('Example', formatExampleMarkdown(example, card.title))}
+                >
+                  Copy example
+                </button>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
       {related.length > 0 && <><h3>Suggested companions</h3><ul>{related.map(r => <li key={r.id}>{r.title}</li>)}</ul></>}
       <h3>Boundary</h3>
       <p>{card.boundaryNote}</p>
