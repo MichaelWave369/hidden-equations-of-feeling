@@ -15,7 +15,7 @@ v0.4.0
 Recommended release mode:
 
 ```txt
-Create as a normal GitHub release after one final maintainer look.
+Ready to publish as a normal GitHub release after final maintainer confirmation.
 ```
 
 ## Release summary
@@ -52,7 +52,9 @@ Confirmed before release draft:
 - deployed-app live smoke test passes
 - README accuracy pass complete
 - release-notes accuracy pass complete
+- science / claim validation pass complete
 - Issue #1 cleanly tracks the full 52-card dataset / publication / Zenodo path
+- repository has been enabled in Zenodo by the maintainer
 
 These are technical release checks only. They do not imply scientific, clinical, empirical, psychological, or care-related validation.
 
@@ -109,20 +111,29 @@ Favorites are stored locally in the browser only. They are not uploaded, synced,
 - The cross-reference map may need more pairings after full dataset import.
 - Formula of the Day uses simple deterministic local selection.
 - Favorites are browser-local only and not synced across devices.
-- Zenodo/DOI should not be advertised until a DOI exists.
+- DOI should not be advertised until it exists.
 
 ## Zenodo / DOI
 
-Zenodo and DOI metadata are not complete in this release draft.
+The maintainer has enabled this repository in Zenodo.
+
+Recommended release decision:
+
+```txt
+Publish the GitHub release now, then confirm the Zenodo archive/DOI afterward.
+```
 
 Do not add a DOI badge until a DOI exists.
 
 A DOI makes the release easier to cite. It does not imply peer review, scientific validation, clinical validation, or empirical proof.
 
-Decision needed:
+After the GitHub release is published:
 
-- publish GitHub release now and connect Zenodo afterward, or
-- defer Zenodo/DOI to the Issue #1 publication path.
+- confirm the Zenodo record/archive was created
+- confirm the DOI exists
+- update `README.md` only after the DOI exists
+- update citation docs only after the DOI exists
+- keep Issue #1 open for the full dataset / publication path
 
 ## Boundary footer
 
