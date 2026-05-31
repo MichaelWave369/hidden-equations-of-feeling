@@ -1,0 +1,36 @@
+.copy-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 8px;
+}
+
+.copy-tools button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(244, 201, 93, 0.14);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 800;
+  padding: 0.7rem 0.9rem;
+}
+
+.copy-tools button:hover,
+.copy-tools button:focus-visible {
+  background: var(--gold);
+  color: var(--bg);
+  outline: 3px solid rgba(244, 201, 93, 0.45);
+  outline-offset: 2px;
+}
+
+.copy-status {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 18px;
+}
+
+@media (max-width: 900px) {
+  .copy-tools {
+    display: grid;
+  }
+}
