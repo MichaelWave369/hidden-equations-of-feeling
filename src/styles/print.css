@@ -1,0 +1,7 @@
+@media print {
+  body { background: white; color: black; }
+  .toolbar, .card-grid, .compare-panel, .playground input { display: none !important; }
+  main { width: 100%; padding: 0; }
+  .hero, .detail-panel { box-shadow: none; border: 1px solid #999; color: black; background: white; }
+  .formula { border: 1px solid #ddd; color: black; background: #f7f7f7; }
+}
