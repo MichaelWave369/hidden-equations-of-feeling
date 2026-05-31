@@ -17,6 +17,7 @@ import {
 } from './lib/formulaSelectors';
 import { getCardIdFromHash, setCardHash } from './lib/hashRouting';
 import type { ExampleGalleryRecord } from './lib/formatMarkdown';
+import { getExamplesForFormula } from './lib/exampleSelectors';
 import {
   findRelationship,
   formatRelationshipType,
@@ -62,6 +63,7 @@ export default function App() {
   const selected = findFormulaById(cards, selectedId) ?? filtered[0] ?? getDefaultFormula(cards);
   const compare = findFormulaById(cards, compareId) ?? cards[1] ?? getDefaultFormula(cards);
   const related = getRelatedCards(cards, selected);
+  const selectedExamples = getExamplesForFormula(examples, selected?.id);
   const activeRelationship = selected && compare ? findRelationship(crossReferenceMap, selected.id, compare.id) : undefined;
 
   const handleSelectCard = (cardId: string) => {
@@ -106,7 +108,7 @@ export default function App() {
         <aside className="card-grid">
           {filtered.map(card => <FormulaCardView key={card.id} card={card} selected={card.id === selected?.id} onSelect={handleSelectCard} />)}
         </aside>
-        {selected && <DetailPanel card={selected} related={related} />}
+        {selected && <DetailPanel card={selected} related={related} examples={selectedExamples} />}
       </section>
 
       <section className="compare-panel">
