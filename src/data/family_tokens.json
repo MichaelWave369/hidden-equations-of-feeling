@@ -1,0 +1,52 @@
+{
+  "comedy": {
+    "label": "Comedy",
+    "color": "#E2A93B",
+    "motif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos"
+  },
+  "drama": {
+    "label": "Drama",
+    "color": "#D06A3B",
+    "motif": "theater masks, group chats, red string boards, escalating spirals"
+  },
+  "sadness_grief": {
+    "label": "Sadness / Grief",
+    "color": "#5E82A8",
+    "motif": "rain windows, candles, soft echoes, memory waves"
+  },
+  "joy_wonder": {
+    "label": "Joy / Wonder",
+    "color": "#F4C95D",
+    "motif": "sunbursts, golden spirals, open doors, tiny stars"
+  },
+  "fire_boundary": {
+    "label": "Fire / Boundary",
+    "color": "#C94C4C",
+    "motif": "pressure gauges, fences, repair tools, clean boundary lines"
+  },
+  "fear_threat": {
+    "label": "Fear / Threat",
+    "color": "#7C5AA6",
+    "motif": "lanterns, maps, shadows, safety beacons"
+  },
+  "love_bridge": {
+    "label": "Love / Bridge",
+    "color": "#D9789C",
+    "motif": "hands, bridges, orbit lines, warm lamps"
+  },
+  "social_mirror": {
+    "label": "Social Mirror",
+    "color": "#78A0B7",
+    "motif": "mirrors, masks, receipts, spotlight curves"
+  },
+  "calm_learning": {
+    "label": "Calm / Learning",
+    "color": "#80B7A2",
+    "motif": "breath waves, keys, simple rooms, open notebooks"
+  },
+  "general_feeling": {
+    "label": "General Feeling",
+    "color": "#9EA7AD",
+    "motif": "simple icons with clear boundary labels"
+  }
+}
