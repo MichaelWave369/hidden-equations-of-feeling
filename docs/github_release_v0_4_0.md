@@ -38,7 +38,7 @@ This release uses the current starter/candidate app dataset while the full 52-ca
 - Improved README and public boundary copy.
 - Improved Pages workflow with explicit validation/build checkpoints.
 - Fixed Pages build by using `npm run build:app` for the Vite build step.
-- Improved data validation for UI-critical fields.
+- Improved technical data validation for UI-critical fields.
 - Preserved local-first, non-diagnostic, non-scoring privacy boundary.
 - Documented that the full 52-card dataset remains a separate Issue #1 data/content milestone.
 
@@ -46,13 +46,15 @@ This release uses the current starter/candidate app dataset while the full 52-ca
 
 Confirmed before release draft:
 
-- validation passes
+- technical data validation passes
 - production app build passes
 - GitHub Pages deploy is green
 - deployed-app live smoke test passes
 - README accuracy pass complete
 - release-notes accuracy pass complete
 - Issue #1 cleanly tracks the full 52-card dataset / publication / Zenodo path
+
+These are technical release checks only. They do not imply scientific, clinical, empirical, psychological, or care-related validation.
 
 Live app:
 
@@ -70,6 +72,12 @@ Live smoke-test checklist:
 
 ```txt
 docs/v0_4_live_smoke_test.md
+```
+
+Claim validation checklist:
+
+```txt
+docs/v0_4_science_claim_validation.md
 ```
 
 ## Dataset note
@@ -108,6 +116,8 @@ Favorites are stored locally in the browser only. They are not uploaded, synced,
 Zenodo and DOI metadata are not complete in this release draft.
 
 Do not add a DOI badge until a DOI exists.
+
+A DOI makes the release easier to cite. It does not imply peer review, scientific validation, clinical validation, or empirical proof.
 
 Decision needed:
 
