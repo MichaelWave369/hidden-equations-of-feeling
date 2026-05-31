@@ -19,11 +19,13 @@ Long form:
 
 The v0.4 app-readiness path is green based on maintainer checks:
 
-- validation passes
+- technical data validation passes
 - production app build passes
 - GitHub Pages deploy is green
 - deployed-app live smoke test passes
 - no visible smoke-test boundary blockers were reported
+
+These are technical release checks only. They do not imply scientific, clinical, empirical, psychological, or care-related validation.
 
 This is still a **release-notes draft** until the tagged GitHub release is created.
 
@@ -190,9 +192,11 @@ Privacy copy:
 Favorites are stored locally in this browser only. They are not uploaded, tracked, synced, or used to score you.
 ```
 
-### Validation hardening
+### Technical data validation hardening
 
-The data validator has been hardened for release readiness.
+The project-data validator has been hardened for release readiness.
+
+This is structural/data validation only. It is not scientific validation, clinical validation, empirical proof, psychological measurement, or care-related review.
 
 Validation now protects:
 
@@ -208,7 +212,7 @@ Validation now protects:
 
 ### GitHub Pages workflow hardening
 
-The Pages workflow separates data validation from app build.
+The Pages workflow separates technical data validation from app build.
 
 Implemented workflow checkpoints:
 
@@ -249,6 +253,7 @@ Release-readiness docs include:
 ```txt
 docs/v0_4_closeout_checklist.md
 docs/v0_4_live_smoke_test.md
+docs/v0_4_science_claim_validation.md
 ```
 
 ## Data systems used by the app
@@ -297,7 +302,7 @@ npm run validate-data
 npm run build
 ```
 
-Validation should pass for:
+Technical data validation should pass for:
 
 - formula cards
 - example gallery records
@@ -386,7 +391,7 @@ Use these only after final release decision:
 - Improved README and public boundary copy.
 - Improved Pages workflow with explicit validation/build checkpoints.
 - Fixed Pages build by using `npm run build:app` for the Vite build step.
-- Improved data validation for UI-critical fields.
+- Improved technical data validation for UI-critical fields.
 - Preserved local-first, non-diagnostic, non-scoring privacy boundary.
 - Documented that the full 52-card dataset remains a separate Issue #1 data/content milestone.
 
@@ -394,7 +399,7 @@ Use these only after final release decision:
 
 v0.4.0 can be tagged when:
 
-- [x] validation passes
+- [x] technical data validation passes
 - [x] production build passes
 - [x] GitHub Pages deploys successfully
 - [x] live app opens and loads CSS
