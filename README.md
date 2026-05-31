@@ -2,13 +2,15 @@
 
 A playful, claim-disciplined symbolic formula atlas for writers, game designers, NPC/dialogue designers, educators, and reflective creative tools.
 
-**Boundary:** these formulas are creative metaphors and affective design patterns. They are not clinical tools, diagnostic models, empirical laws, emotional measurements, or instructions for manipulating people.
+**Boundary:** these formulas are creative metaphors and affective design patterns. They are not clinical tools, diagnostic models, empirical laws, emotional measurements, or claims about a person.
 
 ## Status
 
 This repository is in a **v0.4 release-readiness pass**.
 
-The interactive React/Vite atlas is implemented. Validation, app build, GitHub Pages deployment, and the deployed-app live smoke test are green based on the latest maintainer checks.
+The interactive React/Vite atlas is implemented. Technical data validation, app build, GitHub Pages deployment, and the deployed-app live smoke test are green based on the latest maintainer checks.
+
+These green checks are technical release checks only. They do not imply scientific, clinical, empirical, psychological, or care-related validation.
 
 The current formula dataset is intentionally treated as a starter/candidate v0.4 app dataset. The original full 52-card dataset confirmation/import remains tracked separately in Issue #1 and can proceed as a post-v0.4 data/content milestone.
 
@@ -88,7 +90,7 @@ Favorites are stored locally in the browser only. They are not uploaded, synced,
 
 ### Validation and deployment
 
-- `scripts/validate-data.mjs` — data integrity and UI-critical field validator
+- `scripts/validate-data.mjs` — technical data integrity and UI-critical field validator
 - `.github/workflows/pages.yml` — GitHub Pages workflow
 - `vite.config.ts` — Vite config using the GitHub Pages base path
 
@@ -104,6 +106,7 @@ Favorites are stored locally in the browser only. They are not uploaded, synced,
 - `docs/v0_4_release_notes_draft.md` — release notes draft
 - `docs/v0_4_closeout_checklist.md` — release-readiness checklist
 - `docs/v0_4_live_smoke_test.md` — deployed app smoke-test checklist
+- `docs/v0_4_science_claim_validation.md` — pre-tag claim-discipline checklist
 - `docs/security_and_privacy.md` — safety/privacy notes
 - `docs/accessibility_checklist.md` — accessibility checks
 
@@ -116,13 +119,15 @@ npm run dev
 npm run build
 ```
 
-`npm run build` runs data validation before building the app.
+`npm run build` runs technical data validation before building the app.
 
-The Pages workflow separates validation from app build so GitHub Actions logs clearly show whether a failure came from data validation or Vite build. The Pages workflow uses `npm run build:app` so the local Vite binary resolves correctly in GitHub Actions.
+The Pages workflow separates technical data validation from app build so GitHub Actions logs clearly show whether a failure came from data validation or Vite build. The Pages workflow uses `npm run build:app` so the local Vite binary resolves correctly in GitHub Actions.
 
 ## Data validation
 
-The validator checks formula cards, example gallery entries, and the cross-reference map.
+The validator checks formula cards, example gallery entries, and the cross-reference map for structural/data integrity.
+
+This is technical project-data validation only. It is not scientific validation, clinical validation, empirical proof, psychological measurement, or care-related review.
 
 Formula cards are expected to include UI-critical fields such as:
 
@@ -151,11 +156,11 @@ The validator also checks symbol/variable alignment, duplicate IDs, example refe
 Current public-release tracking is split across two issues:
 
 - **Issue #1** — original v0.3/full-dataset/Zenodo path
-- **Issue #2** — v0.4 app release readiness: validation, build, Pages, live checks, README/release notes
+- **Issue #2** — v0.4 app release readiness: technical data validation, build, Pages, live checks, README/release notes
 
 Current v0.4 app-readiness state:
 
-- validation: green
+- technical data validation: green
 - app build: green
 - GitHub Pages deploy: green
 - deployed-app smoke test: green
@@ -168,6 +173,7 @@ Before tagging `v0.4.0`, confirm:
 - README and release notes still reflect only implemented/verified features
 - final dataset status remains documented as starter/candidate for v0.4
 - release/Zenodo decision is documented
+- no release language implies scientific proof, diagnosis, care treatment, emotional measurement, or human scoring
 
 Suggested v0.4 release tag:
 
@@ -190,6 +196,8 @@ The Hidden Equations of Feeling v0.4.0
 ## Citation / Zenodo
 
 The project is being prepared for a citable public release path. DOI/Zenodo metadata should be added after a tagged GitHub release is created and imported or connected in Zenodo.
+
+A DOI makes the release easier to cite. It does not imply peer review, scientific validation, clinical validation, or empirical proof.
 
 Do not add a DOI badge until the DOI exists.
 
