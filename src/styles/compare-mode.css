@@ -1,0 +1,28 @@
+.compare-panel label {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.relationship-note {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: 16px;
+  background: rgba(244, 201, 93, 0.1);
+  padding: 14px 16px;
+  color: var(--text);
+}
+
+.relationship-note strong {
+  color: var(--gold);
+  text-transform: capitalize;
+}
+
+.relationship-note small {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--muted);
+}
