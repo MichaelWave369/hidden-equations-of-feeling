@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import rawCards from './data/formula_cards.json';
+import rawCrossReferenceMap from './data/cross_reference_map.json';
 import type { FormulaCard } from './types/formula';
 import { FormulaCardView } from './components/FormulaCardView';
 import { DetailPanel } from './components/DetailPanel';
@@ -8,12 +9,22 @@ import {
   findFormulaById,
   getDefaultFormula,
   getFamilyOptions,
+  getFormulaTitle,
   getRelatedCards,
   type FamilyFilter
 } from './lib/formulaSelectors';
 import { getCardIdFromHash, setCardHash } from './lib/hashRouting';
+import {
+  findRelationship,
+  formatRelationshipType,
+  getCompareBoundaryText,
+  getRecommendedComparePairs,
+  getRelationshipDescription,
+  type CrossReferenceMap
+} from './lib/relationshipSelectors';
 
 const cards = rawCards as FormulaCard[];
+const crossReferenceMap = rawCrossReferenceMap as CrossReferenceMap;
 
 function getInitialSelectedId(): string {
   const hashCardId = getCardIdFromHash();
@@ -42,14 +53,29 @@ export default function App() {
 
   const familyOptions = useMemo(() => getFamilyOptions(cards), []);
   const filtered = useMemo(() => filterFormulaCards(cards, query, family), [query, family]);
+  const recommendedPairs = useMemo(() => getRecommendedComparePairs(crossReferenceMap), []);
 
   const selected = findFormulaById(cards, selectedId) ?? filtered[0] ?? getDefaultFormula(cards);
   const compare = findFormulaById(cards, compareId) ?? cards[1] ?? getDefaultFormula(cards);
   const related = getRelatedCards(cards, selected);
+  const activeRelationship = selected && compare ? findRelationship(crossReferenceMap, selected.id, compare.id) : undefined;
 
   const handleSelectCard = (cardId: string) => {
     setSelectedId(cardId);
     setCardHash(cardId);
+  };
+
+  const handleRecommendedPair = (pairKey: string) => {
+    const [sourceId, targetId] = pairKey.split('::');
+    if (!sourceId || !targetId) return;
+
+    const source = findFormulaById(cards, sourceId);
+    const target = findFormulaById(cards, targetId);
+    if (!source || !target) return;
+
+    setSelectedId(source.id);
+    setCompareId(target.id);
+    setCardHash(source.id);
   };
 
   return (
@@ -82,9 +108,35 @@ export default function App() {
       <section className="compare-panel">
         <h2>Compare Mode</h2>
         <p>Use this to see how similar structures shift meaning across families, especially Comedy ↔ Drama mirrors.</p>
-        <select value={compareId} onChange={e => setCompareId(e.target.value)}>
-          {cards.map(c => <option key={c.id} value={c.id}>{c.title}</option>)}
-        </select>
+        <p className="copy-status">{getCompareBoundaryText(crossReferenceMap)}</p>
+
+        <label>
+          Suggested compare pair
+          <select value="" onChange={e => handleRecommendedPair(e.target.value)}>
+            <option value="">Choose a recommended pair...</option>
+            {recommendedPairs.map(edge => (
+              <option key={`${edge.source}::${edge.target}::${edge.relationship}`} value={`${edge.source}::${edge.target}`}>
+                {getFormulaTitle(cards, edge.source)} ↔ {getFormulaTitle(cards, edge.target)} — {formatRelationshipType(edge.relationship)}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          Compare selected formula with
+          <select value={compareId} onChange={e => setCompareId(e.target.value)}>
+            {cards.map(c => <option key={c.id} value={c.id}>{c.title}</option>)}
+          </select>
+        </label>
+
+        {activeRelationship && (
+          <div className="relationship-note">
+            <strong>{formatRelationshipType(activeRelationship.relationship)}:</strong> {activeRelationship.label}
+            <br />
+            <small>{getRelationshipDescription(crossReferenceMap, activeRelationship.relationship)}</small>
+          </div>
+        )}
+
         {selected && compare && <div className="compare-grid">
           <FormulaCardView card={selected} />
           <FormulaCardView card={compare} />
