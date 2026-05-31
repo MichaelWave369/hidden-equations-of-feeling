@@ -1,8 +1,8 @@
 # Implementation Order
 
-This document gives a safe, beginner-friendly coding sequence for **The Hidden Equations of Feeling**.
+This document gives a safe, beginner-friendly coding and release sequence for **The Hidden Equations of Feeling**.
 
-The goal is to avoid turning the v0.4 coding phase into a giant scary pile. Each step should be small enough to understand, test, and commit.
+The original purpose was to prevent the v0.4 coding phase from turning into a giant pile. The v0.4 feature build is now mostly complete, so this document has been updated to show what is finished and what still remains before release.
 
 ## Core implementation principle
 
@@ -10,9 +10,43 @@ The goal is to avoid turning the v0.4 coding phase into a giant scary pile. Each
 
 Do not stack five unfinished features at once. The project stays safer when every step can be checked.
 
+## Current status snapshot
+
+The v0.4 app pass has implemented the main interactive atlas features:
+
+- [x] formula selector helpers
+- [x] hash route helpers and shareable formula-card URLs
+- [x] copy tools utilities
+- [x] formula/detail copy buttons
+- [x] cross-reference selectors
+- [x] cross-reference-powered Compare Mode
+- [x] example selectors
+- [x] Examples Gallery
+- [x] formula detail related examples
+- [x] Formula of the Day
+- [x] local-only favorites
+- [x] favorites-only filtering
+- [x] README v0.4 update
+- [x] security/privacy doc update
+- [x] accessibility checklist update
+- [x] architecture overview update
+- [x] release notes draft update
+- [x] closeout checklist update
+- [x] Issue #1 / Issue #2 scope split
+
+Still required before tagging `v0.4.0`:
+
+- [ ] confirm final dataset status / full 52-card import decision
+- [ ] run and confirm `npm run validate-data`
+- [ ] run and confirm `npm run build`
+- [ ] confirm GitHub Pages deploy is green
+- [ ] smoke-test the live app
+- [ ] confirm README and release notes match the live app
+- [ ] decide whether Zenodo is included now or deferred
+
 ## Always start here
 
-Before coding any feature, run:
+Before coding or release work, run:
 
 ```bash
 npm install
@@ -43,9 +77,9 @@ Add copy formula button
 Improve compare mode with relationship labels
 ```
 
-## Step 0 — Confirm v0.3 foundation
+## Step 0 — Confirm foundation
 
-Goal: make sure the foundation is green.
+Goal: make sure the foundation is green before final release.
 
 Tasks:
 
@@ -53,55 +87,45 @@ Tasks:
 - [ ] `npm run build` passes.
 - [ ] GitHub Pages workflow is green.
 - [ ] Live app opens.
-- [ ] README has boundary statement near the top.
+- [x] README has boundary statement near the top.
+- [x] README explains current v0.4 status.
 
-Do not start feature work until this is done or intentionally deferred.
+Do not tag release until this is complete or intentionally deferred with a visible note.
 
 ## Step 1 — Add lightweight selector helpers
 
-Goal: stop putting all lookup logic directly inside components.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/lib/formulaSelectors.ts
 ```
 
-Suggested helpers:
+Implemented helper area:
 
-- `findFormulaById(cards, id)`
-- `filterFormulaCards(cards, query, family)`
-- `getRelatedCards(cards, selectedCard)`
-- `getFamilyOptions(cards)`
-
-Why first:
-
-- makes routing easier
-- makes compare mode easier
-- makes examples easier
-- keeps `App.tsx` cleaner
+- formula lookup by ID
+- search/family filtering
+- default formula resolution
+- family filter options
+- related cards
+- formula title lookup
 
 Check:
 
-- [ ] App still renders.
-- [ ] Search/filter still work.
-- [ ] Selected card still works.
+- [x] App still renders.
+- [x] Search/filter wiring exists.
+- [x] Selected card wiring exists.
 
 ## Step 2 — Add hash route helpers
 
-Goal: support shareable formula URLs without adding a full router yet.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/lib/hashRouting.ts
 ```
-
-Suggested helpers:
-
-- `getCardIdFromHash()`
-- `setCardHash(cardId)`
-- `isCardHash(hash)`
 
 Route format:
 
@@ -109,33 +133,36 @@ Route format:
 /#/card/fear_threat_forecast_loop
 ```
 
+Implemented behavior:
+
+- selecting a formula updates the URL
+- opening a formula URL selects that formula
+- invalid IDs fall back safely
+- GitHub Pages base path remains compatible
+
 Boundary:
 
 Routes identify formula cards, not user emotional states.
 
-Check:
-
-- [ ] Selecting a formula updates the URL.
-- [ ] Opening a formula URL selects that formula.
-- [ ] Invalid IDs fall back safely.
-- [ ] GitHub Pages base path still works.
-
 ## Step 3 — Add copy tools utilities
 
-Goal: prepare safe reuse before adding buttons everywhere.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/lib/formatMarkdown.ts
 src/lib/copyToClipboard.ts
 ```
 
-Suggested formatters:
+Implemented formatters/support:
 
-- `formatFormulaMarkdown(card)`
-- `formatReflectionPromptMarkdown(card)`
-- `formatExampleMarkdown(example)`
+- formula line
+- reflection prompt Markdown
+- formula Markdown card
+- citation snippet
+- example Markdown
+- clipboard result handling
 
 Required boundary in copied Markdown:
 
@@ -143,70 +170,77 @@ Required boundary in copied Markdown:
 Boundary: symbolic design pattern only — not diagnosis, measurement, or universal law.
 ```
 
-Check:
-
-- [ ] Copy output includes formula title.
-- [ ] Copy output includes boundary note.
-- [ ] No copied output sounds diagnostic.
-
 ## Step 4 — Add formula copy buttons
 
-Goal: make formula cards usable by writers/designers.
+Status: **Done**
 
-Add to `DetailPanel.tsx` first:
+Added to:
+
+```txt
+src/components/DetailPanel.tsx
+```
+
+Implemented buttons:
 
 - Copy formula
 - Copy reflection prompt
 - Copy Markdown card
-
-Keep UI simple.
+- Copy citation snippet
+- Copy example in related examples
 
 Check:
 
-- [ ] Buttons work.
-- [ ] Buttons have clear labels.
-- [ ] Copied Markdown includes boundary.
-- [ ] Mobile layout is not broken.
+- [x] Buttons are present.
+- [x] Buttons have clear labels.
+- [x] Copy status message exists.
+- [x] Copied Markdown includes boundary context where needed.
+
+Still verify manually before release:
+
+- [ ] Copy buttons work in the live app.
+- [ ] Mobile layout remains usable.
 
 ## Step 5 — Add cross-reference selectors
 
-Goal: prepare smarter compare mode.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/lib/relationshipSelectors.ts
 ```
 
-Use:
+Uses:
 
 ```txt
 src/data/cross_reference_map.json
 ```
 
-Suggested helpers:
+Implemented helper area:
 
-- `getRecommendedComparePairs(map)`
-- `getRelationshipsForCard(map, cardId)`
-- `findRelationship(map, source, target)`
-- `getLearningPathsForCard(map, cardId)`
+- recommended compare pairs
+- relationship lookup
+- relationship type formatting
+- relationship descriptions
+- compare boundary text
 
 Check:
 
-- [ ] Build passes.
-- [ ] TypeScript imports JSON cleanly.
-- [ ] Missing IDs do not crash.
+- [x] Missing relationship does not crash UI.
+- [x] Relationship labels have text descriptions.
 
-## Step 6 — Upgrade compare mode
+## Step 6 — Upgrade Compare Mode
 
-Goal: make compare mode explain why two formulas belong together.
+Status: **Done**
 
-Add:
+Added:
 
 - suggested compare pair dropdown
 - relationship label
-- relationship type badge
+- relationship type display
+- relationship description
 - boundary copy
+- compare-card rendering
 
 Required boundary:
 
@@ -214,48 +248,48 @@ Required boundary:
 This comparison shows symbolic design relationships, not psychological measurements.
 ```
 
-Check:
+Still verify manually before release:
 
-- [ ] Recommended pair selection works.
-- [ ] Relationship explanation displays.
+- [ ] Recommended pair selection works in live app.
 - [ ] Existing manual compare still works.
 - [ ] No graph/science overclaiming language appears.
 
 ## Step 7 — Add examples selectors
 
-Goal: prepare the examples gallery.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/lib/exampleSelectors.ts
 ```
 
-Suggested helpers:
+Implemented helper area:
 
-- `getExamplesByCategory(examples, category)`
-- `getExamplesForFormula(examples, formulaId)`
-- `getExampleCategories(examples)`
-- `findExampleById(examples, id)`
+- filter examples
+- get examples for formula
+- category options
+- category label formatting
 
 Check:
 
-- [ ] Build passes.
-- [ ] Example formula IDs remain valid through validator.
+- [x] Example formula IDs are validated.
+- [x] Examples can connect back to formula cards.
 
 ## Step 8 — Add Examples Gallery component
 
-Goal: render `example_gallery.json` in the app.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/components/ExampleGallery.tsx
-src/components/ExampleCard.tsx
+src/styles/example-gallery.css
 ```
 
-Show:
+Implemented:
 
+- search
 - category filter
 - title
 - summary
@@ -265,54 +299,58 @@ Show:
 - how to use
 - boundary note
 - misuse warning
-- linked formula title
+- linked formula button
+- copy example button
+- empty-state messaging
 
-Check:
+Still verify manually before release:
 
-- [ ] Starter examples render.
-- [ ] Category filter works.
-- [ ] Formula link/selection works.
-- [ ] Boundary note is visible.
-- [ ] Misuse warning is visible.
+- [ ] Starter examples render in live app.
+- [ ] Category filter works in live app.
+- [ ] Formula link/selection works in live app.
 - [ ] Mobile layout is usable.
 
 ## Step 9 — Add formula detail examples section
 
-Goal: selected formula pages show related worked examples.
+Status: **Done**
 
-In `DetailPanel.tsx`, show examples where:
+Added to:
+
+```txt
+src/components/DetailPanel.tsx
+src/styles/related-examples.css
+```
+
+Behavior:
 
 ```txt
 example.formulaId === card.id
 ```
 
-Keep this short:
+Implemented:
 
-- example title
+- related example title
 - category
 - summary
-- link to gallery/details if present
+- example text
+- why it works
+- copy example button
 
-Check:
+Still verify manually before release:
 
 - [ ] Cards with examples show them.
 - [ ] Cards without examples do not show empty clutter.
 
 ## Step 10 — Add Formula of the Day
 
-Goal: create a friendly daily entry point without tracking.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/lib/dailyFormula.ts
 src/components/FormulaOfTheDay.tsx
-```
-
-Suggested helper:
-
-```txt
-getDailyFormula(cards, date)
+src/styles/daily-formula.css
 ```
 
 Rules:
@@ -321,22 +359,26 @@ Rules:
 - no account
 - no analytics
 - no emotional profiling
+- no user reading or diagnosis
 
-Check:
+Still verify manually before release:
 
-- [ ] Formula changes by date.
 - [ ] Formula is stable for the same date.
+- [ ] Open today's formula button works.
 - [ ] Boundary line is visible.
+- [ ] Mobile layout stacks cleanly.
 
 ## Step 11 — Add local-only favorites
 
-Goal: let users save cards privately in browser storage.
+Status: **Done**
 
-Create:
+Created:
 
 ```txt
 src/lib/localStorageSafe.ts
+src/lib/favoritesStorage.ts
 src/components/FavoriteButton.tsx
+src/styles/favorites.css
 ```
 
 Storage key:
@@ -348,17 +390,31 @@ hidden-equations-of-feeling:favorites:v1
 Required UI copy:
 
 ```txt
-Favorites are stored locally in this browser only. They are not uploaded or used to score you.
+Favorites are stored locally in this browser only. They are not uploaded, tracked, synced, or used to score you.
 ```
 
-Check:
+Implemented:
+
+- favorite toggle on formula cards
+- favorite toggle in detail panel
+- local-only browser storage
+- favorites status text
+- clear local favorites
+- favorites-only filter
+- disabled favorites-only state when no favorites exist
+- automatic exit from favorites-only mode when favorites are empty
+
+Still verify manually before release:
 
 - [ ] Favorite toggle works.
 - [ ] Favorites persist after refresh.
 - [ ] User can clear favorites.
+- [ ] Favorites-only filter works with search/family filters.
 - [ ] No slider values or private reflections are stored.
 
 ## Step 12 — Add glossary view or glossary panel
+
+Status: **Deferred / optional for v0.4**
 
 Goal: explain symbols and operators in-app.
 
@@ -368,63 +424,82 @@ Use:
 src/data/variable_glossary.json
 ```
 
-Start small:
+Start small later:
 
 - operators section
 - roles section
 - note that symbols are scoped per card
 
-Check:
+Reason for deferral:
 
-- [ ] Text is readable.
-- [ ] Glossary does not imply universal constants.
-- [ ] Mobile layout works.
+The v0.4 app already has enough release scope. Glossary UI can land in v0.5 unless needed for the first release.
 
 ## Step 13 — README upgrade
 
-Goal: update the public landing page after features exist.
+Status: **Done**
 
-Use:
+Updated:
 
 ```txt
-docs/readme_upgrade_plan.md
+README.md
 ```
 
-Minimum README additions:
+Now includes:
 
-- live app link
-- boundary statement near top
-- feature list
+- v0.4 release-readiness status
+- GitHub Pages target URL
+- starter/candidate dataset note
+- app feature list
 - docs map
 - quick start
-- example formula
-- citation note
+- validation/deployment notes
+- privacy/boundary language
+- Issue #1 / Issue #2 tracking split
+- Zenodo/DOI caution
 
-Check:
+Still verify before release:
 
-- [ ] README explains project in under 30 seconds.
-- [ ] README does not overclaim.
+- [ ] README live app link is accurate after Pages is green.
+- [ ] README does not claim unverified final dataset/build/DOI status.
 
 ## Step 14 — Accessibility and privacy pass
 
-Use:
+Status: **Docs updated; manual live checks still required**
+
+Updated:
 
 ```txt
 docs/accessibility_checklist.md
 docs/security_and_privacy.md
+docs/app_architecture_overview.md
 ```
 
-Check at least:
+Docs now cover:
 
-- keyboard navigation
-- screen-reader labels for controls
-- visible boundary notes
-- mobile layout
-- no hidden analytics
+- Formula of the Day
+- favorites/localStorage
+- copy tools
+- Examples Gallery
+- Compare Mode
+- live status messages
+- no analytics / no tracking
 - no emotional scoring
-- no private emotional data storage
+- no uploaded reflections by default
+
+Still verify manually before release:
+
+- [ ] keyboard navigation
+- [ ] screen-reader labels for controls
+- [ ] visible boundary notes
+- [ ] live-region status behavior
+- [ ] mobile layout
+- [ ] no hidden analytics
+- [ ] no emotional scoring
+- [ ] no private emotional data storage
 
 ## Step 15 — Prepare v0.4 release candidate
+
+Status: **In progress**
 
 Use:
 
@@ -432,6 +507,7 @@ Use:
 docs/v0_4_release_notes_draft.md
 docs/v0_3_to_v0_4_transition_plan.md
 docs/release_readiness_matrix.md
+docs/v0_4_closeout_checklist.md
 ```
 
 Required:
@@ -439,9 +515,80 @@ Required:
 - [ ] validation passes
 - [ ] build passes
 - [ ] GitHub Pages deploys
+- [ ] live app opens and loads CSS
 - [ ] README reflects actual implemented features
-- [ ] release notes distinguish implemented from planned features
+- [ ] release notes distinguish implemented from planned/deferred features
 - [ ] no boundary blockers remain
+- [ ] Issue #2 gets final release-readiness status
+
+## Step 16 — Dataset closeout
+
+Status: **Still open**
+
+The current dataset is a starter/candidate app dataset until the full 52-card dataset is confirmed or imported.
+
+Tracked in:
+
+```txt
+Issue #1 — original v0.3/full-dataset/Zenodo path
+```
+
+Required:
+
+- [ ] confirm whether `src/data/formula_cards.json` is the final full 52-card dataset
+- [ ] import full 52-card dataset if needed
+- [ ] run validation after import
+- [ ] verify all example formula IDs exist
+- [ ] verify all cross-reference formula IDs exist
+- [ ] verify learning paths reference valid formula IDs
+- [ ] update README/release notes with final dataset status
+
+## Step 17 — GitHub Pages closeout
+
+Status: **Still open**
+
+Required:
+
+- [ ] confirm repo Pages source is set to GitHub Actions
+- [x] confirm `.github/workflows/pages.yml` exists
+- [x] confirm Pages workflow separates validation from build
+- [x] confirm `vite.config.ts` base path is correct
+- [ ] confirm latest Pages workflow is green
+- [ ] confirm live app opens
+- [ ] confirm live app loads CSS
+- [ ] confirm hash routes work on refresh/direct open
+
+## Step 18 — Release / Zenodo closeout
+
+Status: **Still open**
+
+Release candidate can move forward after:
+
+- [ ] validation passes
+- [ ] build passes
+- [ ] Pages is green
+- [ ] live smoke test passes
+- [ ] final dataset status is documented
+- [ ] release notes are accurate
+
+Suggested GitHub tag:
+
+```txt
+v0.4.0
+```
+
+Suggested release title:
+
+```txt
+The Hidden Equations of Feeling v0.4.0
+```
+
+Zenodo:
+
+- [ ] create GitHub release first
+- [ ] import/connect release in Zenodo
+- [ ] add DOI only after it exists
+- [ ] add ORCID only if available and desired
 
 ## Beginner-friendly work blocks
 
@@ -455,28 +602,15 @@ Work in blocks of 30–60 minutes:
 
 Stop before fatigue turns into chaos.
 
-## Suggested first coding sprint
+## Suggested next work block
 
-Sprint 1 should be small:
+Next small block should be release validation, not new feature expansion:
 
-1. Add `formulaSelectors.ts`.
-2. Refactor `App.tsx` search/filter to use it.
-3. Run validation/build.
-4. Commit.
-
-Sprint 2:
-
-1. Add `hashRouting.ts`.
-2. Wire selected card to URL hash.
-3. Run validation/build.
-4. Commit.
-
-Sprint 3:
-
-1. Add `relationshipSelectors.ts`.
-2. Display recommended compare pair labels.
-3. Run validation/build.
-4. Commit.
+1. Check current GitHub Actions / Pages run status.
+2. If failing, inspect logs and fix the first failure only.
+3. Confirm whether failure is validation or build.
+4. Update Issue #2 with the result.
+5. Then decide whether full 52-card dataset import is next or v0.4 app release can proceed with starter/candidate data.
 
 ## Do-not-do-yet list
 
@@ -491,6 +625,8 @@ Do not start with:
 - full redesign
 - AI-generated user assessments
 - anything that stores private reflections
+- anything that stores playground slider history
+- anything that makes formulas look diagnostic
 
 Those can wait, and some should never be built.
 
