@@ -1,14 +1,14 @@
 # App Architecture Overview
 
-This document maps the current React app structure for **The Hidden Equations of Feeling** and outlines how v0.4 feature modules should fit into the codebase.
+This document maps the current v0.4 React app structure for **The Hidden Equations of Feeling** and explains how the data, helper utilities, components, styles, validation, and deployment pieces fit together.
 
-The app should stay simple, static, local-first, and easy to publish through GitHub Pages.
+The app should stay simple, static, local-first, privacy-respecting, and easy to publish through GitHub Pages.
 
 ## Core architecture principle
 
 > Data stays explicit. UI stays humane. Boundaries stay visible.
 
-The app is not a clinical platform, assessment system, or user-profile engine. It is a static symbolic formula atlas.
+The app is not a clinical platform, assessment system, emotional measurement engine, or user-profile system. It is a static symbolic formula atlas.
 
 ## Current stack
 
@@ -16,10 +16,12 @@ The app is not a clinical platform, assessment system, or user-profile engine. I
 - React
 - TypeScript
 - Static JSON data files
+- Lightweight selector/helper utilities
+- Browser localStorage for optional formula favorites only
+- GitHub Actions validation/build workflow
 - GitHub Pages deployment
-- GitHub Actions build workflow
 
-## Current app entry points
+## App entry points
 
 ```txt
 index.html
@@ -48,26 +50,47 @@ Responsibilities:
 - mount `<App />`
 - enable React strict mode
 
+Current style imports:
+
+```txt
+src/styles/tokens.css
+src/styles/copy-tools.css
+src/styles/compare-mode.css
+src/styles/example-gallery.css
+src/styles/related-examples.css
+src/styles/daily-formula.css
+src/styles/favorites.css
+src/styles/print.css
+```
+
 ### `src/App.tsx`
 
 Main app coordinator.
 
 Current responsibilities:
 
-- load formula card data
+- import formula, example, and cross-reference data
 - manage selected formula state
 - manage search query
 - manage family filter
 - manage compare selection
+- manage local favorite IDs
+- manage favorites-only filter state
+- read initial hash route
+- update hash route on formula selection
 - render hero/header
+- render Formula of the Day
+- render local favorites panel
 - render toolbar
 - render formula-card list
-- render detail panel
-- render compare mode
+- render selected detail panel
+- render Compare Mode
+- render Examples Gallery
+- preserve visible boundary language
 
-Future goal:
+Architecture note:
 
-`App.tsx` should eventually become a lightweight router/layout shell, while feature modules handle specific UI areas.
+`App.tsx` is still intentionally simple enough for a small static app. If the app grows beyond v0.4, it can be split into feature folders later, but the current module layout is acceptable for this release pass.
 
 ## Current component map
 
@@ -75,6 +98,9 @@ Future goal:
 src/components/FormulaCardView.tsx
 src/components/DetailPanel.tsx
 src/components/FormulaPlayground.tsx
+src/components/ExampleGallery.tsx
+src/components/FormulaOfTheDay.tsx
+src/components/FavoriteButton.tsx
 ```
 
 ### `FormulaCardView.tsx`
@@ -83,41 +109,56 @@ Purpose:
 
 - display a compact formula-card summary
 - show family label, title, formula, and tagline
-- allow selection
+- allow formula selection
+- optionally show a local favorite button
 
-Future improvements:
+Receives:
 
-- keyboard selection polish
-- favorite toggle
-- copy formula button
-- direct-link affordance
+- `card`
+- `selected`
+- `onSelect`
+- `isFavorite`
+- `onToggleFavorite`
+
+Boundary note:
+
+A formula card represents a creative pattern, not a user's emotional state.
 
 ### `DetailPanel.tsx`
 
 Purpose:
 
 - display selected formula details
-- show variables
-- show derivation
+- show formula variables
+- show derivation/rationale
 - show reflection prompt
 - show example application
-- show boundary/misuse warning
+- show boundary and misuse warning
 - include Formula Playground
+- include copy tools
+- include favorite toggle
+- show related worked examples
+- show suggested companion formulas
 
-Future improvements:
+Receives:
 
-- copy Markdown card
-- related-card section powered by cross-reference map
-- direct URL route support
-- print-friendly detail card mode
+- `card`
+- `related`
+- `examples`
+- `isFavorite`
+- `onToggleFavorite`
+
+Boundary note:
+
+Copied content should preserve boundary language when it may be reused out of context.
 
 ### `FormulaPlayground.tsx`
 
 Purpose:
 
 - provide symbolic variable sliders
-- show rough symbolic intensity/pattern pressure
-- demonstrate amplifier/buffer/stabilizer behavior
+- show rough symbolic intensity / pattern pressure
+- demonstrate amplifier, buffer, and stabilizer behavior
 
 Boundary requirement:
 
@@ -125,126 +166,503 @@ Boundary requirement:
 Symbolic, not diagnostic / not measurement.
 ```
 
-Future improvements:
+Do not use playground values for:
 
-- reset button
-- better role descriptions
-- rename internal language away from `score` where possible
-- card-specific playground notes
-- stronger keyboard and screen-reader labels
+- diagnosis
+- scoring people
+- emotional profiling
+- saved emotional history
+- hidden analytics
+
+### `ExampleGallery.tsx`
+
+Purpose:
+
+- render worked examples from `example_gallery.json`
+- search examples
+- filter by category
+- link examples back to formula cards
+- show scenario, example text, why it works, how to use, boundary note, and misuse warning
+- copy example Markdown with boundary context
+
+Receives:
+
+- `examples`
+- `cards`
+- `onSelectFormula`
+
+Boundary note:
+
+Examples are writing/design/reflection examples, not templates for judging real people.
+
+### `FormulaOfTheDay.tsx`
+
+Purpose:
+
+- render a deterministic local daily formula prompt
+- show formula title, formula, tagline, reflection prompt, date key, and boundary copy
+- open the daily formula in the main detail panel
+
+Receives:
+
+- `cards`
+- `onSelectFormula`
+
+Boundary note:
+
+Formula of the Day is not a user reading, prediction, diagnosis, or emotional assessment.
+
+### `FavoriteButton.tsx`
+
+Purpose:
+
+- render a reusable local favorite toggle
+- expose favorite state with text, icon, and `aria-pressed`
+- support compact and full display modes
+
+Receives:
+
+- `formulaId`
+- `isFavorite`
+- `onToggleFavorite`
+- `compact`
+
+Boundary note:
+
+Favorites are local convenience state only, not user profiling.
 
 ## Current data files
 
 ```txt
 src/data/formula_cards.json
+src/data/example_gallery.json
+src/data/cross_reference_map.json
 src/data/formula_schema.json
 src/data/variable_glossary.json
 src/data/family_tokens.json
 src/data/expansion_candidates.json
-src/data/example_gallery.json
-src/data/example_gallery_schema.json
-src/data/cross_reference_map.json
-src/data/cross_reference_schema.json
 ```
 
 ### `formula_cards.json`
 
-Primary source of truth for canonical formula cards.
+Primary source of truth for formula cards.
 
 Used by:
 
 - card browser
 - detail panel
 - search/filter
+- family filter
 - compare mode
 - Formula Playground
-- future formula routes
-- future examples links
-- future cross-reference graph
+- Formula of the Day
+- favorites
+- hash routes
+- related examples
+- example links
+- cross-reference map validation
 
-### `variable_glossary.json`
+Important fields used by the UI:
 
-Explains common symbols, operators, and roles.
-
-Future app uses:
-
-- glossary page
-- variable tooltips
-- formula accessibility helpers
-- Professor Phi explanations
-
-### `family_tokens.json`
-
-Stores labels, colors, and motifs for formula families.
-
-Future app uses:
-
-- family landing pages
-- consistent styling
-- graph group coloring
-- filters
+- `id`
+- `title`
+- `family`
+- `familyLabel`
+- `familyColor`
+- `formula`
+- `formulaPlaintext`
+- `formulaSymbols`
+- `variables`
+- `tagline`
+- `derivation`
+- `reflectionPrompt`
+- `exampleApplication`
+- `crossReferences`
+- `useCases`
+- `boundaryNote`
+- `misuseWarning`
+- `version`
 
 ### `example_gallery.json`
 
-Starter worked examples.
+Worked examples used by the Examples Gallery and formula detail related examples.
 
-Future app uses:
+Used by:
 
-- examples gallery page
-- formula detail examples section
-- copy example as Markdown
-- teaching/writing/game-design example filters
+- `ExampleGallery.tsx`
+- `DetailPanel.tsx`
+- `exampleSelectors.ts`
+- `formatMarkdown.ts`
+- `validate-data.mjs`
+
+Important fields:
+
+- `id`
+- `formulaId`
+- `category`
+- `title`
+- `summary`
+- `scenario`
+- `exampleText`
+- `whyItWorks`
+- `howToUse`
+- `boundaryNote`
+- `misuseWarning`
+- `tags`
+- `difficulty`
+- `version`
+- `status`
 
 ### `cross_reference_map.json`
 
-Relationships between formulas.
+Relationship map for Compare Mode and learning paths.
 
-Future app uses:
+Used by:
 
-- smarter compare mode
-- related-card suggestions
-- graph view
-- learning paths
-- Professor Phi guided explanations
+- `relationshipSelectors.ts`
+- Compare Mode in `App.tsx`
+- release validation
+- future graph/learning-path features
 
-### `expansion_candidates.json`
+Important sections:
 
-Future formula ideas not yet canonical.
+- `meta`
+- `relationshipTypes`
+- `edges`
+- `learningPaths`
 
-Future app uses:
+Relationship edges support:
 
-- maybe contributor/admin review view
-- not required for public app UI
+- recommended compare pairs
+- relationship labels
+- relationship strength
+- explanation copy
+- boundary-aware compare UI
+
+### Optional/support data files
+
+These data files support the broader publication/release path and may be expanded as the full dataset is confirmed:
+
+```txt
+src/data/formula_schema.json
+src/data/variable_glossary.json
+src/data/family_tokens.json
+src/data/expansion_candidates.json
+```
+
+Possible future app uses:
+
+- glossary page
+- variable tooltips
+- formula schema documentation
+- family landing pages
+- contributor review of expansion candidates
+
+## Current helper utility map
+
+```txt
+src/lib/formulaSelectors.ts
+src/lib/hashRouting.ts
+src/lib/formatMarkdown.ts
+src/lib/copyToClipboard.ts
+src/lib/relationshipSelectors.ts
+src/lib/exampleSelectors.ts
+src/lib/dailyFormula.ts
+src/lib/localStorageSafe.ts
+src/lib/favoritesStorage.ts
+```
+
+### `formulaSelectors.ts`
+
+Purpose:
+
+- filter formula cards by query and family
+- find formula cards by ID
+- return default formula
+- produce family filter options
+- resolve formula titles
+- get related cards through card cross-references
+
+Used by:
+
+- `App.tsx`
+- Compare Mode
+- formula browser
+- detail panel related cards
+
+### `hashRouting.ts`
+
+Purpose:
+
+- read formula ID from URL hash
+- write selected formula to URL hash
+- support shareable card links such as `/#/card/fear_threat_forecast_loop`
+
+Boundary:
+
+Routes identify formula cards only, not user emotional states.
+
+### `formatMarkdown.ts`
+
+Purpose:
+
+- format formula lines
+- format reflection prompts
+- format formula Markdown cards
+- format citation snippets
+- format examples as Markdown
+- preserve boundary notes in copied content
+
+Used by:
+
+- `DetailPanel.tsx`
+- `ExampleGallery.tsx`
+
+### `copyToClipboard.ts`
+
+Purpose:
+
+- safely copy text to clipboard
+- return success/failure status
+- keep copy behavior user-triggered
+
+Used by:
+
+- detail copy tools
+- related examples
+- Examples Gallery
+
+### `relationshipSelectors.ts`
+
+Purpose:
+
+- find relationships between formulas
+- format relationship labels
+- expose relationship type descriptions
+- provide recommended compare pairs
+- provide compare boundary text
+
+Used by:
+
+- Compare Mode in `App.tsx`
+
+### `exampleSelectors.ts`
+
+Purpose:
+
+- filter examples by query and category
+- get examples for a formula
+- format example category labels
+
+Used by:
+
+- `ExampleGallery.tsx`
+- `DetailPanel.tsx`
+
+### `dailyFormula.ts`
+
+Purpose:
+
+- create local date keys
+- deterministically select a daily formula
+- provide Formula of the Day boundary text
+- provide accessible daily formula labels
+
+Boundary:
+
+Formula of the Day is deterministic/local-only and should not track, profile, diagnose, or score users.
+
+### `localStorageSafe.ts`
+
+Purpose:
+
+- check whether localStorage is available
+- safely read JSON from localStorage
+- safely write JSON to localStorage
+- remove localStorage keys
+- normalize unique string lists
+
+Used by:
+
+- `favoritesStorage.ts`
+
+### `favoritesStorage.ts`
+
+Purpose:
+
+- define the favorites storage key
+- read favorite formula IDs
+- write favorite formula IDs
+- toggle favorite IDs
+- clear favorites
+- provide status/privacy text
+
+Storage key:
+
+```txt
+hidden-equations-of-feeling:favorites:v1
+```
+
+Allowed local storage content:
+
+- formula IDs only
+
+Required privacy line:
+
+```txt
+Favorites are stored locally in this browser only. They are not uploaded, tracked, synced, or used to score you.
+```
 
 ## Current styles
 
 ```txt
 src/styles/tokens.css
+src/styles/copy-tools.css
+src/styles/compare-mode.css
+src/styles/example-gallery.css
+src/styles/related-examples.css
+src/styles/daily-formula.css
+src/styles/favorites.css
 src/styles/print.css
 ```
 
-### `tokens.css`
+### Style responsibilities
 
-Current global app styling.
+- `tokens.css` — global layout, base theme, formula cards, detail panel, toolbar, buttons
+- `copy-tools.css` — copy button groups and copy status styling
+- `compare-mode.css` — Compare Mode layout and relationship notes
+- `example-gallery.css` — Examples Gallery search/filter/cards
+- `related-examples.css` — related worked examples inside formula detail panels
+- `daily-formula.css` — Formula of the Day module
+- `favorites.css` — favorite buttons, favorites panel, favorites-only controls
+- `print.css` — print-focused layout and boundary visibility
 
-Future direction:
+Accessibility styling requirements:
 
-- keep styles readable and lightweight
-- avoid over-complicated theming early
-- ensure color is not the only family signal
-- maintain accessible contrast
+- focus states must stay visible
+- family color must not be the only family signal
+- favorite state must use text/pressed state, not color alone
+- boundary notes must remain readable
+- mobile layouts must stack cleanly
 
-### `print.css`
+## Current data flow
 
-Basic print stylesheet.
+```txt
+Static JSON data
+  -> typed imports in App.tsx
+  -> selector/helper utilities in src/lib/
+  -> React components in src/components/
+  -> user-triggered local UI state
+  -> static GitHub Pages app
+```
 
-Future direction:
+Formula selection flow:
 
-- improve formula-card print layout
-- keep boundary note visible in print
-- hide interactive controls
+```txt
+FormulaCardView click/keyboard action
+  -> App.handleSelectCard(formulaId)
+  -> selectedId state
+  -> setCardHash(formulaId)
+  -> DetailPanel renders selected formula
+```
 
-## Current validation flow
+Hash route flow:
+
+```txt
+URL hash /#/card/<formula_id>
+  -> getCardIdFromHash()
+  -> App initial selected ID
+  -> hashchange listener
+  -> selected formula state
+```
+
+Example flow:
+
+```txt
+example_gallery.json
+  -> ExampleGallery
+  -> search/category filters
+  -> formula link button
+  -> App.handleSelectCard(formulaId)
+```
+
+Related examples flow:
+
+```txt
+selected formula ID
+  -> getExamplesForFormula(examples, selected.id)
+  -> DetailPanel related examples section
+```
+
+Compare flow:
+
+```txt
+cross_reference_map.json
+  -> relationshipSelectors
+  -> recommended compare pairs
+  -> relationship note
+  -> selected formula card + compare formula card
+```
+
+Formula of the Day flow:
+
+```txt
+formula_cards.json + local date
+  -> getDailyFormula(cards)
+  -> FormulaOfTheDay
+  -> Open today's formula
+  -> App.handleSelectCard(formulaId)
+```
+
+Favorites flow:
+
+```txt
+FavoriteButton
+  -> App.handleToggleFavorite(formulaId)
+  -> favoritesStorage.toggle/write
+  -> browser localStorage
+  -> favorites status + optional favorites-only filter
+```
+
+Copy tools flow:
+
+```txt
+User clicks copy button
+  -> formatMarkdown helper
+  -> copyToClipboard
+  -> local copy status live region
+```
+
+## State management guidance
+
+For v0.4, React local state is enough.
+
+Current local state includes:
+
+- selected formula ID
+- search query
+- family filter
+- compare formula ID
+- favorite formula IDs
+- favorites-only filter state
+- favorites status text
+- copy result status inside copy-capable components
+- example gallery query/category state
+
+Use localStorage only for:
+
+- optional formula favorites
+
+Do not use localStorage for:
+
+- emotional slider values by default
+- private reflections
+- diagnostic-like results
+- user identity
+- emotional history
+- inferred state labels
+
+## Validation flow
 
 ```txt
 scripts/validate-data.mjs
@@ -252,27 +670,35 @@ scripts/validate-data.mjs
 
 Current validation checks:
 
-- formula cards
+- formula card required fields
+- UI-critical formula fields
+- non-empty `formulaSymbols`, `variables`, and `useCases`
+- variable `symbol`, `meaning`, and `role`
+- at least one output variable
+- formula symbol/variable alignment
+- duplicate formula IDs
+- formula card cross-references
 - example gallery records
-- cross-reference map edges
-- learning paths
-- missing formula references
-- duplicate IDs
-- invalid enum values
+- example categories, difficulties, statuses, and tags
+- example formula references
+- cross-reference map metadata
+- relationship type definitions
+- cross-reference edges
+- relationship strengths
+- recommended compare booleans
+- duplicate cross-reference edges
+- learning paths and formula references
 
-Build command:
-
-```bash
-npm run build
-```
-
-Validation command:
+Commands:
 
 ```bash
 npm run validate-data
+npm run build
 ```
 
-## Current deployment flow
+`npm run build` runs validation before Vite build.
+
+## Deployment flow
 
 ```txt
 .github/workflows/pages.yml
@@ -289,216 +715,25 @@ base: '/hidden-equations-of-feeling/'
 
 ### GitHub Actions workflow
 
-Builds the app and uploads `dist` to GitHub Pages.
+The Pages workflow runs on pushes to `main` and manual dispatch.
+
+Workflow checkpoints:
+
+```yaml
+- name: Validate formula data
+  run: npm run validate-data
+
+- name: Build app
+  run: vite build
+```
+
+Then it uploads `dist` and deploys through `actions/deploy-pages@v4`.
 
 GitHub repo setting must be:
 
 ```txt
 Pages -> Build and deployment -> Source -> GitHub Actions
 ```
-
-## Recommended v0.4 module structure
-
-As features grow, use a clearer module layout:
-
-```txt
-src/features/formulas/
-src/features/compare/
-src/features/examples/
-src/features/glossary/
-src/features/favorites/
-src/features/routing/
-src/features/copyTools/
-src/features/dailyFormula/
-src/features/professorPhi/
-```
-
-This does not all need to exist immediately. Add modules only when features need them.
-
-## v0.4 feature modules
-
-### `features/routing`
-
-Purpose:
-
-- support shareable formula URLs
-- parse hash route
-- update hash on selection
-- handle invalid card IDs
-
-Suggested route:
-
-```txt
-/#/card/fear_threat_forecast_loop
-```
-
-Boundary:
-
-Routes identify formula cards, not user emotional states.
-
-### `features/compare`
-
-Purpose:
-
-- use `cross_reference_map.json`
-- show recommended compare pairs
-- explain relationship type and label
-- keep compare mode non-diagnostic
-
-Suggested components:
-
-```txt
-ComparePanel.tsx
-SuggestedPairs.tsx
-RelationshipBadge.tsx
-```
-
-### `features/examples`
-
-Purpose:
-
-- render `example_gallery.json`
-- filter by category
-- link examples to formula cards
-- show boundary/misuse warnings
-
-Suggested components:
-
-```txt
-ExampleGallery.tsx
-ExampleCard.tsx
-ExampleDetail.tsx
-ExampleCategoryFilter.tsx
-```
-
-### `features/copyTools`
-
-Purpose:
-
-- copy formulas, prompts, examples, and Markdown cards
-- preserve boundary notes in copied content
-
-Suggested utilities:
-
-```txt
-formatFormulaMarkdown.ts
-formatExampleMarkdown.ts
-copyToClipboard.ts
-```
-
-### `features/dailyFormula`
-
-Purpose:
-
-- deterministic Formula of the Day
-- no tracking
-- no account
-
-Suggested helper:
-
-```txt
-getDailyFormula(cards, date)
-```
-
-### `features/favorites`
-
-Purpose:
-
-- local-only favorites
-- no account
-- no upload
-
-Suggested storage key:
-
-```txt
-hidden-equations-of-feeling:favorites:v1
-```
-
-Required UI copy:
-
-```txt
-Favorites are stored locally in this browser only. They are not uploaded or used to score you.
-```
-
-### `features/glossary`
-
-Purpose:
-
-- expose variable and operator explanations
-- support formula accessibility
-- support Professor Phi explanations
-
-### `features/professorPhi`
-
-Purpose:
-
-- optional guided explanation layer
-- friendly microcopy
-- family-specific guidance
-
-Reference:
-
-```txt
-docs/professor_phi_voice.md
-```
-
-## Data flow target
-
-Keep data flow simple:
-
-```txt
-JSON data files
-  -> typed imports
-  -> lightweight selectors/helpers
-  -> React components
-  -> static GitHub Pages app
-```
-
-Avoid:
-
-- server calls
-- hidden APIs
-- user profiles
-- analytics-first design
-- emotional data uploads
-- complex global state too early
-
-## Suggested helper utilities
-
-Future utilities may include:
-
-```txt
-src/lib/formulaSelectors.ts
-src/lib/relationshipSelectors.ts
-src/lib/exampleSelectors.ts
-src/lib/formatMarkdown.ts
-src/lib/localStorageSafe.ts
-src/lib/hashRouting.ts
-```
-
-## State management guidance
-
-For v0.4, React state is enough.
-
-Use local state for:
-
-- selected formula
-- search query
-- family filter
-- compare formula
-- selected example category
-
-Use localStorage only for:
-
-- optional favorites
-- maybe dismissed intro/boundary helper later
-
-Do not use localStorage for:
-
-- emotional slider values by default
-- private reflections
-- diagnostic-like results
-- user identity
 
 ## Privacy architecture
 
@@ -511,6 +746,16 @@ The app should remain:
 - no analytics by default
 - no emotional data collection
 - no uploaded reflections by default
+- no server-side profiles
+
+Feature-specific privacy locks:
+
+- Formula Playground values are symbolic only and not saved by default.
+- Formula of the Day is deterministic/local and not a user reading.
+- Favorites store only formula IDs locally in the browser.
+- Copy tools do not transmit copied content.
+- Examples Gallery contains project examples, not user submissions.
+- Compare Mode compares formula relationships, not people.
 
 Reference:
 
@@ -528,12 +773,63 @@ Each feature should preserve:
 - screen-reader labels
 - readable contrast
 - non-color-only signals
+- live status text for copy/favorites state
+- mobile-friendly stacking
+
+Feature-specific accessibility locks:
+
+- Favorite buttons expose pressed state.
+- Copy status messages use live regions.
+- Formula of the Day does not imply the daily formula describes the user.
+- Examples show boundary notes and misuse warnings.
+- Compare Mode relationship labels are text, not color-only signals.
 
 Reference:
 
 ```txt
 docs/accessibility_checklist.md
 ```
+
+## Future module structure
+
+The current app can stay in `src/components` and `src/lib` for v0.4.
+
+If the project grows, a future feature-folder layout may be useful:
+
+```txt
+src/features/formulas/
+src/features/compare/
+src/features/examples/
+src/features/glossary/
+src/features/favorites/
+src/features/routing/
+src/features/copyTools/
+src/features/dailyFormula/
+src/features/professorPhi/
+```
+
+Do not migrate just for aesthetics. Migrate only when the current structure becomes hard to understand.
+
+## Future feature candidates
+
+Possible future app features:
+
+- glossary page
+- family landing pages
+- learning path explorer
+- cross-reference graph view
+- printable formula-card sheets
+- Professor Phi guided explanations
+- contributor/admin review view for expansion candidates
+
+Future features must preserve:
+
+- static/local-first design
+- visible boundaries
+- no emotional scoring
+- no diagnosis
+- no hidden tracking
+- no server-side personal data storage by default
 
 ## Do-not-build architecture list
 
@@ -547,6 +843,8 @@ Do not add:
 - third-party analytics by default
 - complex state machinery before needed
 - features that make formulas look diagnostic
+- features that compare, rank, or score people
+- hidden persistence of user behavior
 
 ## Architecture voice lock
 
