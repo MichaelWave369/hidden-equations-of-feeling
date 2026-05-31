@@ -42,7 +42,9 @@ These features have been added or scaffolded:
 - [x] Favorites styling
 - [x] Favorites-only formula filter
 - [x] Explicit Pages workflow validation/build separation
+- [x] Pages workflow `vite: command not found` fix via `npm run build:app`
 - [x] UI-critical formula data validation hardening
+- [x] Live smoke-test checklist
 - [x] Issue #1 status comment
 - [x] Issue #2 v0.4 release-readiness tracking
 
@@ -50,9 +52,10 @@ These features have been added or scaffolded:
 
 Before tagging a v0.4 release candidate, check:
 
-- [ ] Run `npm run validate-data`.
-- [ ] Run `npm run build`.
-- [ ] Fix any TypeScript or build errors.
+- [x] Run `npm run validate-data` through the green Pages workflow.
+- [x] Run `npm run build` / app build through the green Pages workflow.
+- [x] Fix TypeScript or build errors from the Pages workflow.
+- [ ] Run the live smoke-test checklist in `docs/v0_4_live_smoke_test.md`.
 - [ ] Confirm hash routes work on GitHub Pages.
 - [ ] Confirm copy buttons work in a modern browser.
 - [ ] Confirm Examples Gallery renders all examples.
@@ -165,6 +168,7 @@ Required docs to review:
 - [ ] `docs/security_and_privacy.md`
 - [ ] `docs/accessibility_checklist.md`
 - [ ] `docs/v0_4_closeout_checklist.md`
+- [x] `docs/v0_4_live_smoke_test.md`
 
 README should include:
 
@@ -224,25 +228,54 @@ Required checks:
 
 - [ ] GitHub Pages source is set to GitHub Actions.
 - [x] `.github/workflows/pages.yml` exists.
-- [x] Pages workflow separates `npm run validate-data` from `vite build`.
+- [x] Pages workflow separates `npm run validate-data` from `npm run build:app`.
+- [x] Pages workflow resolves Vite through npm scripts instead of direct shell invocation.
 - [x] `vite.config.ts` uses the correct base path:
 
 ```ts
 base: '/hidden-equations-of-feeling/'
 ```
 
-- [ ] Latest Pages workflow completes successfully.
+- [x] Latest Pages workflow completes successfully, based on user-reported green check.
 - [ ] Live app opens.
 - [ ] Live app loads CSS correctly.
 - [ ] Hash routes work on refresh/direct open.
+
+## Live smoke-test closeout
+
+Use this checklist:
+
+```txt
+docs/v0_4_live_smoke_test.md
+```
+
+Live smoke test should confirm:
+
+- [ ] Page loads without a blank screen.
+- [ ] CSS loads correctly.
+- [ ] Hero and boundary copy are visible.
+- [ ] Formula browsing works.
+- [ ] Search and family filter work.
+- [ ] Valid hash route opens the correct formula.
+- [ ] Invalid hash route fails gently.
+- [ ] Formula of the Day works and does not imply a user reading.
+- [ ] Copy tools work and preserve boundary context where needed.
+- [ ] Compare Mode works and does not imply measurement.
+- [ ] Examples Gallery works.
+- [ ] Related examples work.
+- [ ] Favorites persist locally after refresh.
+- [ ] Clear local favorites works.
+- [ ] Mobile layout is usable.
+- [ ] No visible UI copy violates the symbolic/non-diagnostic/non-scoring boundary.
 
 ## Release closeout
 
 Before creating a release:
 
-- [ ] Validation passes.
-- [ ] Build passes.
-- [ ] GitHub Pages deploy is green.
+- [x] Validation passes through the green Pages workflow.
+- [x] Build passes through the green Pages workflow.
+- [x] GitHub Pages deploy is green, based on user-reported green check.
+- [ ] Live smoke test passes.
 - [ ] README reflects actual implemented features.
 - [ ] Release notes distinguish implemented features from planned/deferred features.
 - [ ] Issue #1 is updated with final status.
@@ -278,7 +311,7 @@ Issue #1 can be closed when:
 - [ ] Full formula dataset status is resolved.
 - [ ] Validation passes.
 - [ ] Build passes.
-- [ ] GitHub Pages is green.
+- [x] GitHub Pages is green, based on user-reported green check.
 - [ ] Public release is tagged.
 - [ ] Zenodo path is complete or intentionally deferred with a note.
 
@@ -291,9 +324,9 @@ If the v0.4 app work moves beyond the original v0.3 issue scope, then:
 
 Issue #2 can be closed when:
 
-- [ ] v0.4 validation passes.
-- [ ] v0.4 build passes.
-- [ ] GitHub Pages deploy is green.
+- [x] v0.4 validation passes through the green Pages workflow.
+- [x] v0.4 build passes through the green Pages workflow.
+- [x] GitHub Pages deploy is green, based on user-reported green check.
 - [ ] Live app checks pass.
 - [ ] README and release notes are accurate.
 - [ ] Boundary language remains visible.
