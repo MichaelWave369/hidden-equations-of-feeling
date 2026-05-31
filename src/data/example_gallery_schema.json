@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hidden Equations Example Gallery Record",
+  "description": "Schema for worked examples that demonstrate symbolic formula-card use without diagnosis, measurement, or human scoring.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "formulaId",
+    "category",
+    "title",
+    "summary",
+    "scenario",
+    "exampleText",
+    "whyItWorks",
+    "howToUse",
+    "boundaryNote",
+    "misuseWarning",
+    "tags",
+    "difficulty",
+    "version",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^example_[a-z0-9_]+$",
+      "description": "Stable machine-readable example ID."
+    },
+    "formulaId": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "ID of the formula card this example demonstrates."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "comedy_writing",
+        "drama_scene",
+        "npc_design",
+        "reflection_prompt",
+        "classroom_activity",
+        "game_mechanic",
+        "infographic_poster"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 10
+    },
+    "exampleText": {
+      "type": "string",
+      "minLength": 10
+    },
+    "whyItWorks": {
+      "type": "string",
+      "minLength": 10
+    },
+    "howToUse": {
+      "type": "string",
+      "minLength": 10
+    },
+    "boundaryNote": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Claim/safety boundary for the example."
+    },
+    "misuseWarning": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Warning about how not to use the example."
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "advanced"]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "draft", "review", "stable", "deprecated"]
+    },
+    "relatedFormulaIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "promptQuestions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uiNotes": {
+      "type": "string"
+    },
+    "posterVisual": {
+      "type": "string"
+    },
+    "sourceNote": {
+      "type": "string"
+    }
+  }
+}
