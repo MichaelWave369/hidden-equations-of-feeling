@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import rawCards from './data/formula_cards.json';
+import rawExamples from './data/example_gallery.json';
 import rawCrossReferenceMap from './data/cross_reference_map.json';
 import type { FormulaCard } from './types/formula';
 import { FormulaCardView } from './components/FormulaCardView';
 import { DetailPanel } from './components/DetailPanel';
+import { ExampleGallery } from './components/ExampleGallery';
 import {
   filterFormulaCards,
   findFormulaById,
@@ -14,6 +16,7 @@ import {
   type FamilyFilter
 } from './lib/formulaSelectors';
 import { getCardIdFromHash, setCardHash } from './lib/hashRouting';
+import type { ExampleGalleryRecord } from './lib/formatMarkdown';
 import {
   findRelationship,
   formatRelationshipType,
@@ -24,6 +27,7 @@ import {
 } from './lib/relationshipSelectors';
 
 const cards = rawCards as FormulaCard[];
+const examples = rawExamples as ExampleGalleryRecord[];
 const crossReferenceMap = rawCrossReferenceMap as CrossReferenceMap;
 
 function getInitialSelectedId(): string {
@@ -142,6 +146,8 @@ export default function App() {
           <FormulaCardView card={compare} />
         </div>}
       </section>
+
+      <ExampleGallery examples={examples} cards={cards} onSelectFormula={handleSelectCard} />
 
       <footer className="footer-note">
         <strong>Publication note:</strong> v0.3 starter atlas. Full 52-card dataset and whitepaper expansion are staged in the local scaffold ZIP for the next commit pass.
