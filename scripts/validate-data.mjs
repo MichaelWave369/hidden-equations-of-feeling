@@ -7,13 +7,15 @@ function readJson(path) {
 const cards = readJson('src/data/formula_cards.json');
 const examplesPath = 'src/data/example_gallery.json';
 const examples = fs.existsSync(examplesPath) ? readJson(examplesPath) : [];
+const crossReferencePath = 'src/data/cross_reference_map.json';
+const crossReferenceMap = fs.existsSync(crossReferencePath) ? readJson(crossReferencePath) : null;
 
 const errors = [];
 
 function requireFields(record, required, label) {
   for (const key of required) {
     if (record[key] === undefined || record[key] === null || record[key] === '') {
-      errors.push(`${label} ${record.id ?? 'unknown'} missing ${key}`);
+      errors.push(`${label} ${record.id ?? record.title ?? 'unknown'} missing ${key}`);
     }
   }
 }
@@ -108,8 +110,67 @@ function validateExampleGallery(formulaIds) {
   }
 }
 
+function validateCrossReferenceMap(formulaIds) {
+  if (!crossReferenceMap) return;
+
+  const allowedRelationships = new Set([
+    'mirror',
+    'buffer',
+    'amplifier',
+    'repair_path',
+    'contrast',
+    'sequence',
+    'family_bridge',
+    'example_pair'
+  ]);
+  const allowedStrengths = new Set(['low', 'medium', 'high']);
+  const requiredRelationshipTypes = [...allowedRelationships];
+
+  if (!crossReferenceMap.meta) errors.push('cross-reference map missing meta');
+  else requireFields(crossReferenceMap.meta, ['title', 'version', 'boundary'], 'cross-reference meta');
+
+  if (!crossReferenceMap.relationshipTypes) errors.push('cross-reference map missing relationshipTypes');
+  else {
+    for (const type of requiredRelationshipTypes) {
+      if (!crossReferenceMap.relationshipTypes[type]) errors.push(`cross-reference relationshipTypes missing ${type}`);
+    }
+  }
+
+  const edgeKeys = new Set();
+  for (const edge of crossReferenceMap.edges ?? []) {
+    requireFields(edge, ['source', 'target', 'relationship', 'label', 'strength', 'recommendedForCompare'], 'cross-reference edge');
+
+    const edgeKey = `${edge.source}->${edge.target}:${edge.relationship}`;
+    if (edgeKeys.has(edgeKey)) errors.push(`duplicate cross-reference edge ${edgeKey}`);
+    edgeKeys.add(edgeKey);
+
+    if (edge.source && !formulaIds.has(edge.source)) errors.push(`cross-reference edge source missing formula ${edge.source}`);
+    if (edge.target && !formulaIds.has(edge.target)) errors.push(`cross-reference edge target missing formula ${edge.target}`);
+    if (edge.relationship && !allowedRelationships.has(edge.relationship)) errors.push(`cross-reference edge ${edgeKey} has invalid relationship ${edge.relationship}`);
+    if (edge.strength && !allowedStrengths.has(edge.strength)) errors.push(`cross-reference edge ${edgeKey} has invalid strength ${edge.strength}`);
+    if (typeof edge.recommendedForCompare !== 'boolean') errors.push(`cross-reference edge ${edgeKey} recommendedForCompare must be boolean`);
+  }
+
+  const pathIds = new Set();
+  for (const path of crossReferenceMap.learningPaths ?? []) {
+    requireFields(path, ['id', 'title', 'description', 'formulaIds', 'boundaryNote'], 'learning path');
+
+    if (pathIds.has(path.id)) errors.push(`duplicate learning path id ${path.id}`);
+    pathIds.add(path.id);
+
+    if (!Array.isArray(path.formulaIds) || path.formulaIds.length < 2) {
+      errors.push(`learning path ${path.id} must include at least two formulaIds`);
+    }
+
+    for (const formulaId of path.formulaIds ?? []) {
+      if (!formulaIds.has(formulaId)) errors.push(`learning path ${path.id} references missing formula ${formulaId}`);
+    }
+  }
+}
+
 const formulaIds = validateFormulaCards();
 validateExampleGallery(formulaIds);
+validateCrossReferenceMap(formulaIds);
 
 if (errors.length) {
   console.error('Data validation failed:');
@@ -119,3 +180,6 @@ if (errors.length) {
 
 console.log(`Formula data validation passed for ${cards.length} cards.`);
 console.log(`Example gallery validation passed for ${examples.length} examples.`);
+if (crossReferenceMap) {
+  console.log(`Cross-reference map validation passed for ${crossReferenceMap.edges.length} edges and ${crossReferenceMap.learningPaths.length} learning paths.`);
+}
