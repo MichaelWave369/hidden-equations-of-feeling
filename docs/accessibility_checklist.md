@@ -21,6 +21,10 @@ Check:
 - [ ] Boundary appears near the top of the app.
 - [ ] Boundary appears in the README.
 - [ ] Boundary appears near interactive sliders/meters.
+- [ ] Boundary appears in Formula of the Day.
+- [ ] Boundary appears in Examples Gallery cards.
+- [ ] Boundary appears near Compare Mode.
+- [ ] Boundary appears near local favorites/privacy copy.
 - [ ] Boundary appears in release notes and Zenodo description.
 - [ ] Boundary language is plain and not hidden in legal-style wording.
 
@@ -34,6 +38,9 @@ Check:
 - [ ] Important warnings are not buried.
 - [ ] Mobile text remains readable.
 - [ ] Formula text does not overflow small screens.
+- [ ] Example cards do not become cramped on mobile.
+- [ ] Favorite status text is readable and not visually tiny.
+- [ ] Copy-status text is readable and not hidden by layout.
 
 ## Color and contrast
 
@@ -43,6 +50,10 @@ Check:
 - [ ] Family colors are not the only way to identify card families.
 - [ ] Buttons and interactive controls have visible focus states.
 - [ ] Warning text is readable and not only communicated through red/orange color.
+- [ ] Favorite state uses text plus icon/pressed state, not color alone.
+- [ ] Compare relationship labels use text, not only color.
+- [ ] Examples Gallery category labels are readable.
+- [ ] Formula of the Day highlight does not reduce text contrast.
 - [ ] The app is usable in grayscale or low-saturation viewing.
 
 ## Keyboard access
@@ -55,6 +66,13 @@ Check:
 - [ ] Family filter is keyboard accessible.
 - [ ] Slider controls are keyboard accessible.
 - [ ] Compare mode controls are keyboard accessible.
+- [ ] Copy buttons are keyboard accessible.
+- [ ] Favorite buttons are keyboard accessible.
+- [ ] Favorites-only filter button is keyboard accessible.
+- [ ] Clear favorites button is keyboard accessible.
+- [ ] Formula of the Day open button is keyboard accessible.
+- [ ] Examples Gallery search/filter controls are keyboard accessible.
+- [ ] Example formula-link buttons are keyboard accessible.
 - [ ] Focus order follows the visual page order.
 - [ ] No keyboard trap exists.
 
@@ -67,6 +85,12 @@ Check:
 - [ ] Buttons have clear accessible labels.
 - [ ] Sliders include variable name, role, and current symbolic state.
 - [ ] The symbolic intensity meter has a text equivalent.
+- [ ] Copy status messages use a live region.
+- [ ] Favorites status uses a live region.
+- [ ] Favorite buttons expose `aria-pressed`.
+- [ ] Formula of the Day has a clear accessible label.
+- [ ] Examples Gallery has a clear heading and filter context.
+- [ ] Compare Mode has plain-text relationship descriptions.
 - [ ] Decorative visuals are hidden from screen readers where appropriate.
 - [ ] Meaningful visuals have text descriptions.
 
@@ -80,7 +104,9 @@ Every formula card should include:
 - [ ] plaintext formula
 - [ ] variable list
 - [ ] tagline
+- [ ] derivation/rationale
 - [ ] reflection prompt
+- [ ] example application
 - [ ] boundary note
 - [ ] misuse warning
 
@@ -102,6 +128,76 @@ Check:
 - [ ] Amplifier, buffer, and stabilizer roles are explained.
 - [ ] Reset button exists or is planned.
 - [ ] Users can ignore the playground and still understand the card.
+- [ ] Playground values are not presented as emotional truth or personal assessment.
+
+## Formula of the Day accessibility
+
+Check:
+
+- [ ] The module has a clear heading.
+- [ ] The selected formula title is readable.
+- [ ] The formula includes plaintext access through `formulaPlaintext`.
+- [ ] The reflection prompt is visibly optional.
+- [ ] The local/no-tracking boundary is visible.
+- [ ] The date key is not the only context for the module.
+- [ ] The open button is keyboard accessible.
+- [ ] The module stacks cleanly on mobile.
+- [ ] The module does not imply the daily formula describes the user.
+
+## Favorites accessibility
+
+Check:
+
+- [ ] Favorite buttons include visible text.
+- [ ] Favorite buttons expose pressed state.
+- [ ] Favorite buttons are keyboard accessible.
+- [ ] Favorite buttons have clear labels in compact and full modes.
+- [ ] Favorites-only toggle exposes pressed state.
+- [ ] Disabled favorites-only state is visible and understandable.
+- [ ] Favorites status text uses a live region.
+- [ ] Clear local favorites is reachable by keyboard.
+- [ ] Privacy copy is visible near favorites.
+- [ ] Favorite state is not represented by color alone.
+
+## Copy tools accessibility
+
+Check:
+
+- [ ] Copy buttons have clear labels.
+- [ ] Copy success/failure messages use a live region.
+- [ ] Copy status text remains visible long enough to read.
+- [ ] Copy buttons do not move focus unexpectedly.
+- [ ] Copied content includes boundary notes where needed.
+- [ ] Copy tools do not imply the user has been measured or scored.
+
+## Examples Gallery accessibility
+
+Check:
+
+- [ ] Gallery has a clear heading.
+- [ ] Search input has an understandable placeholder or label context.
+- [ ] Category filter is keyboard accessible.
+- [ ] Example cards have clear titles.
+- [ ] Category labels are text, not color-only signals.
+- [ ] Formula link buttons are keyboard accessible.
+- [ ] Boundary notes are visible for each example.
+- [ ] Misuse warnings are visible for each example.
+- [ ] Copy example buttons are keyboard accessible.
+- [ ] Empty search/filter state is clear.
+- [ ] Gallery layout stacks cleanly on mobile.
+
+## Compare Mode accessibility
+
+Check:
+
+- [ ] Compare Mode has a clear heading.
+- [ ] Suggested compare-pair dropdown is keyboard accessible.
+- [ ] Manual compare dropdown is keyboard accessible.
+- [ ] Relationship type is written as text.
+- [ ] Relationship explanation is written as text.
+- [ ] Boundary copy is visible.
+- [ ] Compare cards remain readable on mobile.
+- [ ] Compare Mode does not imply ranking, diagnosis, or emotional measurement.
 
 ## Emotional safety
 
@@ -116,6 +212,8 @@ For grief, fear, shame, anger, love, family conflict, and trauma-adjacent cards,
 - [ ] The card routes toward support, context, clarity, or repair where appropriate.
 - [ ] The reflection prompt is optional and consent-based.
 - [ ] The misuse warning is visible.
+- [ ] Related examples avoid mocking real distress.
+- [ ] Examples do not turn sensitive feelings into punchlines unless clearly fictional and safe.
 
 ## Mobile accessibility
 
@@ -127,6 +225,10 @@ Check:
 - [ ] Sliders have enough space for touch input.
 - [ ] Text does not require horizontal scrolling.
 - [ ] Compare mode stacks cleanly on mobile.
+- [ ] Formula of the Day stacks cleanly on mobile.
+- [ ] Favorites panel stacks cleanly on mobile.
+- [ ] Examples Gallery cards stack cleanly on mobile.
+- [ ] Copy/favorite buttons have enough tap area.
 
 ## Print accessibility
 
@@ -137,6 +239,7 @@ Check:
 - [ ] Boundary note remains visible in print.
 - [ ] Text prints in high contrast.
 - [ ] Formula and variable meanings remain together.
+- [ ] Printed content does not imply diagnosis or scoring.
 
 ## Content review checklist
 
@@ -161,6 +264,9 @@ For each sample, confirm:
 - [ ] screen-reader understandable
 - [ ] emotionally safe
 - [ ] boundary clear
+- [ ] favorite button works without color-only meaning
+- [ ] copy tools include boundary notes where needed
+- [ ] related examples do not weaken the boundary
 
 ## Manual test path
 
@@ -168,14 +274,20 @@ Use this quick manual test before release:
 
 1. Open the app.
 2. Read the hero and boundary line.
-3. Search for `fear`.
-4. Select a fear card.
-5. Navigate variables by keyboard.
-6. Move a playground slider by keyboard.
-7. Compare it with a calm card.
-8. Print preview the selected card.
-9. Resize browser to mobile width.
-10. Confirm nothing feels like diagnosis or scoring.
+3. Open Formula of the Day with keyboard.
+4. Search for `fear`.
+5. Select a fear card.
+6. Navigate variables by keyboard.
+7. Move a playground slider by keyboard.
+8. Use each copy button and confirm the live status text updates.
+9. Favorite the card and confirm the pressed state is visible.
+10. Use favorites-only filtering.
+11. Compare it with a calm card.
+12. Search/filter the Examples Gallery.
+13. Open an example's linked formula.
+14. Print preview the selected card.
+15. Resize browser to mobile width.
+16. Confirm nothing feels like diagnosis or scoring.
 
 ## Public voice lock
 
