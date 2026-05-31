@@ -1,0 +1,12 @@
+name: Boundary Concern
+description: Flag a formula or page that may overclaim, harm, shame, or confuse users.
+title: "[Boundary Concern]: "
+labels: [boundary, ethics]
+body:
+  - type: textarea
+    id: concern
+    attributes:
+      label: What is the concern?
+      description: Please include the card/page and suggested repair if you have one.
+    validations:
+      required: true
