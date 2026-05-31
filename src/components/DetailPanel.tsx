@@ -10,15 +10,18 @@ import {
   formatReflectionPromptMarkdown,
   type ExampleGalleryRecord
 } from '../lib/formatMarkdown';
+import { FavoriteButton } from './FavoriteButton';
 import { FormulaPlayground } from './FormulaPlayground';
 
 interface DetailPanelProps {
   card: FormulaCard;
   related: FormulaCard[];
   examples: ExampleGalleryRecord[];
+  isFavorite?: boolean;
+  onToggleFavorite?: (formulaId: string) => void;
 }
 
-export function DetailPanel({ card, related, examples }: DetailPanelProps) {
+export function DetailPanel({ card, related, examples, isFavorite = false, onToggleFavorite }: DetailPanelProps) {
   const [copyResult, setCopyResult] = useState<CopyResult | null>(null);
 
   const handleCopy = async (label: string, text: string) => {
@@ -31,7 +34,12 @@ export function DetailPanel({ card, related, examples }: DetailPanelProps) {
 
   return (
     <article className="detail-panel">
-      <span className="family-pill" style={{ background: card.familyColor }}>{card.familyLabel}</span>
+      <div className="detail-heading-row">
+        <span className="family-pill" style={{ background: card.familyColor }}>{card.familyLabel}</span>
+        {onToggleFavorite && (
+          <FavoriteButton formulaId={card.id} isFavorite={isFavorite} onToggleFavorite={onToggleFavorite} />
+        )}
+      </div>
       <h2>{card.title}</h2>
       <p className="formula large" aria-label={card.formulaPlaintext}>{card.formula}</p>
       <p className="tagline">{card.tagline}</p>
