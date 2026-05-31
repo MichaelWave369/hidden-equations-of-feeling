@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Variable Glossary",
+    "version": "0.3.0",
+    "boundary": "Symbols are scoped per card. Repeated letters may mean different things in different formulas. This glossary gives common meanings only. These are symbolic design variables, not measurements."
+  },
+  "operators": {
+    "+": "Stacks with; separate contributors add pressure, color, or meaning.",
+    "×": "Amplifies or compounds; variables intensify each other when paired.",
+    "/": "Buffered by or softened by; denominator variables reduce, stabilize, contextualize, or repair the pattern.",
+    "^2": "Nonlinear spiral; the factor can run away with itself once intensified.",
+    "3^R": "Escalation through repeated rounds; each return grows the pattern."
+  },
+  "commonVariables": {
+    "A": ["Absurdity", "Attachment", "Attention", "Agency", "Assumptions", "Anger signal"],
+    "B": ["Boundary crossed", "Bad idea", "Breath", "Belonging threat"],
+    "C": ["Chaos", "Calm", "Clarity", "Communication", "Compassion", "Context"],
+    "D": ["Deadpan power", "Drama delta", "Dramatic seriousness"],
+    "E": ["Evidence", "Emotional reaction", "Exposure", "Ego compatibility"],
+    "F": ["Funny output", "Fear forecast", "Format integrity"],
+    "G": ["General idea", "General complaint", "Gratitude", "Grief echo"],
+    "H": ["Hat coefficient", "Harm", "Hope", "Honesty"],
+    "I": ["Insecurity", "Imagination", "Identity threat", "Innocent tone"],
+    "J": ["Joke seed", "Judgment", "Joy"],
+    "K": ["Confidence / certainty", "Knowledge"],
+    "L": ["Logic", "Loss", "Love bridge", "Loop / callback"],
+    "M": ["Mustache confidence", "Memory", "Meaning", "Mundane event"],
+    "N": ["Need", "Noise", "Nonsense"],
+    "O": ["Orientation"],
+    "P": ["Public audience", "Presence", "Persistence", "Plausible deniability", "Support"],
+    "R": ["Rules", "Repair", "Respect", "Ritual", "Retelling rounds"],
+    "S": ["Smirk", "Safety", "Sleep", "Surprise", "Support", "Silence pressure"],
+    "T": ["Trigger", "Threat", "Time", "Timing", "Trust"],
+    "U": ["Uncertainty"],
+    "V": ["Violation", "Verification", "Violation index"],
+    "W": ["Wrongness", "Witness", "Wonder"],
+    "X": ["Surprise third item", "Unexpected detail"]
+  },
+  "roles": {
+    "output": "The named pattern or emotional/comic result produced by the symbolic equation.",
+    "amplifier": "A factor that increases pressure, intensity, charge, or narrative force.",
+    "buffer": "A factor that reduces, contextualizes, clarifies, or softens the pattern.",
+    "stabilizer": "A factor that helps the pattern become safer, clearer, or more usable.",
+    "signal": "A factor that points toward a need, boundary, or story truth.",
+    "bridge": "A factor that reconnects separated parts, people, or meanings."
+  },
+  "designNotes": [
+    "Symbols are local to each card, not globally fixed constants.",
+    "The same structure can produce different emotional payloads across families, especially Comedy and Drama.",
+    "These variables are meant for writing, game design, NPC design, reflection, and teaching prompts.",
+    "They should never be used to score, diagnose, shame, manipulate, or reduce a person."
+  ]
+}
