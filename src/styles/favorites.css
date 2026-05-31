@@ -1,0 +1,91 @@
+.favorites-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 14px 16px;
+}
+
+.favorites-panel .copy-status {
+  margin: 0;
+}
+
+.favorite-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 900;
+  padding: 0.65rem 0.85rem;
+}
+
+.favorite-button span {
+  color: var(--gold);
+  font-size: 1.05em;
+  line-height: 1;
+}
+
+.favorite-button.active {
+  background: rgba(244, 201, 93, 0.18);
+  border-color: var(--gold);
+}
+
+.favorite-button.compact {
+  justify-self: start;
+  margin-top: 10px;
+  padding: 0.55rem 0.75rem;
+  width: fit-content;
+}
+
+.detail-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.formula-card {
+  display: grid;
+  gap: 8px;
+}
+
+.formula-card-select {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.formula-card-select:hover,
+.formula-card-select:focus-visible {
+  background: transparent;
+  color: inherit;
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .favorites-panel {
+    align-items: stretch;
+    display: grid;
+  }
+
+  .detail-heading-row {
+    align-items: flex-start;
+  }
+}
