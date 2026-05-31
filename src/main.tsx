@@ -7,6 +7,7 @@ import './styles/compare-mode.css';
 import './styles/example-gallery.css';
 import './styles/related-examples.css';
 import './styles/daily-formula.css';
+import './styles/favorites.css';
 import './styles/print.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
