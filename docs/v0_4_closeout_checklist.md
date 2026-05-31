@@ -41,7 +41,10 @@ These features have been added or scaffolded:
 - [x] Local-only favorites wired into app
 - [x] Favorites styling
 - [x] Favorites-only formula filter
+- [x] Explicit Pages workflow validation/build separation
+- [x] UI-critical formula data validation hardening
 - [x] Issue #1 status comment
+- [x] Issue #2 v0.4 release-readiness tracking
 
 ## Remaining app polish
 
@@ -78,6 +81,72 @@ Required checks:
 - [ ] Confirm no duplicate cross-reference edges unless intentional.
 - [ ] Confirm sensitive formulas include boundary and misuse warning text.
 
+## Validator requirements
+
+`scripts/validate-data.mjs` should protect both data integrity and UI-critical fields before deploy.
+
+Formula cards must include:
+
+- [x] `id`
+- [x] `title`
+- [x] `family`
+- [x] `familyLabel`
+- [x] `familyColor`
+- [x] `formula`
+- [x] `formulaPlaintext`
+- [x] `formulaSymbols`
+- [x] `variables`
+- [x] `tagline`
+- [x] `derivation`
+- [x] `reflectionPrompt`
+- [x] `exampleApplication`
+- [x] `useCases`
+- [x] `boundaryNote`
+- [x] `misuseWarning`
+- [x] `version`
+
+Formula-card validator should also enforce:
+
+- [x] non-empty `formulaSymbols`
+- [x] non-empty `variables`
+- [x] non-empty `useCases`
+- [x] at least one variable with role `output`
+- [x] every formula symbol is defined in `variables`
+- [x] every variable has `symbol`, `meaning`, and `role`
+- [x] `familyColor` is a 6-digit hex color such as `#F4C95D`
+- [x] `crossReferences` point only to existing formula IDs
+
+Examples must include:
+
+- [x] `id`
+- [x] `formulaId`
+- [x] `category`
+- [x] `title`
+- [x] `summary`
+- [x] `scenario`
+- [x] `exampleText`
+- [x] `whyItWorks`
+- [x] `howToUse`
+- [x] `boundaryNote`
+- [x] `misuseWarning`
+- [x] `tags`
+- [x] `difficulty`
+- [x] `version`
+- [x] `status`
+
+Cross-reference map must validate:
+
+- [x] metadata title/version/boundary
+- [x] required relationship type definitions
+- [x] source and target formula IDs
+- [x] allowed relationship values
+- [x] allowed strength values
+- [x] boolean `recommendedForCompare`
+- [x] duplicate edge detection
+- [x] learning path IDs
+- [x] learning path formula ID references
+- [x] learning path boundary notes
+
 ## Documentation closeout
 
 Make sure the public documentation matches the actual app.
@@ -95,6 +164,7 @@ Required docs to review:
 - [ ] `docs/implementation_order.md`
 - [ ] `docs/security_and_privacy.md`
 - [ ] `docs/accessibility_checklist.md`
+- [ ] `docs/v0_4_closeout_checklist.md`
 
 README should include:
 
@@ -153,8 +223,9 @@ Local storage must not store:
 Required checks:
 
 - [ ] GitHub Pages source is set to GitHub Actions.
-- [ ] `.github/workflows/pages.yml` exists.
-- [ ] `vite.config.ts` uses the correct base path:
+- [x] `.github/workflows/pages.yml` exists.
+- [x] Pages workflow separates `npm run validate-data` from `vite build`.
+- [x] `vite.config.ts` uses the correct base path:
 
 ```ts
 base: '/hidden-equations-of-feeling/'
@@ -175,6 +246,7 @@ Before creating a release:
 - [ ] README reflects actual implemented features.
 - [ ] Release notes distinguish implemented features from planned/deferred features.
 - [ ] Issue #1 is updated with final status.
+- [ ] Issue #2 is updated with final status.
 - [ ] No known boundary blockers remain.
 
 Suggested release tag:
@@ -213,7 +285,19 @@ Issue #1 can be closed when:
 If the v0.4 app work moves beyond the original v0.3 issue scope, then:
 
 - [ ] Close Issue #1 after documenting remaining v0.3 items.
-- [ ] Open a new `v0.4 release readiness` issue.
+- [x] Open a new `v0.4 release readiness` issue.
+
+## Issue #2 closeout decision
+
+Issue #2 can be closed when:
+
+- [ ] v0.4 validation passes.
+- [ ] v0.4 build passes.
+- [ ] GitHub Pages deploy is green.
+- [ ] Live app checks pass.
+- [ ] README and release notes are accurate.
+- [ ] Boundary language remains visible.
+- [ ] No known v0.4 release blockers remain.
 
 ## Do-not-close if
 
