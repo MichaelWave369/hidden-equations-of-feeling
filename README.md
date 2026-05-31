@@ -8,7 +8,7 @@ A playful, claim-disciplined symbolic formula atlas for writers, game designers,
 
 This repository is in a **v0.4 release-readiness pass**.
 
-Current app work includes the interactive React/Vite atlas, but the final public release still depends on validation/build checks, GitHub Pages deployment confirmation, and final dataset/release decisions.
+The interactive React/Vite atlas is implemented, and the GitHub Pages workflow is green based on the latest maintainer check. The final public release still depends on live smoke testing, final dataset/release decisions, and the final README/release-notes accuracy pass.
 
 The current formula dataset is a starter/candidate app dataset. The original full 52-card dataset confirmation/import is tracked separately in Issue #1.
 
@@ -20,7 +20,13 @@ The intended Pages URL is:
 https://michaelwave369.github.io/hidden-equations-of-feeling/
 ```
 
-Before treating the page as officially live, confirm GitHub Pages is set to **GitHub Actions** and that the latest Pages workflow is green.
+GitHub Pages should be set to **GitHub Actions**. The latest Pages workflow has been reported green, but the deployed app should still pass the live smoke test before being treated as release-ready.
+
+Live smoke-test checklist:
+
+```txt
+docs/v0_4_live_smoke_test.md
+```
 
 ## What the app does
 
@@ -95,6 +101,7 @@ Favorites are stored locally in the browser only. They are not uploaded, synced,
 - `docs/v0_3_to_v0_4_transition_plan.md` — transition plan
 - `docs/v0_4_release_notes_draft.md` — release notes draft
 - `docs/v0_4_closeout_checklist.md` — release-readiness checklist
+- `docs/v0_4_live_smoke_test.md` — deployed app smoke-test checklist
 - `docs/security_and_privacy.md` — safety/privacy notes
 - `docs/accessibility_checklist.md` — accessibility checks
 
@@ -109,7 +116,7 @@ npm run build
 
 `npm run build` runs data validation before building the app.
 
-The Pages workflow also separates validation from build so GitHub Actions logs clearly show whether a failure came from data validation or Vite build.
+The Pages workflow also separates validation from app build so GitHub Actions logs clearly show whether a failure came from data validation or Vite build. The Pages workflow uses `npm run build:app` so the local Vite binary resolves correctly in GitHub Actions.
 
 ## Data validation
 
@@ -143,6 +150,14 @@ Current public-release tracking is split across two issues:
 
 - **Issue #1** — original v0.3/full-dataset/Zenodo path
 - **Issue #2** — v0.4 app release readiness: validation, build, Pages, live checks, README/release notes
+
+Before tagging `v0.4.0`, confirm:
+
+- live smoke test passes
+- final dataset status is documented
+- README reflects only implemented/verified features
+- release notes distinguish implemented items from deferred items
+- release/Zenodo decision is documented
 
 Suggested v0.4 release tag:
 
