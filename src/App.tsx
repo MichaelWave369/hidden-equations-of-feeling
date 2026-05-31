@@ -6,6 +6,7 @@ import type { FormulaCard } from './types/formula';
 import { FormulaCardView } from './components/FormulaCardView';
 import { DetailPanel } from './components/DetailPanel';
 import { ExampleGallery } from './components/ExampleGallery';
+import { FormulaOfTheDay } from './components/FormulaOfTheDay';
 import {
   filterFormulaCards,
   findFormulaById,
@@ -92,6 +93,8 @@ export default function App() {
         <p>A symbolic formula atlas for comedy, drama, story design, NPC emotion design, and reflective creative tools.</p>
         <div className="boundary-chip">Creative metaphor only — not clinical, diagnostic, empirical, or a human score.</div>
       </header>
+
+      <FormulaOfTheDay cards={cards} onSelectFormula={handleSelectCard} />
 
       <section className="toolbar" aria-label="Filter formula cards">
         <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search formulas, families, or variables..." />
