@@ -2,6 +2,24 @@
 
 These are positioning anchors, not proof that the symbolic formulas are empirically validated.
 
+## Project release citation
+
+Suggested citation for the v0.4.0 release:
+
+```txt
+Hughes, Michael W. The Hidden Equations of Feeling v0.4.0. Zenodo. https://doi.org/10.5281/zenodo.20481411
+```
+
+DOI:
+
+```txt
+10.5281/zenodo.20481411
+```
+
+A DOI makes the release easier to cite. It does not imply peer review, scientific validation, clinical validation, or empirical proof.
+
+## Reference anchors
+
 - Russell, J. A. (1980). A circumplex model of affect.
 - Plutchik, R. (1980). A general psychoevolutionary theory of emotion.
 - Lazarus, R. S. (1991). Emotion and adaptation.
