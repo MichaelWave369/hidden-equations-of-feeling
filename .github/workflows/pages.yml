@@ -27,7 +27,7 @@ jobs:
       - name: Validate formula data
         run: npm run validate-data
       - name: Build app
-        run: vite build
+        run: npm run build:app
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
