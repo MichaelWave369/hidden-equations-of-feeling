@@ -20,6 +20,14 @@ import { getCardIdFromHash, setCardHash } from './lib/hashRouting';
 import type { ExampleGalleryRecord } from './lib/formatMarkdown';
 import { getExamplesForFormula } from './lib/exampleSelectors';
 import {
+  clearFavoriteFormulaIds,
+  getFavoritesStatusText,
+  isFavoriteFormula,
+  readFavoriteFormulaIds,
+  toggleFavoriteFormulaId,
+  writeFavoriteFormulaIds
+} from './lib/favoritesStorage';
+import {
   findRelationship,
   formatRelationshipType,
   getCompareBoundaryText,
@@ -37,11 +45,17 @@ function getInitialSelectedId(): string {
   return findFormulaById(cards, hashCardId)?.id ?? getDefaultFormula(cards)?.id ?? '';
 }
 
+function getInitialFavoriteIds(): string[] {
+  return readFavoriteFormulaIds().value;
+}
+
 export default function App() {
   const [query, setQuery] = useState('');
   const [family, setFamily] = useState<FamilyFilter>('all');
   const [selectedId, setSelectedId] = useState(getInitialSelectedId);
   const [compareId, setCompareId] = useState(cards[1]?.id ?? getDefaultFormula(cards)?.id ?? '');
+  const [favoriteIds, setFavoriteIds] = useState<string[]>(getInitialFavoriteIds);
+  const [favoritesStatus, setFavoritesStatus] = useState(getFavoritesStatusText(favoriteIds.length));
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -72,6 +86,19 @@ export default function App() {
     setCardHash(cardId);
   };
 
+  const handleToggleFavorite = (formulaId: string) => {
+    const nextFavoriteIds = toggleFavoriteFormulaId(favoriteIds, formulaId);
+    const result = writeFavoriteFormulaIds(nextFavoriteIds);
+    setFavoriteIds(result.value);
+    setFavoritesStatus(result.ok ? getFavoritesStatusText(result.value.length) : result.message);
+  };
+
+  const handleClearFavorites = () => {
+    const result = clearFavoriteFormulaIds();
+    setFavoriteIds([]);
+    setFavoritesStatus(result.ok ? getFavoritesStatusText(0) : result.message);
+  };
+
   const handleRecommendedPair = (pairKey: string) => {
     const [sourceId, targetId] = pairKey.split('::');
     if (!sourceId || !targetId) return;
@@ -96,6 +123,13 @@ export default function App() {
 
       <FormulaOfTheDay cards={cards} onSelectFormula={handleSelectCard} />
 
+      <section className="favorites-panel" aria-label="Local favorites">
+        <p className="copy-status" role="status" aria-live="polite">{favoritesStatus}</p>
+        {favoriteIds.length > 0 && (
+          <button type="button" onClick={handleClearFavorites}>Clear local favorites</button>
+        )}
+      </section>
+
       <section className="toolbar" aria-label="Filter formula cards">
         <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search formulas, families, or variables..." />
         <select value={family} onChange={e => setFamily(e.target.value as FamilyFilter)}>
@@ -109,9 +143,26 @@ export default function App() {
 
       <section className="layout">
         <aside className="card-grid">
-          {filtered.map(card => <FormulaCardView key={card.id} card={card} selected={card.id === selected?.id} onSelect={handleSelectCard} />)}
+          {filtered.map(card => (
+            <FormulaCardView
+              key={card.id}
+              card={card}
+              selected={card.id === selected?.id}
+              onSelect={handleSelectCard}
+              isFavorite={isFavoriteFormula(favoriteIds, card.id)}
+              onToggleFavorite={handleToggleFavorite}
+            />
+          ))}
         </aside>
-        {selected && <DetailPanel card={selected} related={related} examples={selectedExamples} />}
+        {selected && (
+          <DetailPanel
+            card={selected}
+            related={related}
+            examples={selectedExamples}
+            isFavorite={isFavoriteFormula(favoriteIds, selected.id)}
+            onToggleFavorite={handleToggleFavorite}
+          />
+        )}
       </section>
 
       <section className="compare-panel">
