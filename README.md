@@ -1,5 +1,7 @@
 # The Hidden Equations of Feeling
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20481411.svg)](https://doi.org/10.5281/zenodo.20481411)
+
 A playful, claim-disciplined symbolic formula atlas for writers, game designers, NPC/dialogue designers, educators, and reflective creative tools.
 
 **Boundary:** these formulas are creative metaphors and affective design patterns. They are not clinical tools, diagnostic models, empirical laws, emotional measurements, or claims about a person.
@@ -14,7 +16,11 @@ These green checks are technical release checks only. They do not imply scientif
 
 The current formula dataset is intentionally treated as a starter/candidate v0.4 app dataset. The original full 52-card dataset confirmation/import remains tracked separately in Issue #1 and can proceed as a post-v0.4 data/content milestone.
 
-A tagged GitHub release and Zenodo/DOI path have not been completed yet.
+The v0.4.0 Zenodo DOI is available:
+
+```txt
+10.5281/zenodo.20481411
+```
 
 ## GitHub Pages target
 
@@ -165,10 +171,9 @@ Current v0.4 app-readiness state:
 - GitHub Pages deploy: green
 - deployed-app smoke test: green
 - full 52-card dataset: deferred/tracked separately in Issue #1
-- tagged GitHub release: not yet completed
-- Zenodo/DOI: not yet completed
+- v0.4.0 Zenodo DOI: `10.5281/zenodo.20481411`
 
-Before tagging `v0.4.0`, confirm:
+Before closing the v0.4 release-readiness pass, confirm:
 
 - README and release notes still reflect only implemented/verified features
 - final dataset status remains documented as starter/candidate for v0.4
@@ -195,11 +200,19 @@ The Hidden Equations of Feeling v0.4.0
 
 ## Citation / Zenodo
 
-The project is being prepared for a citable public release path. DOI/Zenodo metadata should be added after a tagged GitHub release is created and imported or connected in Zenodo.
+The v0.4.0 Zenodo DOI is:
+
+```txt
+10.5281/zenodo.20481411
+```
+
+Suggested citation:
+
+```txt
+Hughes, Michael W. The Hidden Equations of Feeling v0.4.0. Zenodo. https://doi.org/10.5281/zenodo.20481411
+```
 
 A DOI makes the release easier to cite. It does not imply peer review, scientific validation, clinical validation, or empirical proof.
-
-Do not add a DOI badge until the DOI exists.
 
 ## Project tone
 
