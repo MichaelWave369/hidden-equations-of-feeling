@@ -5,6 +5,7 @@ import './styles/tokens.css';
 import './styles/copy-tools.css';
 import './styles/compare-mode.css';
 import './styles/example-gallery.css';
+import './styles/related-examples.css';
 import './styles/print.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
