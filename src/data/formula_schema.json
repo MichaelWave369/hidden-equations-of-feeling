@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hidden Equations Formula Card",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "family",
+    "formula",
+    "formulaPlaintext",
+    "formulaSymbols",
+    "variables",
+    "tagline",
+    "reflectionPrompt",
+    "boundaryNote",
+    "misuseWarning",
+    "version"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "canonicalTitle": { "type": "string" },
+    "family": { "type": "string" },
+    "familyLabel": { "type": "string" },
+    "formula": { "type": "string" },
+    "formulaPlaintext": { "type": "string" },
+    "formulaSymbols": { "type": "array", "items": { "type": "string" } },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["symbol", "meaning", "role"],
+        "properties": {
+          "symbol": { "type": "string" },
+          "meaning": { "type": "string" },
+          "role": { "type": "string" }
+        }
+      }
+    },
+    "tagline": { "type": "string" },
+    "derivation": { "type": "string" },
+    "reflectionPrompt": { "type": "string" },
+    "boundaryNote": { "type": "string" },
+    "misuseWarning": { "type": "string" },
+    "version": { "type": "string" }
+  }
+}
