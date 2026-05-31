@@ -17,20 +17,32 @@ Long form:
 
 ## Release status
 
-This is a **release-notes draft** until all closeout checks pass.
-
-Do not tag `v0.4.0` until:
+The v0.4 app-readiness path is green based on maintainer checks:
 
 - validation passes
-- production build passes
+- production app build passes
 - GitHub Pages deploy is green
-- README and release notes match the implemented app
-- no boundary blockers remain
+- deployed-app live smoke test passes
+- no visible smoke-test boundary blockers were reported
+
+This is still a **release-notes draft** until the tagged GitHub release is created.
+
+Current dataset decision:
+
+- v0.4 ships with the current starter/candidate app dataset.
+- The full 52-card dataset confirmation/import remains tracked separately in Issue #1.
+- The full 52-card import can proceed as a post-v0.4 data/content milestone unless the maintainer decides to block release for it.
 
 Source checklist:
 
 ```txt
 docs/v0_4_closeout_checklist.md
+```
+
+Smoke-test checklist:
+
+```txt
+docs/v0_4_live_smoke_test.md
 ```
 
 ## Implemented in the v0.4 app pass
@@ -196,7 +208,7 @@ Validation now protects:
 
 ### GitHub Pages workflow hardening
 
-The Pages workflow now separates data validation from Vite build.
+The Pages workflow separates data validation from app build.
 
 Implemented workflow checkpoints:
 
@@ -205,7 +217,7 @@ Implemented workflow checkpoints:
   run: npm run validate-data
 
 - name: Build app
-  run: vite build
+  run: npm run build:app
 ```
 
 Why it matters:
@@ -213,6 +225,7 @@ Why it matters:
 - data/schema problems fail at the validation checkpoint
 - React/Vite build problems fail at the build checkpoint
 - Pages deployment only proceeds after both pass
+- `npm run build:app` resolves the local Vite binary correctly in GitHub Actions
 
 ### README and closeout documentation
 
@@ -231,10 +244,11 @@ It now includes:
 - Zenodo/DOI caution
 - boundary language near the top
 
-The closeout checklist now includes:
+Release-readiness docs include:
 
 ```txt
 docs/v0_4_closeout_checklist.md
+docs/v0_4_live_smoke_test.md
 ```
 
 ## Data systems used by the app
@@ -254,14 +268,9 @@ Additional release/support data may include:
 
 ## Deferred or not yet confirmed
 
-These items should not be described as complete until verified:
+These items should not be described as complete for v0.4.0 unless separately finished before tagging:
 
 - full 52-card formula dataset confirmation/import
-- final `npm run validate-data` result on the release dataset
-- final `npm run build` result
-- GitHub Pages deploy status
-- live app smoke test
-- broad accessibility testing
 - screenshot/social preview asset
 - tagged GitHub release
 - Zenodo import/DOI metadata
@@ -271,12 +280,12 @@ These items should not be described as complete until verified:
 
 Update before tagging if any of these change:
 
-- The current app dataset is still described as starter/candidate until the full 52-card dataset is confirmed.
+- v0.4 uses the current starter/candidate app dataset.
+- The full 52-card dataset is deferred/tracked separately in Issue #1.
 - The examples gallery may remain starter-sized.
 - The cross-reference map may need more pairings after full dataset import.
 - Formula of the Day uses simple deterministic local selection.
 - Favorites are browser-local only and not synced across devices.
-- Accessibility has checklist coverage but still needs final live-app spot checks.
 - Zenodo/DOI should not be advertised until a DOI exists.
 
 ## Validation requirements
@@ -301,9 +310,13 @@ Validation should pass for:
 
 ## Accessibility requirements
 
-v0.4 should include at least a spot-check against:
+v0.4 includes checklist coverage and a maintainer-confirmed live smoke test.
 
-- `docs/accessibility_checklist.md`
+Reference:
+
+```txt
+docs/accessibility_checklist.md
+```
 
 Key checks:
 
@@ -339,7 +352,7 @@ The README should stay aligned with the actual app and include:
 - documentation map
 - citation/Zenodo caution
 - privacy/boundary language
-- final dataset status
+- final dataset status as starter/candidate for v0.4
 
 ## Suggested GitHub release title
 
@@ -356,12 +369,12 @@ v0.4.0
 ## Suggested short release summary
 
 ```txt
-v0.4.0 upgrades The Hidden Equations of Feeling from a publication scaffold into a more useful interactive symbolic atlas, adding shareable formula URLs, cross-reference compare mode, worked examples, copy tools, Formula of the Day, and local-only favorites. Symbolic design patterns only — not diagnosis, measurement, emotional scoring, or universal law.
+v0.4.0 upgrades The Hidden Equations of Feeling from a publication scaffold into a more useful interactive symbolic atlas, adding shareable formula URLs, cross-reference compare mode, worked examples, copy tools, Formula of the Day, and local-only favorites. This release uses the current starter/candidate app dataset while the full 52-card dataset remains tracked separately. Symbolic design patterns only — not diagnosis, measurement, emotional scoring, or universal law.
 ```
 
 ## Draft changelog bullets
 
-Use these only after final validation/build/Pages checks pass:
+Use these only after final release decision:
 
 - Added shareable formula-card URLs.
 - Added cross-reference-powered compare suggestions and relationship explanations.
@@ -372,28 +385,31 @@ Use these only after final validation/build/Pages checks pass:
 - Added local-only favorites and favorites-only filtering.
 - Improved README and public boundary copy.
 - Improved Pages workflow with explicit validation/build checkpoints.
+- Fixed Pages build by using `npm run build:app` for the Vite build step.
 - Improved data validation for UI-critical fields.
 - Preserved local-first, non-diagnostic, non-scoring privacy boundary.
+- Documented that the full 52-card dataset remains a separate Issue #1 data/content milestone.
 
 ## Release definition of done
 
 v0.4.0 can be tagged when:
 
-- [ ] validation passes
-- [ ] production build passes
-- [ ] GitHub Pages deploys successfully
-- [ ] live app opens and loads CSS
-- [ ] shareable formula URLs work
-- [ ] compare mode uses cross-reference data correctly
-- [ ] examples gallery renders
-- [ ] copy tools work
-- [ ] Formula of the Day works
-- [ ] favorites persist locally and can be cleared
-- [ ] favorites-only filtering works
-- [ ] local-only privacy language is visible for saved state
-- [ ] README reflects implemented features
-- [ ] release notes distinguish implemented features from planned/deferred ones
-- [ ] no known boundary blockers remain
+- [x] validation passes
+- [x] production build passes
+- [x] GitHub Pages deploys successfully
+- [x] live app opens and loads CSS
+- [x] shareable formula URLs work
+- [x] compare mode uses cross-reference data correctly
+- [x] examples gallery renders
+- [x] copy tools work
+- [x] Formula of the Day works
+- [x] favorites persist locally and can be cleared
+- [x] favorites-only filtering works
+- [x] local-only privacy language is visible for saved state
+- [x] README reflects implemented features
+- [x] release notes distinguish implemented features from planned/deferred ones
+- [ ] final release/Zenodo decision is documented
+- [ ] no known boundary blockers remain after final issue review
 
 ## Boundary footer for release notes
 
