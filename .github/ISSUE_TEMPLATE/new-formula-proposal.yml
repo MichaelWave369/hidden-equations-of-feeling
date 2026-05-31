@@ -1,0 +1,23 @@
+name: New Formula Proposal
+description: Propose a new symbolic formula card.
+title: "[Formula]: "
+labels: [formula-proposal]
+body:
+  - type: textarea
+    id: formula
+    attributes:
+      label: Formula
+      description: Include title, family, equation, variables, derivation, boundary note, and reflection prompt.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundary checklist
+      options:
+        - label: This is a symbolic design metaphor, not a diagnosis or scientific claim.
+          required: true
+        - label: It does not target or shame a vulnerable group.
+          required: true
+        - label: It includes a misuse warning if needed.
+          required: true
