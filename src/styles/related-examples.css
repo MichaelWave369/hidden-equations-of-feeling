@@ -1,0 +1,40 @@
+.related-examples {
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 18px;
+}
+
+.related-examples h3 {
+  margin-top: 0;
+}
+
+.related-example-list {
+  display: grid;
+  gap: 14px;
+}
+
+.related-example {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.16);
+  padding: 16px;
+}
+
+.related-example h4 {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.related-example p {
+  margin: 0.65rem 0;
+}
+
+.related-example blockquote {
+  margin: 12px 0;
+}
+
+.related-example button {
+  margin-top: 8px;
+}
