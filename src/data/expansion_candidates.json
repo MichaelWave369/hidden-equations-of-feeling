@@ -1,0 +1,56 @@
+[
+  {
+    "id": "trust_continuity_bridge",
+    "title": "The Trust Continuity Bridge",
+    "family": "love_bridge",
+    "priority": "high",
+    "candidateFormula": "T = (Consistency × Honesty × Repair) / (Betrayal + Ambiguity)",
+    "reason": "Trust is a core missing bridge variable across love, repair, grief, NPC relationship arcs, and public community design.",
+    "boundaryNote": "Symbolic relationship-design metaphor only; not relationship therapy or a score of a person."
+  },
+  {
+    "id": "loneliness_signal_field",
+    "title": "The Loneliness Signal Field",
+    "family": "sadness_grief",
+    "priority": "high",
+    "candidateFormula": "Lon = (Disconnection × Unseen Need × Time) / (Belonging + Contact + Meaning)",
+    "reason": "Loneliness is essential for humane storytelling, cozy game arcs, and reflective prompts without shaming isolation.",
+    "boundaryNote": "Reflection/craft metaphor only; not a diagnosis or substitute for support."
+  },
+  {
+    "id": "regret_time_loop",
+    "title": "The Regret Time Loop",
+    "family": "social_mirror",
+    "priority": "high",
+    "candidateFormula": "Reg = (Missed Choice × Consequence × Replay) / (Learning + Repair + Acceptance)",
+    "reason": "Regret bridges guilt, grief, character development, time-loop stories, and moral learning arcs.",
+    "boundaryNote": "Use as a repair and learning lens, not self-punishment."
+  },
+  {
+    "id": "forgiveness_release_vector",
+    "title": "The Forgiveness Release Vector",
+    "family": "love_bridge",
+    "priority": "high",
+    "candidateFormula": "Forg = (Truth × Accountability × Time) / (Denial + Repeated Harm)",
+    "reason": "Forgiveness needs careful claim discipline: it belongs with repair and truth, not pressure or bypassing.",
+    "boundaryNote": "Never use forgiveness language to force reconciliation, excuse harm, or remove boundaries."
+  },
+  {
+    "id": "motivation_ignition_curve",
+    "title": "The Motivation Ignition Curve",
+    "family": "calm_learning",
+    "priority": "medium",
+    "candidateFormula": "Mot = (Meaning × Agency × Small Win) / (Overwhelm + Shame)",
+    "reason": "Motivation is useful for learning systems, creator tools, productivity arcs, and character growth.",
+    "boundaryNote": "Not a productivity score; avoid shame-based motivation."
+  },
+  {
+    "id": "acceptance_landing_field",
+    "title": "The Acceptance Landing Field",
+    "family": "calm_learning",
+    "priority": "medium",
+    "candidateFormula": "Acc = (Truth Seen × Support × Time) / (Denial + Control Grip)",
+    "reason": "Acceptance supports grief closure, fear softening, calm, and wise decision arcs.",
+    "boundaryNote": "Acceptance does not mean approval of harm or giving up needed action."
+  }
+]
