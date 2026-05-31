@@ -3,27 +3,29 @@ import rawCards from './data/formula_cards.json';
 import type { FormulaCard } from './types/formula';
 import { FormulaCardView } from './components/FormulaCardView';
 import { DetailPanel } from './components/DetailPanel';
+import {
+  filterFormulaCards,
+  findFormulaById,
+  getDefaultFormula,
+  getFamilyOptions,
+  getRelatedCards,
+  type FamilyFilter
+} from './lib/formulaSelectors';
 
 const cards = rawCards as FormulaCard[];
-const families = Array.from(new Set(cards.map(c => c.family)));
 
 export default function App() {
   const [query, setQuery] = useState('');
-  const [family, setFamily] = useState('all');
-  const [selectedId, setSelectedId] = useState(cards[0]?.id ?? '');
-  const [compareId, setCompareId] = useState(cards[1]?.id ?? '');
+  const [family, setFamily] = useState<FamilyFilter>('all');
+  const [selectedId, setSelectedId] = useState(getDefaultFormula(cards)?.id ?? '');
+  const [compareId, setCompareId] = useState(cards[1]?.id ?? getDefaultFormula(cards)?.id ?? '');
 
-  const filtered = useMemo(() => {
-    const q = query.toLowerCase();
-    return cards.filter(card =>
-      (family === 'all' || card.family === family) &&
-      [card.title, card.canonicalTitle, card.tagline, card.familyLabel, card.formula].join(' ').toLowerCase().includes(q)
-    );
-  }, [query, family]);
+  const familyOptions = useMemo(() => getFamilyOptions(cards), []);
+  const filtered = useMemo(() => filterFormulaCards(cards, query, family), [query, family]);
 
-  const selected = cards.find(c => c.id === selectedId) ?? filtered[0] ?? cards[0];
-  const compare = cards.find(c => c.id === compareId) ?? cards[1] ?? cards[0];
-  const related = cards.filter(c => selected?.crossReferences.includes(c.id));
+  const selected = findFormulaById(cards, selectedId) ?? filtered[0] ?? getDefaultFormula(cards);
+  const compare = findFormulaById(cards, compareId) ?? cards[1] ?? getDefaultFormula(cards);
+  const related = getRelatedCards(cards, selected);
 
   return (
     <main>
@@ -36,9 +38,12 @@ export default function App() {
 
       <section className="toolbar" aria-label="Filter formula cards">
         <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search formulas, families, or variables..." />
-        <select value={family} onChange={e => setFamily(e.target.value)}>
-          <option value="all">All families</option>
-          {families.map(f => <option key={f} value={f}>{cards.find(c => c.family === f)?.familyLabel ?? f}</option>)}
+        <select value={family} onChange={e => setFamily(e.target.value as FamilyFilter)}>
+          {familyOptions.map(option => (
+            <option key={option.value} value={option.value}>
+              {option.label} ({option.count})
+            </option>
+          ))}
         </select>
       </section>
 
