@@ -1,5 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://phi369labs.example/schemas/formula_card.schema.json",
   "title": "Hidden Equations Formula Card",
   "type": "object",
   "required": [
@@ -17,31 +18,131 @@
     "version"
   ],
   "properties": {
-    "id": { "type": "string" },
-    "title": { "type": "string" },
-    "canonicalTitle": { "type": "string" },
-    "family": { "type": "string" },
-    "familyLabel": { "type": "string" },
-    "formula": { "type": "string" },
-    "formulaPlaintext": { "type": "string" },
-    "formulaSymbols": { "type": "array", "items": { "type": "string" } },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "canonicalTitle": {
+      "type": "string"
+    },
+    "alternateTitles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "family": {
+      "type": "string"
+    },
+    "familyLabel": {
+      "type": "string"
+    },
+    "formula": {
+      "type": "string"
+    },
+    "formulaLatex": {
+      "type": "string"
+    },
+    "formulaPlaintext": {
+      "type": "string"
+    },
+    "formulaSymbols": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "variables": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["symbol", "meaning", "role"],
+        "required": [
+          "symbol",
+          "meaning",
+          "role"
+        ],
         "properties": {
-          "symbol": { "type": "string" },
-          "meaning": { "type": "string" },
-          "role": { "type": "string" }
+          "symbol": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
         }
       }
     },
-    "tagline": { "type": "string" },
-    "derivation": { "type": "string" },
-    "reflectionPrompt": { "type": "string" },
-    "boundaryNote": { "type": "string" },
-    "misuseWarning": { "type": "string" },
-    "version": { "type": "string" }
+    "tagline": {
+      "type": "string"
+    },
+    "derivation": {
+      "type": "string"
+    },
+    "theoreticalEcho": {
+      "type": "string"
+    },
+    "culturalScope": {
+      "type": "string"
+    },
+    "temporalNote": {
+      "type": "string"
+    },
+    "reflectionPrompt": {
+      "type": "string"
+    },
+    "useCases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exampleApplication": {
+      "type": "string"
+    },
+    "crossReferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "posterVisual": {
+      "type": "string"
+    },
+    "visualMotif": {
+      "type": "string"
+    },
+    "familyColor": {
+      "type": "string"
+    },
+    "boundaryNote": {
+      "type": "string"
+    },
+    "misuseWarning": {
+      "type": "string"
+    },
+    "intensity": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    }
   }
 }

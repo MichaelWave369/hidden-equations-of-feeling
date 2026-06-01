@@ -1,53 +1,1404 @@
-{
-  "meta": {
-    "title": "Variable Glossary",
-    "version": "0.3.0",
-    "boundary": "Symbols are scoped per card. Repeated letters may mean different things in different formulas. This glossary gives common meanings only. These are symbolic design variables, not measurements."
+[
+  {
+    "term": "TF",
+    "defaultMeaning": "Turd Ferguson Output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
   },
-  "operators": {
-    "+": "Stacks with; separate contributors add pressure, color, or meaning.",
-    "×": "Amplifies or compounds; variables intensify each other when paired.",
-    "/": "Buffered by or softened by; denominator variables reduce, stabilize, contextualize, or repair the pattern.",
-    "^2": "Nonlinear spiral; the factor can run away with itself once intensified.",
-    "3^R": "Escalation through repeated rounds; each return grows the pattern."
+  {
+    "term": "H",
+    "defaultMeaning": "Hat Coefficient",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
   },
-  "commonVariables": {
-    "A": ["Absurdity", "Attachment", "Attention", "Agency", "Assumptions", "Anger signal"],
-    "B": ["Boundary crossed", "Bad idea", "Breath", "Belonging threat"],
-    "C": ["Chaos", "Calm", "Clarity", "Communication", "Compassion", "Context"],
-    "D": ["Deadpan power", "Drama delta", "Dramatic seriousness"],
-    "E": ["Evidence", "Emotional reaction", "Exposure", "Ego compatibility"],
-    "F": ["Funny output", "Fear forecast", "Format integrity"],
-    "G": ["General idea", "General complaint", "Gratitude", "Grief echo"],
-    "H": ["Hat coefficient", "Harm", "Hope", "Honesty"],
-    "I": ["Insecurity", "Imagination", "Identity threat", "Innocent tone"],
-    "J": ["Joke seed", "Judgment", "Joy"],
-    "K": ["Confidence / certainty", "Knowledge"],
-    "L": ["Logic", "Loss", "Love bridge", "Loop / callback"],
-    "M": ["Mustache confidence", "Memory", "Meaning", "Mundane event"],
-    "N": ["Need", "Noise", "Nonsense"],
-    "O": ["Orientation"],
-    "P": ["Public audience", "Presence", "Persistence", "Plausible deniability", "Support"],
-    "R": ["Rules", "Repair", "Respect", "Ritual", "Retelling rounds"],
-    "S": ["Smirk", "Safety", "Sleep", "Surprise", "Support", "Silence pressure"],
-    "T": ["Trigger", "Threat", "Time", "Timing", "Trust"],
-    "U": ["Uncertainty"],
-    "V": ["Violation", "Verification", "Violation index"],
-    "W": ["Wrongness", "Witness", "Wonder"],
-    "X": ["Surprise third item", "Unexpected detail"]
+  {
+    "term": "M",
+    "defaultMeaning": "Mustache Confidence",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
   },
-  "roles": {
-    "output": "The named pattern or emotional/comic result produced by the symbolic equation.",
-    "amplifier": "A factor that increases pressure, intensity, charge, or narrative force.",
-    "buffer": "A factor that reduces, contextualizes, clarifies, or softens the pattern.",
-    "stabilizer": "A factor that helps the pattern become safer, clearer, or more usable.",
-    "signal": "A factor that points toward a need, boundary, or story truth.",
-    "bridge": "A factor that reconnects separated parts, people, or meanings."
+  {
+    "term": "S",
+    "defaultMeaning": "Smirk Constant",
+    "commonRoles": [
+      "amplifier",
+      "buffer",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
   },
-  "designNotes": [
-    "Symbols are local to each card, not globally fixed constants.",
-    "The same structure can produce different emotional payloads across families, especially Comedy and Drama.",
-    "These variables are meant for writing, game design, NPC design, reflection, and teaching prompts.",
-    "They should never be used to score, diagnose, shame, manipulate, or reduce a person."
-  ]
-}
+  {
+    "term": "W",
+    "defaultMeaning": "Wrong Answer Velocity",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "C",
+    "defaultMeaning": "Chaos Injection",
+    "commonRoles": [
+      "amplifier",
+      "buffer",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "R",
+    "defaultMeaning": "Respect for Rules",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "F",
+    "defaultMeaning": "Format Integrity",
+    "commonRoles": [
+      "buffer",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "D",
+    "defaultMeaning": "Deadpan Power",
+    "commonRoles": [
+      "amplifier",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "A",
+    "defaultMeaning": "Absurdity",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "E",
+    "defaultMeaning": "Emotional Reaction",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "J",
+    "defaultMeaning": "Joke Seed",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "K",
+    "defaultMeaning": "Confidence",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "T",
+    "defaultMeaning": "Time",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Ac",
+    "defaultMeaning": "Authority Collapse",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "N",
+    "defaultMeaning": "Nonsense",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "P",
+    "defaultMeaning": "Punchline",
+    "commonRoles": [
+      "amplifier",
+      "buffer",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "L",
+    "defaultMeaning": "Logical Setup Item",
+    "commonRoles": [
+      "amplifier",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "X",
+    "defaultMeaning": "Surprise Third Item",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "J1",
+    "defaultMeaning": "Original Joke",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "G",
+    "defaultMeaning": "General Idea",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Sp",
+    "defaultMeaning": "Specificity",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "If",
+    "defaultMeaning": "False Importance",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Cf",
+    "defaultMeaning": "Comic Force",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "B",
+    "defaultMeaning": "Bad Idea",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "V",
+    "defaultMeaning": "Violation Humor",
+    "commonRoles": [
+      "buffer",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "I",
+    "defaultMeaning": "Innocent Confidence",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Phi_haha",
+    "defaultMeaning": "The Professor Phi Comedy Constant output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Truth",
+    "defaultMeaning": "Truth",
+    "commonRoles": [
+      "buffer",
+      "stabilizer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Absurdity",
+    "defaultMeaning": "Absurdity",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Timing",
+    "defaultMeaning": "Timing",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Cruelty",
+    "defaultMeaning": "Cruelty",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "DR",
+    "defaultMeaning": "Drama Output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Am",
+    "defaultMeaning": "The Authority Meltdown Formula output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Phi_drama",
+    "defaultMeaning": "The Professor Phi Drama Constant output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Misunderstanding",
+    "defaultMeaning": "Misunderstanding",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Ego",
+    "defaultMeaning": "Ego",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Communication",
+    "defaultMeaning": "Communication",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Sleep",
+    "defaultMeaning": "Sleep",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Sad",
+    "defaultMeaning": "Sadness Reservoir output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Loss",
+    "defaultMeaning": "Loss",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Attachment",
+    "defaultMeaning": "Attachment",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Exhaustion",
+    "defaultMeaning": "Exhaustion",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Unspoken Need",
+    "defaultMeaning": "Unspoken Need",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Comfort",
+    "defaultMeaning": "Comfort",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Expression",
+    "defaultMeaning": "Expression",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Time",
+    "defaultMeaning": "Time",
+    "commonRoles": [
+      "buffer",
+      "stabilizer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Joy",
+    "defaultMeaning": "Happiness / Joy Spark output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Meaning",
+    "defaultMeaning": "Meaning",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Play",
+    "defaultMeaning": "Play",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Connection",
+    "defaultMeaning": "Connection",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Gratitude",
+    "defaultMeaning": "Gratitude",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Presence",
+    "defaultMeaning": "Presence",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Comparison",
+    "defaultMeaning": "Comparison",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Rush",
+    "defaultMeaning": "Rush",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Ang",
+    "defaultMeaning": "Anger Boundary Engine output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Boundary Violation",
+    "defaultMeaning": "Boundary Violation",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Injustice",
+    "defaultMeaning": "Injustice",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Frustration",
+    "defaultMeaning": "Frustration",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Agency",
+    "defaultMeaning": "Agency",
+    "commonRoles": [
+      "buffer",
+      "stabilizer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Repair",
+    "defaultMeaning": "Repair",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Breath",
+    "defaultMeaning": "Breath",
+    "commonRoles": [
+      "buffer",
+      "stabilizer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Fear",
+    "defaultMeaning": "Fear Signal Map output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Threat",
+    "defaultMeaning": "Threat",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Uncertainty",
+    "defaultMeaning": "Uncertainty",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Imagination",
+    "defaultMeaning": "Imagination",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Safety Signals",
+    "defaultMeaning": "Safety Signals",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Knowledge",
+    "defaultMeaning": "Knowledge",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Support",
+    "defaultMeaning": "Support",
+    "commonRoles": [
+      "buffer",
+      "stabilizer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Anx",
+    "defaultMeaning": "Anxiety Forecast Loop output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Body Charge",
+    "defaultMeaning": "Body Charge",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Plan",
+    "defaultMeaning": "Plan",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Grounding",
+    "defaultMeaning": "Grounding",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Reassurance",
+    "defaultMeaning": "Reassurance",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Love",
+    "defaultMeaning": "Love Continuity Field output",
+    "commonRoles": [
+      "amplifier",
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Attention",
+    "defaultMeaning": "Attention",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Care",
+    "defaultMeaning": "Care",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Trust",
+    "defaultMeaning": "Trust",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Control",
+    "defaultMeaning": "Control",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Performance",
+    "defaultMeaning": "Performance",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Grief",
+    "defaultMeaning": "Grief Echo Equation output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Absence",
+    "defaultMeaning": "Absence",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Memory",
+    "defaultMeaning": "Memory",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Ritual",
+    "defaultMeaning": "Ritual",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Witness",
+    "defaultMeaning": "Witness",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Shame",
+    "defaultMeaning": "Shame Exposure Collapse output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Exposure",
+    "defaultMeaning": "Exposure",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Self-Judgment",
+    "defaultMeaning": "Self-Judgment",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Belonging Threat",
+    "defaultMeaning": "Belonging Threat",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Compassion",
+    "defaultMeaning": "Compassion",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Guilt",
+    "defaultMeaning": "Guilt Repair Vector output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Harm Awareness",
+    "defaultMeaning": "Harm Awareness",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Responsibility",
+    "defaultMeaning": "Responsibility",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Forgiveness",
+    "defaultMeaning": "Forgiveness",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Learning",
+    "defaultMeaning": "Learning",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Jealousy",
+    "defaultMeaning": "Jealousy Attachment Alarm output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Attachment Fear",
+    "defaultMeaning": "Attachment Fear",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Unknowns",
+    "defaultMeaning": "Unknowns",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Conversation",
+    "defaultMeaning": "Conversation",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Self-Worth",
+    "defaultMeaning": "Self-Worth",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Envy",
+    "defaultMeaning": "Envy Directional Signal output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Desire",
+    "defaultMeaning": "Desire",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Path Clarity",
+    "defaultMeaning": "Path Clarity",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Action",
+    "defaultMeaning": "Action",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Hope",
+    "defaultMeaning": "Hope Horizon Lift output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Possibility",
+    "defaultMeaning": "Possibility",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Despair",
+    "defaultMeaning": "Despair",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Isolation",
+    "defaultMeaning": "Isolation",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Awe",
+    "defaultMeaning": "Awe Vastness Gate output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Vastness",
+    "defaultMeaning": "Vastness",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Mystery",
+    "defaultMeaning": "Mystery",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Ego Grip",
+    "defaultMeaning": "Ego Grip",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Need to Explain",
+    "defaultMeaning": "Need to Explain",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Calm",
+    "defaultMeaning": "Calm Nervous-System Equation output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Simplicity",
+    "defaultMeaning": "Simplicity",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Threat Load",
+    "defaultMeaning": "Threat Load",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Noise",
+    "defaultMeaning": "Noise",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Emb",
+    "defaultMeaning": "Embarrassment Spotlight Curve output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Public Mistake",
+    "defaultMeaning": "Public Mistake",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Self-Focus",
+    "defaultMeaning": "Self-Focus",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Humor",
+    "defaultMeaning": "Humor",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Kind Witness",
+    "defaultMeaning": "Kind Witness",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Nos",
+    "defaultMeaning": "Nostalgia Time-Glow Equation output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Warmth",
+    "defaultMeaning": "Warmth",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Distance",
+    "defaultMeaning": "Distance",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Unresolved Pain",
+    "defaultMeaning": "Unresolved Pain",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Idealization",
+    "defaultMeaning": "Idealization",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Cur",
+    "defaultMeaning": "Curiosity Doorway Formula output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Safety",
+    "defaultMeaning": "Safety",
+    "commonRoles": [
+      "buffer",
+      "stabilizer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Permission",
+    "defaultMeaning": "Permission",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Fear of Being Wrong",
+    "defaultMeaning": "Fear of Being Wrong",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Comp",
+    "defaultMeaning": "Compassion Bridge Equation output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Suffering Noticed",
+    "defaultMeaning": "Suffering Noticed",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Shared Humanity",
+    "defaultMeaning": "Shared Humanity",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Blame",
+    "defaultMeaning": "Blame",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Disg",
+    "defaultMeaning": "Disgust Boundary Chemistry output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Violation Signal",
+    "defaultMeaning": "Violation Signal",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Sensory Charge",
+    "defaultMeaning": "Sensory Charge",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Context",
+    "defaultMeaning": "Context",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Choice",
+    "defaultMeaning": "Choice",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Sur",
+    "defaultMeaning": "Surprise Expectation Gap output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Expectation Gap",
+    "defaultMeaning": "Expectation Gap",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Novelty",
+    "defaultMeaning": "Novelty",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Preparation",
+    "defaultMeaning": "Preparation",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Bor",
+    "defaultMeaning": "Boredom Agency Drain output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Understimulation",
+    "defaultMeaning": "Understimulation",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "No Agency",
+    "defaultMeaning": "No Agency",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Curiosity",
+    "defaultMeaning": "Curiosity",
+    "commonRoles": [
+      "amplifier",
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Challenge",
+    "defaultMeaning": "Challenge",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Conf",
+    "defaultMeaning": "Confidence Evidence Stack output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Skill",
+    "defaultMeaning": "Skill",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Evidence",
+    "defaultMeaning": "Evidence",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Self-Trust",
+    "defaultMeaning": "Self-Trust",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Impostor Noise",
+    "defaultMeaning": "Impostor Noise",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Rel",
+    "defaultMeaning": "Relief Exhale Drop output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Threat Removed",
+    "defaultMeaning": "Threat Removed",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Body Exhale",
+    "defaultMeaning": "Body Exhale",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Residual Worry",
+    "defaultMeaning": "Residual Worry",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Grat",
+    "defaultMeaning": "Gratitude Gift Lens output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Gift Noticed",
+    "defaultMeaning": "Gift Noticed",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Entitlement",
+    "defaultMeaning": "Entitlement",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Speed",
+    "defaultMeaning": "Speed",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Res",
+    "defaultMeaning": "Resentment Pressure Ledger output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Unrepaired Hurt",
+    "defaultMeaning": "Unrepaired Hurt",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Repetition",
+    "defaultMeaning": "Repetition",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Silence",
+    "defaultMeaning": "Silence",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Boundary",
+    "defaultMeaning": "Boundary",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Honesty",
+    "defaultMeaning": "Honesty",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Won",
+    "defaultMeaning": "Wonder Golden Joy Spiral output",
+    "commonRoles": [
+      "output"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Beauty",
+    "defaultMeaning": "Beauty",
+    "commonRoles": [
+      "amplifier"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Cynicism",
+    "defaultMeaning": "Cynicism",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  },
+  {
+    "term": "Hurry",
+    "defaultMeaning": "Hurry",
+    "commonRoles": [
+      "buffer"
+    ],
+    "note": "Symbols are scoped per card. The same letter or word can carry a different meaning in another formula."
+  }
+]

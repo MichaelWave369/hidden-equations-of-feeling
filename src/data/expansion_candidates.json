@@ -1,56 +1,265 @@
 [
   {
-    "id": "trust_continuity_bridge",
-    "title": "The Trust Continuity Bridge",
+    "id": "love_bridge_trust_signal_stack",
+    "title": "Trust Signal Stack",
     "family": "love_bridge",
-    "priority": "high",
-    "candidateFormula": "T = (Consistency × Honesty × Repair) / (Betrayal + Ambiguity)",
-    "reason": "Trust is a core missing bridge variable across love, repair, grief, NPC relationship arcs, and public community design.",
-    "boundaryNote": "Symbolic relationship-design metaphor only; not relationship therapy or a score of a person."
+    "formula": "Trust = (Consistency x Honesty x Repair) / (Secrecy + Repeated Harm)",
+    "variables": [
+      {
+        "symbol": "Trust",
+        "meaning": "Trust",
+        "role": "output"
+      },
+      {
+        "symbol": "Consistency",
+        "meaning": "Consistency",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Honesty",
+        "meaning": "Honesty",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Repair",
+        "meaning": "Repair",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Secrecy",
+        "meaning": "Secrecy",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Repeated Harm",
+        "meaning": "Repeated Harm",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Trust is confidence built from repeated congruence.",
+    "status": "v0.4-candidate",
+    "reflectionPrompt": "Where can attention, care, trust, or compassion become more present without control?",
+    "boundaryNote": "Do not demand trust; earn and protect it.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair."
   },
   {
-    "id": "loneliness_signal_field",
-    "title": "The Loneliness Signal Field",
-    "family": "sadness_grief",
-    "priority": "high",
-    "candidateFormula": "Lon = (Disconnection × Unseen Need × Time) / (Belonging + Contact + Meaning)",
-    "reason": "Loneliness is essential for humane storytelling, cozy game arcs, and reflective prompts without shaming isolation.",
-    "boundaryNote": "Reflection/craft metaphor only; not a diagnosis or substitute for support."
-  },
-  {
-    "id": "regret_time_loop",
-    "title": "The Regret Time Loop",
+    "id": "social_mirror_loneliness_signal_field",
+    "title": "Loneliness Signal Field",
     "family": "social_mirror",
-    "priority": "high",
-    "candidateFormula": "Reg = (Missed Choice × Consequence × Replay) / (Learning + Repair + Acceptance)",
-    "reason": "Regret bridges guilt, grief, character development, time-loop stories, and moral learning arcs.",
-    "boundaryNote": "Use as a repair and learning lens, not self-punishment."
+    "formula": "Lonely = (Disconnection x Unseen Self x Time) / (Contact + Belonging + Meaning)",
+    "variables": [
+      {
+        "symbol": "Lonely",
+        "meaning": "Lonely",
+        "role": "output"
+      },
+      {
+        "symbol": "Disconnection",
+        "meaning": "Disconnection",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Unseen Self",
+        "meaning": "Unseen Self",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Time",
+        "meaning": "Time",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Contact",
+        "meaning": "Contact",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Belonging",
+        "meaning": "Belonging",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Meaning",
+        "meaning": "Meaning",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Loneliness asks for real contact, not performance proximity.",
+    "status": "v0.4-candidate",
+    "reflectionPrompt": "What belongs to repair, what belongs to truth, and what belongs to inherited social pressure?",
+    "boundaryNote": "Not a diagnosis; seek real connection and support when isolation hurts.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair."
   },
   {
-    "id": "forgiveness_release_vector",
-    "title": "The Forgiveness Release Vector",
+    "id": "sadness_grief_regret_time_repair_vector",
+    "title": "Regret Time-Repair Vector",
+    "family": "sadness_grief",
+    "formula": "Regret = (Choice Echo x Consequence Awareness) / (Learning + Repair + Self-Forgiveness)",
+    "variables": [
+      {
+        "symbol": "Regret",
+        "meaning": "Regret",
+        "role": "output"
+      },
+      {
+        "symbol": "Choice Echo",
+        "meaning": "Choice Echo",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Consequence Awareness",
+        "meaning": "Consequence Awareness",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Learning",
+        "meaning": "Learning",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Repair",
+        "meaning": "Repair",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Self-Forgiveness",
+        "meaning": "Self-Forgiveness",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Regret becomes useful when it points toward learning and repair.",
+    "status": "v0.4-candidate",
+    "reflectionPrompt": "What needs witness, ritual, expression, or time rather than a forced solution?",
+    "boundaryNote": "Do not confuse regret with permanent self-condemnation.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair."
+  },
+  {
+    "id": "love_bridge_forgiveness_repair_loop",
+    "title": "Forgiveness Repair Loop",
     "family": "love_bridge",
-    "priority": "high",
-    "candidateFormula": "Forg = (Truth × Accountability × Time) / (Denial + Repeated Harm)",
-    "reason": "Forgiveness needs careful claim discipline: it belongs with repair and truth, not pressure or bypassing.",
-    "boundaryNote": "Never use forgiveness language to force reconciliation, excuse harm, or remove boundaries."
+    "formula": "Forgive = (Truth + Accountability + Time) / (Denial + Forced Closure)",
+    "variables": [
+      {
+        "symbol": "Forgive",
+        "meaning": "Forgive",
+        "role": "output"
+      },
+      {
+        "symbol": "Truth",
+        "meaning": "Truth",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Accountability",
+        "meaning": "Accountability",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Time",
+        "meaning": "Time",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Denial",
+        "meaning": "Denial",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Forced Closure",
+        "meaning": "Forced Closure",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Forgiveness cannot be forced; it grows where truth and safety are honored.",
+    "status": "v0.4-candidate",
+    "reflectionPrompt": "Where can attention, care, trust, or compassion become more present without control?",
+    "boundaryNote": "Never use this to pressure someone to bypass harm or accept unsafe behavior.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair."
   },
   {
-    "id": "motivation_ignition_curve",
-    "title": "The Motivation Ignition Curve",
-    "family": "calm_learning",
-    "priority": "medium",
-    "candidateFormula": "Mot = (Meaning × Agency × Small Win) / (Overwhelm + Shame)",
-    "reason": "Motivation is useful for learning systems, creator tools, productivity arcs, and character growth.",
-    "boundaryNote": "Not a productivity score; avoid shame-based motivation."
+    "id": "joy_wonder_motivation_spark_engine",
+    "title": "Motivation Spark Engine",
+    "family": "joy_wonder",
+    "formula": "Motivation = (Meaning x Energy x Next Step) / (Overwhelm + Shame)",
+    "variables": [
+      {
+        "symbol": "Motivation",
+        "meaning": "Motivation",
+        "role": "output"
+      },
+      {
+        "symbol": "Meaning",
+        "meaning": "Meaning",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Energy",
+        "meaning": "Energy",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Next Step",
+        "meaning": "Next Step",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Overwhelm",
+        "meaning": "Overwhelm",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Shame",
+        "meaning": "Shame",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Motivation starts when meaning finds a step small enough to move.",
+    "status": "v0.4-candidate",
+    "reflectionPrompt": "What is alive, beautiful, playful, meaningful, or possible right now if hurry softens?",
+    "boundaryNote": "Avoid shame as fuel; sustainable motion needs kindness and scale.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair."
   },
   {
-    "id": "acceptance_landing_field",
-    "title": "The Acceptance Landing Field",
-    "family": "calm_learning",
-    "priority": "medium",
-    "candidateFormula": "Acc = (Truth Seen × Support × Time) / (Denial + Control Grip)",
-    "reason": "Acceptance supports grief closure, fear softening, calm, and wise decision arcs.",
-    "boundaryNote": "Acceptance does not mean approval of harm or giving up needed action."
+    "id": "sadness_grief_acceptance_grounding_equation",
+    "title": "Acceptance Grounding Equation",
+    "family": "sadness_grief",
+    "formula": "Accept = (Truth x Time x Support) / (Resistance + Denial)",
+    "variables": [
+      {
+        "symbol": "Accept",
+        "meaning": "Accept",
+        "role": "output"
+      },
+      {
+        "symbol": "Truth",
+        "meaning": "Truth",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Time",
+        "meaning": "Time",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Support",
+        "meaning": "Support",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Resistance",
+        "meaning": "Resistance",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Denial",
+        "meaning": "Denial",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Acceptance is not approval; it is contact with what is real.",
+    "status": "v0.4-candidate",
+    "reflectionPrompt": "What needs witness, ritual, expression, or time rather than a forced solution?",
+    "boundaryNote": "Do not use acceptance to excuse harm or silence needed change.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair."
   }
 ]

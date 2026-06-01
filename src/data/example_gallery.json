@@ -1,7 +1,7 @@
 [
   {
     "id": "example_deadpan_parking_receipt",
-    "formulaId": "comedy_deadpan_delta",
+    "formulaId": "comedy_the_deadpan_delta",
     "category": "comedy_writing",
     "title": "Deadpan Parking Receipt",
     "summary": "A character reports an impossible event with no emotional reaction.",
@@ -11,14 +11,19 @@
     "howToUse": "Use this pattern when a scene needs a clean absurdity spike without characters winking at the audience.",
     "boundaryNote": "Comedy craft pattern only; not a claim about real emotional health.",
     "misuseWarning": "Do not use deadpan examples to dismiss real distress or emotional communication.",
-    "tags": ["deadpan", "absurdity", "comedy", "dialogue"],
+    "tags": [
+      "deadpan",
+      "absurdity",
+      "comedy",
+      "dialogue"
+    ],
     "difficulty": "easy",
-    "version": "0.4.0",
+    "version": "0.5.0-candidate",
     "status": "candidate"
   },
   {
     "id": "example_suspicious_silence_group_chat",
-    "formulaId": "drama_suspicious_silence_delta",
+    "formulaId": "drama_the_suspicious_silence_delta",
     "category": "drama_scene",
     "title": "The Group Chat Weather Event",
     "summary": "A read receipt becomes the seed of an escalating invented story.",
@@ -28,16 +33,21 @@
     "howToUse": "Use this pattern when a scene needs tension created by uncertainty rather than confirmed betrayal.",
     "boundaryNote": "Story-design lens only; do not use to mock anxiety, relational pain, or real uncertainty.",
     "misuseWarning": "Do not frame someone’s fear or worry as automatically silly or invalid.",
-    "tags": ["drama", "group-chat", "assumptions", "uncertainty"],
+    "tags": [
+      "drama",
+      "group-chat",
+      "assumptions",
+      "uncertainty"
+    ],
     "difficulty": "easy",
-    "version": "0.4.0",
+    "version": "0.5.0-candidate",
     "status": "candidate"
   },
   {
-    "id": "example_fear_forecast_reflection",
-    "formulaId": "fear_threat_forecast_loop",
+    "id": "example_fear_signal_reflection",
+    "formulaId": "fear_threat_fear_signal_map",
     "category": "reflection_prompt",
-    "title": "Fear Forecast Reflection",
+    "title": "Fear Signal Reflection",
     "summary": "A gentle prompt that separates known threat, imagined threat, and available support.",
     "scenario": "A user or character feels fear rising because the next step is uncertain.",
     "exampleText": "What is known, what is imagined, and what support would make the next step safer? Name one safety signal already present.",
@@ -45,26 +55,125 @@
     "howToUse": "Use this as an optional journaling or character-design prompt when fear needs clarity rather than dismissal.",
     "boundaryNote": "Reflection invitation only; not clinical guidance. If danger is immediate, real-world safety comes first.",
     "misuseWarning": "Do not use this prompt to minimize fear or pressure someone to calm down before they feel safe.",
-    "tags": ["fear", "reflection", "safety", "support"],
+    "tags": [
+      "fear",
+      "reflection",
+      "safety",
+      "support"
+    ],
     "difficulty": "easy",
-    "version": "0.4.0",
+    "version": "0.5.0-candidate",
     "status": "candidate"
   },
   {
     "id": "example_trust_shopkeeper_npc",
-    "formulaId": "love_bridge_equation",
+    "formulaId": "love_bridge_love_continuity_field",
     "category": "npc_design",
     "title": "The Shopkeeper Trust Arc",
     "summary": "An NPC becomes warmer when the player returns, repairs, and acts consistently.",
     "scenario": "A cozy shopkeeper remembers whether the player keeps promises and repairs mistakes.",
     "exampleText": "Low trust: 'I have seen promises walk out that door before.' High trust: 'You came back. That matters more than you think.'",
-    "whyItWorks": "Attention, presence, trust, and repair make the relationship feel earned instead of automatic.",
+    "whyItWorks": "Attention, care, trust, and time make the relationship feel earned instead of automatic.",
     "howToUse": "Use this pattern for NPC relationships where kindness, consistency, and repair change future dialogue.",
     "boundaryNote": "NPC design logic only; not a real relationship score.",
     "misuseWarning": "Do not turn trust into manipulation math or use love language to excuse control or harm.",
-    "tags": ["npc", "trust", "shopkeeper", "repair", "cozy-game"],
+    "tags": [
+      "npc",
+      "trust",
+      "shopkeeper",
+      "repair",
+      "cozy-game"
+    ],
     "difficulty": "medium",
-    "version": "0.4.0",
+    "version": "0.5.0-candidate",
+    "status": "candidate"
+  },
+  {
+    "id": "example_boundary_repair_scene",
+    "formulaId": "fire_boundary_anger_boundary_engine",
+    "category": "drama_scene",
+    "title": "The Boundary Repair Scene",
+    "summary": "A character names a broken agreement without turning anger into harm.",
+    "scenario": "Two characters have repeated conflict because one boundary keeps getting crossed.",
+    "exampleText": "I am angry because the agreement mattered. I do not want to punish you. I want the line to be real this time.",
+    "whyItWorks": "The scene separates harm, violation, and need from clarity and repair, keeping the boundary visible.",
+    "howToUse": "Use this for character arcs where anger becomes a signal for clean action rather than escalation.",
+    "boundaryNote": "Creative conflict-design example only; not advice for unsafe real-world conflict.",
+    "misuseWarning": "Do not use anger language to justify threats, coercion, or harm.",
+    "tags": [
+      "anger",
+      "boundary",
+      "repair",
+      "conflict"
+    ],
+    "difficulty": "medium",
+    "version": "0.5.0-candidate",
+    "status": "candidate"
+  },
+  {
+    "id": "example_grief_memory_object",
+    "formulaId": "sadness_grief_grief_echo_equation",
+    "category": "reflection_prompt",
+    "title": "The Memory Object",
+    "summary": "A grief scene uses an object to let memory be witnessed instead of solved.",
+    "scenario": "A character finds an ordinary object connected to someone they lost.",
+    "exampleText": "The mug was still chipped on the handle. Nobody fixed it. Somehow that was the part that made the room honest.",
+    "whyItWorks": "Love, absence, and memory intensify the echo, while ritual, witness, and time create a holding structure.",
+    "howToUse": "Use this for gentle grief scenes where the story pauses to honor memory without forcing closure.",
+    "boundaryNote": "Reflection/craft example only; not grief therapy.",
+    "misuseWarning": "Do not rush, grade, or pathologize grief with this pattern.",
+    "tags": [
+      "grief",
+      "memory",
+      "witness",
+      "ritual"
+    ],
+    "difficulty": "medium",
+    "version": "0.5.0-candidate",
+    "status": "candidate"
+  },
+  {
+    "id": "example_curiosity_classroom_key",
+    "formulaId": "calm_learning_curiosity_doorway_formula",
+    "category": "classroom_activity",
+    "title": "Wrong Answers Welcome",
+    "summary": "A learning activity turns uncertainty into permission to explore.",
+    "scenario": "A class or workshop gets stuck because everyone is afraid of being wrong.",
+    "exampleText": "Write three wrong answers first. Circle the one that teaches us the most. Now we can begin.",
+    "whyItWorks": "Mystery, safety, and permission increase curiosity while fear of being wrong is softened.",
+    "howToUse": "Use this to design a low-shame opening move for workshops, classrooms, or tutorial scenes.",
+    "boundaryNote": "Education/design prompt only; adapt to the real learners and setting.",
+    "misuseWarning": "Do not use forced vulnerability or public mistakes as humiliation.",
+    "tags": [
+      "curiosity",
+      "learning",
+      "permission",
+      "classroom"
+    ],
+    "difficulty": "easy",
+    "version": "0.5.0-candidate",
+    "status": "candidate"
+  },
+  {
+    "id": "example_wonder_secret_door",
+    "formulaId": "joy_wonder_wonder_golden_joy_spiral",
+    "category": "game_mechanic",
+    "title": "The Secret Door That Was Always There",
+    "summary": "A game rewards patient curiosity with a small, beautiful discovery.",
+    "scenario": "The player returns to a familiar room after gaining a new way to notice details.",
+    "exampleText": "The wall did not open because of a key. It opened because the player finally stopped running past the painted moth.",
+    "whyItWorks": "Curiosity, beauty, and mystery rise when cynicism and hurry drop, creating a gentle wonder reward.",
+    "howToUse": "Use this for cozy exploration mechanics where attention is rewarded without punishing the player.",
+    "boundaryNote": "Game-design pattern only; not a claim that wonder fixes pain.",
+    "misuseWarning": "Do not use wonder language to bypass grief, fear, or real needs.",
+    "tags": [
+      "wonder",
+      "game-design",
+      "secret",
+      "curiosity"
+    ],
+    "difficulty": "medium",
+    "version": "0.5.0-candidate",
     "status": "candidate"
   }
 ]

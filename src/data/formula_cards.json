@@ -1,395 +1,3615 @@
 [
   {
-    "id": "comedy_giant_hat_disruption",
+    "id": "comedy_the_turd_ferguson_equation",
     "title": "The Giant Hat Disruption Equation",
     "canonicalTitle": "The Turd Ferguson Equation",
+    "alternateTitles": [
+      "The Turd Ferguson Equation",
+      "affectionate SNL Celebrity Jeopardy homage origin"
+    ],
     "family": "comedy",
     "familyLabel": "Comedy",
-    "formula": "TF = ((H × M × S) + W² + C) / (R + F)",
-    "formulaPlaintext": "T F equals H times M times S plus W squared plus C, divided by R plus F.",
-    "formulaSymbols": ["TF", "H", "M", "S", "W", "C", "R", "F"],
+    "formula": "TF = ((H x M x S) + W^2 + C) / (R + F)",
+    "formulaLatex": "TF = ((H \\times M \\times S) + W^{2} + C) / (R + F)",
+    "formulaPlaintext": "TF equals  open parenthesis open parenthesis H times M times S close parenthesis  plus W squared plus C close parenthesis  divided by  open parenthesis R plus F close parenthesis ",
+    "formulaSymbols": [
+      "TF",
+      "H",
+      "M",
+      "S",
+      "W",
+      "C",
+      "R",
+      "F"
+    ],
     "variables": [
-      {"symbol":"TF","meaning":"Disruption output","role":"output"},
-      {"symbol":"H","meaning":"Hat coefficient","role":"amplifier"},
-      {"symbol":"M","meaning":"Mustache confidence","role":"amplifier"},
-      {"symbol":"S","meaning":"Smirk constant","role":"amplifier"},
-      {"symbol":"W","meaning":"Wrong-answer velocity","role":"amplifier"},
-      {"symbol":"C","meaning":"Chaos injection","role":"amplifier"},
-      {"symbol":"R","meaning":"Respect for rules","role":"buffer"},
-      {"symbol":"F","meaning":"Format integrity","role":"buffer"}
+      {
+        "symbol": "TF",
+        "meaning": "Turd Ferguson Output",
+        "role": "output"
+      },
+      {
+        "symbol": "H",
+        "meaning": "Hat Coefficient",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "M",
+        "meaning": "Mustache Confidence",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "S",
+        "meaning": "Smirk Constant",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "W",
+        "meaning": "Wrong Answer Velocity",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "C",
+        "meaning": "Chaos Injection",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "R",
+        "meaning": "Respect for Rules",
+        "role": "buffer"
+      },
+      {
+        "symbol": "F",
+        "meaning": "Format Integrity",
+        "role": "buffer"
+      }
     ],
     "tagline": "Big hat + wrong confidence + zero format respect = legendary disruption.",
-    "derivation": "A symbolic comedy craft pattern where confidence, costume, and disruption amplify, while rules and format buffer the chaos.",
-    "theoreticalEcho": "Comedy incongruity, authority disruption, rule-breaking, and game-show parody structure.",
-    "culturalScope": "Western sketch-comedy / game-show parody context; homage origin, not a universal claim.",
-    "temporalNote": "A static snapshot of a bit escalating inside a formal structure.",
-    "reflectionPrompt": "What invisible rule is being gloriously violated, and why does the format trying to survive make it funnier?",
-    "useCases": ["comedy writing", "NPC dialogue", "sketch design"],
-    "exampleApplication": "A contestant answers with total confidence while the host tries to preserve order.",
-    "crossReferences": ["drama_overreaction_theorem", "comedy_deadpan_delta"],
-    "posterVisual": "Giant hat, smirk arrows, podium, irritation chart.",
-    "visualMotif": "Marquee lights, cowboy hat, red/yellow chaos panels.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What invisible rule or format is being gloriously violated, and how does the audience response become part of the bit?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "A contestant keeps answering with impossible confidence while the host tries to preserve order; the joke lands because format respect drops while commitment rises.",
+    "crossReferences": [
+      "comedy_the_callback_loop",
+      "comedy_the_authority_collapse_formula",
+      "drama_the_overreaction_theorem"
+    ],
+    "posterVisual": "Featured cowboy-hat cameo, game-show podium, host irritation chart, oversized hat arrows.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
     "familyColor": "#E2A93B",
-    "boundaryNote": "Creative metaphor only; not a measurement of people.",
-    "misuseWarning": "Do not use as a cruelty or conflict-escalation manual.",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
     "intensity": "medium",
     "version": "0.3.0",
     "createdDate": "2026-05-31",
     "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
   },
   {
-    "id": "comedy_deadpan_delta",
+    "id": "comedy_the_deadpan_delta",
     "title": "The Deadpan Delta",
+    "canonicalTitle": "The Deadpan Delta",
+    "alternateTitles": [],
     "family": "comedy",
     "familyLabel": "Comedy",
     "formula": "D = A / E",
-    "formulaPlaintext": "Deadpan power equals absurdity divided by emotional reaction.",
-    "formulaSymbols": ["D", "A", "E"],
+    "formulaLatex": "D = A / E",
+    "formulaPlaintext": "D equals A divided by E",
+    "formulaSymbols": [
+      "D",
+      "A",
+      "E"
+    ],
     "variables": [
-      {"symbol":"D","meaning":"Deadpan power","role":"output"},
-      {"symbol":"A","meaning":"Absurdity","role":"amplifier"},
-      {"symbol":"E","meaning":"Emotional reaction","role":"buffer"}
+      {
+        "symbol": "D",
+        "meaning": "Deadpan Power",
+        "role": "output"
+      },
+      {
+        "symbol": "A",
+        "meaning": "Absurdity",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "E",
+        "meaning": "Emotional Reaction",
+        "role": "buffer"
+      }
     ],
     "tagline": "Say the wildest thing like you are reading a parking receipt.",
-    "derivation": "The formula rises when absurdity increases while visible emotional response stays low.",
-    "theoreticalEcho": "Incongruity, contrast, understatement, and straight-man performance.",
-    "culturalScope": "Drafted from sketch-comedy and deadpan performance traditions.",
-    "temporalNote": "Works best when the audience has time to notice the emotional mismatch.",
-    "reflectionPrompt": "What absurd thing becomes funnier when nobody on screen reacts like it is absurd?",
-    "useCases": ["comedy writing", "dialogue timing"],
-    "exampleApplication": "A character reports a disaster with the tone of someone checking a grocery list.",
-    "crossReferences": ["comedy_giant_hat_disruption", "drama_suspicious_silence_delta"],
-    "posterVisual": "Neutral face beside a wild statement.",
-    "visualMotif": "Flat expression, big absurd object, tiny reaction meter.",
+    "derivation": "The ratio form frames the numerator as the pressure source and the denominator as the reality-check or emotional display that regulates it.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [
+      "drama_the_suspicious_silence_delta",
+      "comedy_the_social_contract_violation_index",
+      "drama_the_social_contract_violation_index"
+    ],
+    "posterVisual": "Neutral face icon beside absurd object.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
     "familyColor": "#E2A93B",
-    "boundaryNote": "Craft metaphor only.",
-    "misuseWarning": "Do not confuse emotional restraint with emotional health.",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
     "intensity": "medium",
     "version": "0.3.0",
     "createdDate": "2026-05-31",
     "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
   },
   {
-    "id": "drama_overreaction_theorem",
+    "id": "comedy_the_escalation_spiral",
+    "title": "The Escalation Spiral",
+    "canonicalTitle": "The Escalation Spiral",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "C = J x 3^R",
+    "formulaLatex": "C = J \\times 3^{R}",
+    "formulaPlaintext": "C equals J times 3 to the power of R",
+    "formulaSymbols": [
+      "C",
+      "J",
+      "R"
+    ],
+    "variables": [
+      {
+        "symbol": "C",
+        "meaning": "Comedy Intensity",
+        "role": "output"
+      },
+      {
+        "symbol": "J",
+        "meaning": "Joke Seed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "R",
+        "meaning": "Repetition Rounds",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Round 3: society collapses around the bit.",
+    "derivation": "The exponential term represents a symbolic threshold effect: each retelling or repetition does not merely add force, it changes the social weather of the scene.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [
+      "comedy_the_rule_of_three_detonation",
+      "drama_the_rule_of_three_retellings"
+    ],
+    "posterVisual": "Spiral arrow growing into an explosion.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_confidence_to_wrongness_ratio",
+    "title": "The Confidence-to-Wrongness Ratio",
+    "canonicalTitle": "The Confidence-to-Wrongness Ratio",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "F = K / A",
+    "formulaLatex": "F = K / A",
+    "formulaPlaintext": "F equals K divided by A",
+    "formulaSymbols": [
+      "F",
+      "K",
+      "A"
+    ],
+    "variables": [
+      {
+        "symbol": "F",
+        "meaning": "Funny Output",
+        "role": "output"
+      },
+      {
+        "symbol": "K",
+        "meaning": "Confidence",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "A",
+        "meaning": "Accuracy",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Fake expert energy.",
+    "derivation": "The ratio form frames the numerator as the pressure source and the denominator as the reality-check or emotional display that regulates it.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Crown, target, and a tiny fact-check microscope.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_awkward_silence_singularity",
+    "title": "The Awkward Silence Singularity",
+    "canonicalTitle": "The Awkward Silence Singularity",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "S = T^2 x E",
+    "formulaLatex": "S = T^{2} \\times E",
+    "formulaPlaintext": "S equals T squared times E",
+    "formulaSymbols": [
+      "S",
+      "T",
+      "E"
+    ],
+    "variables": [
+      {
+        "symbol": "S",
+        "meaning": "Silence Pressure",
+        "role": "output"
+      },
+      {
+        "symbol": "T",
+        "meaning": "Time",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "E",
+        "meaning": "Eye Contact",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "At 7 seconds it opens a wormhole.",
+    "derivation": "The squared term marks runaway attention: time, read receipts, or eye contact intensify faster than linear explanation can absorb.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Hourglass, unblinking eyes, tiny portal.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_authority_collapse_formula",
+    "title": "The Authority Collapse Formula",
+    "canonicalTitle": "The Authority Collapse Formula",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "Ac = R - N",
+    "formulaLatex": "Ac = R - N",
+    "formulaPlaintext": "Ac equals R minus N",
+    "formulaSymbols": [
+      "Ac",
+      "R",
+      "N"
+    ],
+    "variables": [
+      {
+        "symbol": "Ac",
+        "meaning": "Authority Collapse",
+        "role": "output"
+      },
+      {
+        "symbol": "R",
+        "meaning": "Rules",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "N",
+        "meaning": "Nonsense",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Serious system meets giant hat.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Badge versus jester hat.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_rule_of_three_detonation",
+    "title": "The Rule of Three Detonation",
+    "canonicalTitle": "The Rule of Three Detonation",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "P = 2L + X",
+    "formulaLatex": "P = 2L + X",
+    "formulaPlaintext": "P equals 2L plus X",
+    "formulaSymbols": [
+      "P",
+      "L",
+      "X"
+    ],
+    "variables": [
+      {
+        "symbol": "P",
+        "meaning": "Punchline",
+        "role": "output"
+      },
+      {
+        "symbol": "L",
+        "meaning": "Logical Setup Item",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "X",
+        "meaning": "Surprise Third Item",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "The third item kicks the train into a lake.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Two neat blocks plus one chaotic burst.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_callback_loop",
+    "title": "The Callback Loop",
+    "canonicalTitle": "The Callback Loop",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "L = J1 + T + R",
+    "formulaLatex": "L = J1 + T + R",
+    "formulaPlaintext": "L equals J1 plus T plus R",
+    "formulaSymbols": [
+      "L",
+      "J1",
+      "T",
+      "R"
+    ],
+    "variables": [
+      {
+        "symbol": "L",
+        "meaning": "Laugh Resonance",
+        "role": "output"
+      },
+      {
+        "symbol": "J1",
+        "meaning": "Original Joke",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "T",
+        "meaning": "Time Passed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "R",
+        "meaning": "Return in New Context",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "A comedy ghost in a different hat.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [
+      "drama_the_grudge_callback_loop",
+      "comedy_the_escalation_spiral",
+      "drama_the_escalation_spiral"
+    ],
+    "posterVisual": "Ghost joke, clock, new top hat.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_specificity_amplifier",
+    "title": "The Specificity Amplifier",
+    "canonicalTitle": "The Specificity Amplifier",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "F = G x Sp",
+    "formulaLatex": "F = G \\times Sp",
+    "formulaPlaintext": "F equals G times Sp",
+    "formulaSymbols": [
+      "F",
+      "G",
+      "Sp"
+    ],
+    "variables": [
+      {
+        "symbol": "F",
+        "meaning": "Funny",
+        "role": "output"
+      },
+      {
+        "symbol": "G",
+        "meaning": "General Idea",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Sp",
+        "meaning": "Specificity",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Reality with one screw loose.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Magnifying glass over an oddly specific receipt.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_false_importance_theorem",
+    "title": "The False Importance Theorem",
+    "canonicalTitle": "The False Importance Theorem",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "If = M x D",
+    "formulaLatex": "If = M \\times D",
+    "formulaPlaintext": "If equals M times D",
+    "formulaSymbols": [
+      "If",
+      "M",
+      "D"
+    ],
+    "variables": [
+      {
+        "symbol": "If",
+        "meaning": "False Importance",
+        "role": "output"
+      },
+      {
+        "symbol": "M",
+        "meaning": "Mundane Object",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "D",
+        "meaning": "Dramatic Seriousness",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "A sandwich becomes a constitutional crisis.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Sandwich on a presidential podium.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_inappropriate_commitment_law",
+    "title": "The Inappropriate Commitment Law",
+    "canonicalTitle": "The Inappropriate Commitment Law",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "Cf = B x P",
+    "formulaLatex": "Cf = B \\times P",
+    "formulaPlaintext": "Cf equals B times P",
+    "formulaSymbols": [
+      "Cf",
+      "B",
+      "P"
+    ],
+    "variables": [
+      {
+        "symbol": "Cf",
+        "meaning": "Comic Force",
+        "role": "output"
+      },
+      {
+        "symbol": "B",
+        "meaning": "Bad Idea",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "P",
+        "meaning": "Persistence",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Never abandon the bit.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Bulldozer pushing a bad idea uphill.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_social_contract_violation_index",
+    "title": "The Social Contract Violation Index",
+    "canonicalTitle": "The Social Contract Violation Index",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "V = (B + S + I) / P",
+    "formulaLatex": "V = (B + S + I) / P",
+    "formulaPlaintext": "V equals  open parenthesis B plus S plus I close parenthesis  divided by P",
+    "formulaSymbols": [
+      "V",
+      "B",
+      "S",
+      "I",
+      "P"
+    ],
+    "variables": [
+      {
+        "symbol": "V",
+        "meaning": "Violation Humor",
+        "role": "output"
+      },
+      {
+        "symbol": "B",
+        "meaning": "Boundary",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "S",
+        "meaning": "Surprise",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "I",
+        "meaning": "Innocent Confidence",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "P",
+        "meaning": "Punishment Risk",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Wait... are we allowed to say that?",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Halo face, warning sign, invisible rule line.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "comedy_the_professor_phi_comedy_constant",
+    "title": "The Professor Phi Comedy Constant",
+    "canonicalTitle": "The Professor Phi Comedy Constant",
+    "alternateTitles": [],
+    "family": "comedy",
+    "familyLabel": "Comedy",
+    "formula": "Phi_haha = (Truth + Absurdity + Timing) / Cruelty",
+    "formulaLatex": "\\Phi_{haha} = (Truth + Absurdity + Timing) / Cruelty",
+    "formulaPlaintext": "Phi_haha equals  open parenthesis Truth plus Absurdity plus Timing close parenthesis  divided by Cruelty",
+    "formulaSymbols": [
+      "Phi_haha",
+      "Truth",
+      "Absurdity",
+      "Timing",
+      "Cruelty"
+    ],
+    "variables": [
+      {
+        "symbol": "Phi_haha",
+        "meaning": "The Professor Phi Comedy Constant output",
+        "role": "output"
+      },
+      {
+        "symbol": "Truth",
+        "meaning": "Truth",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Absurdity",
+        "meaning": "Absurdity",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Timing",
+        "meaning": "Timing",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Cruelty",
+        "meaning": "Cruelty",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Tell the truth sideways, with mercy in the engine.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "comedy timing, incongruity, callback structure, and rule-of-three craft. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What makes this funny: surprise, timing, specificity, confidence, or the refusal to respect the format?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "comedy/sketch craft"
+    ],
+    "exampleApplication": "Use this card to sharpen a sketch beat, NPC gag, or dialogue turn without making cruelty the engine.",
+    "crossReferences": [],
+    "posterVisual": "Heart, fake mustache, stopwatch, broken cruelty meter.",
+    "visualMotif": "marquee bulbs, fake lab stickers, timing clocks, giant hat chaos",
+    "familyColor": "#E2A93B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_overreaction_theorem",
     "title": "The Overreaction Theorem",
+    "canonicalTitle": "The Overreaction Theorem",
+    "alternateTitles": [],
     "family": "drama",
     "familyLabel": "Drama",
-    "formula": "DR = ((T × I²) + P) / (C + S)",
-    "formulaPlaintext": "Drama output equals trigger times insecurity squared plus public audience, divided by calm plus sleep.",
-    "formulaSymbols": ["DR", "T", "I", "P", "C", "S"],
+    "formula": "DR = ((T x I^2) + P) / (C + S)",
+    "formulaLatex": "DR = ((T \\times I^{2}) + P) / (C + S)",
+    "formulaPlaintext": "DR equals  open parenthesis open parenthesis T times I squared close parenthesis  plus P close parenthesis  divided by  open parenthesis C plus S close parenthesis ",
+    "formulaSymbols": [
+      "DR",
+      "T",
+      "I",
+      "P",
+      "C",
+      "S"
+    ],
     "variables": [
-      {"symbol":"DR","meaning":"Drama output","role":"output"},
-      {"symbol":"T","meaning":"Trigger size","role":"amplifier"},
-      {"symbol":"I","meaning":"Insecurity","role":"amplifier"},
-      {"symbol":"P","meaning":"Public audience","role":"amplifier"},
-      {"symbol":"C","meaning":"Calm","role":"buffer"},
-      {"symbol":"S","meaning":"Sleep","role":"buffer"}
+      {
+        "symbol": "DR",
+        "meaning": "Drama Output",
+        "role": "output"
+      },
+      {
+        "symbol": "T",
+        "meaning": "Trigger Size",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "I",
+        "meaning": "Insecurity",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "P",
+        "meaning": "Public Audience",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "C",
+        "meaning": "Calm",
+        "role": "buffer"
+      },
+      {
+        "symbol": "S",
+        "meaning": "Sleep",
+        "role": "buffer"
+      }
     ],
     "tagline": "Small problem + big feelings + witnesses = instant scene.",
-    "derivation": "Drama grows when a trigger is amplified by insecurity and audience pressure, then softened by calm and rest.",
-    "theoreticalEcho": "Appraisal, social amplification, and narrative escalation as craft analogies.",
-    "culturalScope": "Story-design and social-drama metaphor; not a clinical model.",
-    "temporalNote": "Usually changes after rest, repair, or private conversation.",
-    "reflectionPrompt": "What part of this scene is the actual trigger, and what part is audience amplification?",
-    "useCases": ["drama writing", "NPC conflict", "reflection prompt"],
-    "exampleApplication": "A missed call becomes a betrayal because the character is tired and people are watching.",
-    "crossReferences": ["comedy_giant_hat_disruption", "drama_suspicious_silence_delta"],
-    "posterVisual": "Theatrical hand-to-forehead figure and red alert arrows.",
-    "visualMotif": "Stage curtains, warning lights, rising tension graph.",
-    "familyColor": "#D85A3A",
-    "boundaryNote": "Creative metaphor only; not a diagnosis.",
-    "misuseWarning": "Do not use to shame strong emotions or dismiss real harm.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Theatrical hand-to-forehead portrait.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
     "intensity": "high",
     "version": "0.3.0",
     "createdDate": "2026-05-31",
     "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
   },
   {
-    "id": "drama_suspicious_silence_delta",
+    "id": "drama_the_suspicious_silence_delta",
     "title": "The Suspicious Silence Delta",
+    "canonicalTitle": "The Suspicious Silence Delta",
+    "alternateTitles": [],
     "family": "drama",
     "familyLabel": "Drama",
     "formula": "D = A / E",
-    "formulaPlaintext": "Drama delta equals assumptions divided by evidence.",
-    "formulaSymbols": ["D", "A", "E"],
+    "formulaLatex": "D = A / E",
+    "formulaPlaintext": "D equals A divided by E",
+    "formulaSymbols": [
+      "D",
+      "A",
+      "E"
+    ],
     "variables": [
-      {"symbol":"D","meaning":"Drama delta","role":"output"},
-      {"symbol":"A","meaning":"Assumptions","role":"amplifier"},
-      {"symbol":"E","meaning":"Evidence","role":"buffer"}
+      {
+        "symbol": "D",
+        "meaning": "The Suspicious Silence Delta output",
+        "role": "output"
+      },
+      {
+        "symbol": "A",
+        "meaning": "Assumptions",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "E",
+        "meaning": "Evidence",
+        "role": "buffer"
+      }
     ],
     "tagline": "They did not text back, so obviously it is war.",
-    "derivation": "The story gets louder when assumption increases while evidence remains small.",
-    "theoreticalEcho": "Appraisal, uncertainty, and narrative gap-filling as creative analogies.",
-    "culturalScope": "Digital communication drama; culturally situated.",
-    "temporalNote": "Often resolves when direct communication arrives.",
-    "reflectionPrompt": "What do we actually know, and what did the imagination add?",
-    "useCases": ["drama writing", "group-chat comedy", "reflection prompt"],
-    "exampleApplication": "A seen message becomes evidence in a trial nobody agreed to attend.",
-    "crossReferences": ["comedy_deadpan_delta", "fear_threat_forecast_loop"],
-    "posterVisual": "Phone bubbles, folder labeled evidence, suspicious eyes.",
-    "visualMotif": "Blue chat bubbles, red suspicion arrows.",
-    "familyColor": "#D85A3A",
-    "boundaryNote": "Creative metaphor only.",
-    "misuseWarning": "Do not use to mock anxiety or real relational harm.",
-    "intensity": "medium",
+    "derivation": "The ratio form frames the numerator as the pressure source and the denominator as the reality-check or emotional display that regulates it.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Thinking face versus tiny evidence folder.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
     "version": "0.3.0",
     "createdDate": "2026-05-31",
     "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
   },
   {
-    "id": "sadness_grief_echo",
-    "title": "The Grief Echo Equation",
+    "id": "drama_the_escalation_spiral",
+    "title": "The Escalation Spiral",
+    "canonicalTitle": "The Escalation Spiral",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "C = J x 3^R",
+    "formulaLatex": "C = J \\times 3^{R}",
+    "formulaPlaintext": "C equals J times 3 to the power of R",
+    "formulaSymbols": [
+      "C",
+      "J",
+      "R"
+    ],
+    "variables": [
+      {
+        "symbol": "C",
+        "meaning": "The Escalation Spiral output",
+        "role": "output"
+      },
+      {
+        "symbol": "J",
+        "meaning": "Comment Seed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "R",
+        "meaning": "Retelling Rounds",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Round 3: now it is personal.",
+    "derivation": "The exponential term represents a symbolic threshold effect: each retelling or repetition does not merely add force, it changes the social weather of the scene.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [
+      "comedy_the_rule_of_three_detonation",
+      "drama_the_rule_of_three_retellings"
+    ],
+    "posterVisual": "Gossip spiral into explosion.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_certainty_to_verification_ratio",
+    "title": "The Certainty-to-Verification Ratio",
+    "canonicalTitle": "The Certainty-to-Verification Ratio",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "F = K / V",
+    "formulaLatex": "F = K / V",
+    "formulaPlaintext": "F equals K divided by V",
+    "formulaSymbols": [
+      "F",
+      "K",
+      "V"
+    ],
+    "variables": [
+      {
+        "symbol": "F",
+        "meaning": "The Certainty-to-Verification Ratio output",
+        "role": "output"
+      },
+      {
+        "symbol": "K",
+        "meaning": "Certainty",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "V",
+        "meaning": "Verification",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Unverified, but passionate.",
+    "derivation": "The ratio form frames the numerator as the pressure source and the denominator as the reality-check or emotional display that regulates it.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Megaphone crown and tiny magnifier.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_awkward_group_chat_singularity",
+    "title": "The Awkward Group-Chat Singularity",
+    "canonicalTitle": "The Awkward Group-Chat Singularity",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "S = R^2 x T",
+    "formulaLatex": "S = R^{2} \\times T",
+    "formulaPlaintext": "S equals R squared times T",
+    "formulaSymbols": [
+      "S",
+      "R",
+      "T"
+    ],
+    "variables": [
+      {
+        "symbol": "S",
+        "meaning": "The Awkward Group-Chat Singularity output",
+        "role": "output"
+      },
+      {
+        "symbol": "R",
+        "meaning": "Read Receipts",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "T",
+        "meaning": "Tension",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Unread messages are bad. Seen messages are worse.",
+    "derivation": "The squared term marks runaway attention: time, read receipts, or eye contact intensify faster than linear explanation can absorb.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Blue check marks, speech bubbles, nervous eyes.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_authority_meltdown_formula",
+    "title": "The Authority Meltdown Formula",
+    "canonicalTitle": "The Authority Meltdown Formula",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "Am = R - E",
+    "formulaLatex": "Am = R - E",
+    "formulaPlaintext": "Am equals R minus E",
+    "formulaSymbols": [
+      "Am",
+      "R",
+      "E"
+    ],
+    "variables": [
+      {
+        "symbol": "Am",
+        "meaning": "The Authority Meltdown Formula output",
+        "role": "output"
+      },
+      {
+        "symbol": "R",
+        "meaning": "Rules",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "E",
+        "meaning": "Ego Compatibility",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Serious system meets fragile pride.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Rules badge versus ego mask.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_rule_of_three_retellings",
+    "title": "The Rule of Three Retellings",
+    "canonicalTitle": "The Rule of Three Retellings",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "P = 2L + X",
+    "formulaLatex": "P = 2L + X",
+    "formulaPlaintext": "P equals 2L plus X",
+    "formulaSymbols": [
+      "P",
+      "L",
+      "X"
+    ],
+    "variables": [
+      {
+        "symbol": "P",
+        "meaning": "The Rule of Three Retellings output",
+        "role": "output"
+      },
+      {
+        "symbol": "L",
+        "meaning": "Logical Facts",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "X",
+        "meaning": "The Extra Detail",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "The third detail flips the table.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Two calm fact cards and one explosive receipt.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_grudge_callback_loop",
+    "title": "The Grudge Callback Loop",
+    "canonicalTitle": "The Grudge Callback Loop",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "L = J1 + T + M",
+    "formulaLatex": "L = J1 + T + M",
+    "formulaPlaintext": "L equals J1 plus T plus M",
+    "formulaSymbols": [
+      "L",
+      "J1",
+      "T",
+      "M"
+    ],
+    "variables": [
+      {
+        "symbol": "L",
+        "meaning": "The Grudge Callback Loop output",
+        "role": "output"
+      },
+      {
+        "symbol": "J1",
+        "meaning": "Original Incident",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "T",
+        "meaning": "Time Passed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "M",
+        "meaning": "Memory",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "I am glad you brought that up.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Ghost file, clock, notebook.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_specificity_weaponizer",
+    "title": "The Specificity Weaponizer",
+    "canonicalTitle": "The Specificity Weaponizer",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "F = G x Sp",
+    "formulaLatex": "F = G \\times Sp",
+    "formulaPlaintext": "F equals G times Sp",
+    "formulaSymbols": [
+      "F",
+      "G",
+      "Sp"
+    ],
+    "variables": [
+      {
+        "symbol": "F",
+        "meaning": "The Specificity Weaponizer output",
+        "role": "output"
+      },
+      {
+        "symbol": "G",
+        "meaning": "General Complaint",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Sp",
+        "meaning": "Specific Receipts",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "On Tuesday at 4:17 you said...",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Receipt scroll with magnifying glass.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_false_importance_theorem",
+    "title": "The False Importance Theorem",
+    "canonicalTitle": "The False Importance Theorem",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "If = M x D",
+    "formulaLatex": "If = M \\times D",
+    "formulaPlaintext": "If equals M times D",
+    "formulaSymbols": [
+      "If",
+      "M",
+      "D"
+    ],
+    "variables": [
+      {
+        "symbol": "If",
+        "meaning": "The False Importance Theorem output",
+        "role": "output"
+      },
+      {
+        "symbol": "M",
+        "meaning": "Mundane Event",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "D",
+        "meaning": "Dramatic Seriousness",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "A missed call becomes a betrayal.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Coffee cup or sandwich under stage lights.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_inappropriate_commitment_law",
+    "title": "The Inappropriate Commitment Law",
+    "canonicalTitle": "The Inappropriate Commitment Law",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "Cf = B x P",
+    "formulaLatex": "Cf = B \\times P",
+    "formulaPlaintext": "Cf equals B times P",
+    "formulaSymbols": [
+      "Cf",
+      "B",
+      "P"
+    ],
+    "variables": [
+      {
+        "symbol": "Cf",
+        "meaning": "The Inappropriate Commitment Law output",
+        "role": "output"
+      },
+      {
+        "symbol": "B",
+        "meaning": "Bad Take",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "P",
+        "meaning": "Persistence",
+        "role": "amplifier"
+      }
+    ],
+    "tagline": "Never abandon the argument.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Steamroller with a hot take sign.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_social_contract_violation_index",
+    "title": "The Social Contract Violation Index",
+    "canonicalTitle": "The Social Contract Violation Index",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "V = (B + S + I) / P",
+    "formulaLatex": "V = (B + S + I) / P",
+    "formulaPlaintext": "V equals  open parenthesis B plus S plus I close parenthesis  divided by P",
+    "formulaSymbols": [
+      "V",
+      "B",
+      "S",
+      "I",
+      "P"
+    ],
+    "variables": [
+      {
+        "symbol": "V",
+        "meaning": "The Social Contract Violation Index output",
+        "role": "output"
+      },
+      {
+        "symbol": "B",
+        "meaning": "Boundary Crossed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "S",
+        "meaning": "Surprise",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "I",
+        "meaning": "Innocent Tone",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "P",
+        "meaning": "Plausible Deniability",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Wait... did they really say that?",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Bomb, halo, scales.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "drama_the_professor_phi_drama_constant",
+    "title": "The Professor Phi Drama Constant",
+    "canonicalTitle": "The Professor Phi Drama Constant",
+    "alternateTitles": [],
+    "family": "drama",
+    "familyLabel": "Drama",
+    "formula": "Phi_drama = (Misunderstanding + Ego + Timing) / (Communication + Sleep)",
+    "formulaLatex": "\\Phi_{drama} = (Misunderstanding + Ego + Timing) / (Communication + Sleep)",
+    "formulaPlaintext": "Phi_drama equals  open parenthesis Misunderstanding plus Ego plus Timing close parenthesis  divided by  open parenthesis Communication plus Sleep close parenthesis ",
+    "formulaSymbols": [
+      "Phi_drama",
+      "Misunderstanding",
+      "Ego",
+      "Timing",
+      "Communication",
+      "Sleep"
+    ],
+    "variables": [
+      {
+        "symbol": "Phi_drama",
+        "meaning": "The Professor Phi Drama Constant output",
+        "role": "output"
+      },
+      {
+        "symbol": "Misunderstanding",
+        "meaning": "Misunderstanding",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Ego",
+        "meaning": "Ego",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Timing",
+        "meaning": "Timing",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Communication",
+        "meaning": "Communication",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Sleep",
+        "meaning": "Sleep",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Tell the story sideways, with maximum tension in the engine.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "narrative conflict design, misunderstanding loops, and social escalation patterns. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is being assumed, witnessed, repeated, or left unsaid that turns tension into a scene?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "drama scene design"
+    ],
+    "exampleApplication": "Use this card to design a scene where tension rises from assumptions, timing, witnesses, or unresolved stakes.",
+    "crossReferences": [],
+    "posterVisual": "Crossed wires, crown, clock, speech bubble, pillow.",
+    "visualMotif": "theater masks, group chats, red string boards, escalating spirals",
+    "familyColor": "#D06A3B",
+    "boundaryNote": "Symbolic craft pattern only; not measurement.",
+    "misuseWarning": "Do not use this as a cruelty machine or conflict-escalation manual. The project is for craft, play, reflection, and humane storytelling.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "sadness_grief_sadness_reservoir",
+    "title": "Sadness Reservoir",
+    "canonicalTitle": "Sadness Reservoir",
+    "alternateTitles": [],
     "family": "sadness_grief",
-    "familyLabel": "Sadness & Grief",
-    "formula": "G = (L × M × A) / (T + W + R)",
-    "formulaPlaintext": "Grief echo equals loss times memory times attachment, divided by time plus witness plus ritual.",
-    "formulaSymbols": ["G", "L", "M", "A", "T", "W", "R"],
-    "variables": [
-      {"symbol":"G","meaning":"Grief echo","role":"output"},
-      {"symbol":"L","meaning":"Loss","role":"amplifier"},
-      {"symbol":"M","meaning":"Memory","role":"amplifier"},
-      {"symbol":"A","meaning":"Attachment","role":"amplifier"},
-      {"symbol":"T","meaning":"Time","role":"buffer"},
-      {"symbol":"W","meaning":"Witness","role":"buffer"},
-      {"symbol":"R","meaning":"Ritual","role":"stabilizer"}
+    "familyLabel": "Sadness / Grief",
+    "formula": "Sad = (Loss x Attachment + Exhaustion + Unspoken Need) / (Comfort + Expression + Time)",
+    "formulaLatex": "Sad = (Loss \\times Attachment + Exhaustion + Unspoken Need) / (Comfort + Expression + Time)",
+    "formulaPlaintext": "Sad equals  open parenthesis Loss times Attachment plus Exhaustion plus Unspoken Need close parenthesis  divided by  open parenthesis Comfort plus Expression plus Time close parenthesis ",
+    "formulaSymbols": [
+      "Sad",
+      "Loss",
+      "Attachment",
+      "Exhaustion",
+      "Unspoken Need",
+      "Comfort",
+      "Expression",
+      "Time"
     ],
-    "tagline": "Love leaves an echo; witness helps it become bearable.",
-    "derivation": "Loss and attachment deepen sadness, while time, witness, and ritual create holding structure.",
-    "theoreticalEcho": "Narrative grief, memory, ritual, and social support as nonclinical design references.",
-    "culturalScope": "Grief practices vary widely by culture and person.",
-    "temporalNote": "Grief is nonlinear; this is a symbolic snapshot, not a schedule.",
-    "reflectionPrompt": "What memory is asking to be witnessed rather than solved?",
-    "useCases": ["story arcs", "journaling prompts", "NPC loss arcs"],
-    "exampleApplication": "A character revisits a familiar place and the memory hits before the plot moves forward.",
-    "crossReferences": ["love_bridge_equation", "calm_grounding_loop"],
-    "posterVisual": "Echo rings, candle, memory object.",
-    "visualMotif": "Blue-violet gradients, soft rings, candlelight.",
-    "familyColor": "#6B7FD7",
-    "boundaryNote": "Reflection/craft metaphor only; not grief therapy.",
-    "misuseWarning": "Do not rush, grade, or pathologize grief with this card.",
-    "intensity": "high",
+    "variables": [
+      {
+        "symbol": "Sad",
+        "meaning": "Sadness Reservoir output",
+        "role": "output"
+      },
+      {
+        "symbol": "Loss",
+        "meaning": "Loss",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Attachment",
+        "meaning": "Attachment",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Exhaustion",
+        "meaning": "Exhaustion",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Unspoken Need",
+        "meaning": "Unspoken Need",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Comfort",
+        "meaning": "Comfort",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Expression",
+        "meaning": "Expression",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Time",
+        "meaning": "Time",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Sadness asks to be witnessed, not rushed.",
+    "derivation": "Loss and attachment are treated as linked amplifiers, while witness, ritual, expression, and time provide humane containers rather than quick fixes.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What needs witness, ritual, expression, or time rather than a forced solution?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Rain window, blue reservoir gauge, open notebook.",
+    "visualMotif": "rain windows, candles, soft echoes, memory waves",
+    "familyColor": "#5E82A8",
+    "boundaryNote": "Reflection tool only; not a diagnostic model.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "medium",
     "version": "0.3.0",
     "createdDate": "2026-05-31",
     "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
   },
   {
-    "id": "joy_wonder_lift",
-    "title": "The Joy Lift Equation",
+    "id": "joy_wonder_happiness_joy_spark",
+    "title": "Happiness / Joy Spark",
+    "canonicalTitle": "Happiness / Joy Spark",
+    "alternateTitles": [],
     "family": "joy_wonder",
-    "familyLabel": "Joy & Wonder",
-    "formula": "J = (P × G × S) + W",
-    "formulaPlaintext": "Joy equals presence times gratitude times safety, plus wonder.",
-    "formulaSymbols": ["J", "P", "G", "S", "W"],
-    "variables": [
-      {"symbol":"J","meaning":"Joy lift","role":"output"},
-      {"symbol":"P","meaning":"Presence","role":"amplifier"},
-      {"symbol":"G","meaning":"Gratitude","role":"amplifier"},
-      {"symbol":"S","meaning":"Safety","role":"stabilizer"},
-      {"symbol":"W","meaning":"Wonder","role":"amplifier"}
+    "familyLabel": "Joy / Wonder",
+    "formula": "Joy = ((Meaning + Play + Connection + Gratitude) x Presence) / (Comparison + Rush)",
+    "formulaLatex": "Joy = ((Meaning + Play + Connection + Gratitude) \\times Presence) / (Comparison + Rush)",
+    "formulaPlaintext": "Joy equals  open parenthesis open parenthesis Meaning plus Play plus Connection plus Gratitude close parenthesis times Presence close parenthesis  divided by  open parenthesis Comparison plus Rush close parenthesis ",
+    "formulaSymbols": [
+      "Joy",
+      "Meaning",
+      "Play",
+      "Connection",
+      "Gratitude",
+      "Presence",
+      "Comparison",
+      "Rush"
     ],
-    "tagline": "Joy rises when presence has room to notice the miracle.",
-    "derivation": "Presence, gratitude, and safety create a receptive base; wonder adds lift.",
-    "theoreticalEcho": "Awe, play, gratitude, and broaden-and-build style creative references.",
-    "culturalScope": "Joy expressions are culturally and personally specific.",
-    "temporalNote": "Often brief; repeated noticing can build a motif.",
-    "reflectionPrompt": "What tiny thing is already glowing that the scene almost missed?",
-    "useCases": ["game reward design", "cozy writing", "reflection prompts"],
-    "exampleApplication": "A shopkeeper offers a smile for free and the whole town feels warmer.",
-    "crossReferences": ["love_bridge_equation", "calm_grounding_loop"],
-    "posterVisual": "Sunburst, tiny miracle icons, warmth meter.",
-    "visualMotif": "Gold, sunrise, soft sparkles.",
+    "variables": [
+      {
+        "symbol": "Joy",
+        "meaning": "Happiness / Joy Spark output",
+        "role": "output"
+      },
+      {
+        "symbol": "Meaning",
+        "meaning": "Meaning",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Play",
+        "meaning": "Play",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Connection",
+        "meaning": "Connection",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Gratitude",
+        "meaning": "Gratitude",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Presence",
+        "meaning": "Presence",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Comparison",
+        "meaning": "Comparison",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Rush",
+        "meaning": "Rush",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Joy grows when attention returns to what is alive now.",
+    "derivation": "The joy/wonder family treats presence, meaning, play, beauty, or mystery as amplifiers and comparison, hurry, or ego grip as dampeners.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is alive, beautiful, playful, meaningful, or possible right now if hurry softens?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Sunburst, friends at a table, little play icon.",
+    "visualMotif": "sunbursts, golden spirals, open doors, tiny stars",
     "familyColor": "#F4C95D",
-    "boundaryNote": "Creative metaphor only; not a requirement to be happy.",
-    "misuseWarning": "Do not use joy language to erase pain or pressure positivity.",
-    "intensity": "medium",
-    "version": "0.3.0",
-    "createdDate": "2026-05-31",
-    "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
-  },
-  {
-    "id": "anger_boundary_engine",
-    "title": "The Anger Boundary Engine",
-    "family": "fire_boundary",
-    "familyLabel": "Anger & Boundary",
-    "formula": "A = (H × V × N) / (C + R)",
-    "formulaPlaintext": "Anger equals harm times violation times need, divided by clarity plus repair.",
-    "formulaSymbols": ["A", "H", "V", "N", "C", "R"],
-    "variables": [
-      {"symbol":"A","meaning":"Anger signal","role":"output"},
-      {"symbol":"H","meaning":"Harm","role":"amplifier"},
-      {"symbol":"V","meaning":"Violation","role":"amplifier"},
-      {"symbol":"N","meaning":"Need","role":"amplifier"},
-      {"symbol":"C","meaning":"Clarity","role":"buffer"},
-      {"symbol":"R","meaning":"Repair","role":"stabilizer"}
-    ],
-    "tagline": "Anger is often a boundary flare asking for clarity and repair.",
-    "derivation": "Harm, violation, and unmet need amplify anger; clarity and repair convert fire into signal.",
-    "theoreticalEcho": "Boundary-setting, appraisal, and conflict-repair as craft references.",
-    "culturalScope": "Anger expression is shaped by culture, safety, power, and history.",
-    "temporalNote": "Fire can flare fast and soften when the need is named.",
-    "reflectionPrompt": "What boundary or need is trying to be protected here?",
-    "useCases": ["conflict scenes", "NPC motives", "reflection prompts"],
-    "exampleApplication": "A character snaps, then realizes the anger is pointing to a broken agreement.",
-    "crossReferences": ["calm_grounding_loop", "love_bridge_equation"],
-    "posterVisual": "Boundary line, flame, repair bridge.",
-    "visualMotif": "Red-orange fire with clear blue repair lines.",
-    "familyColor": "#F26D3D",
-    "boundaryNote": "Creative metaphor only; not advice for unsafe conflict.",
-    "misuseWarning": "Do not use this card to justify harm, threats, or coercion.",
-    "intensity": "high",
-    "version": "0.3.0",
-    "createdDate": "2026-05-31",
-    "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
-  },
-  {
-    "id": "fear_threat_forecast_loop",
-    "title": "The Fear Forecast Loop",
-    "family": "fear_threat",
-    "familyLabel": "Fear & Threat",
-    "formula": "F = (T × U × I²) / (S + K + P)",
-    "formulaPlaintext": "Fear equals threat times uncertainty times imagination squared, divided by safety signals plus knowledge plus support.",
-    "formulaSymbols": ["F", "T", "U", "I", "S", "K", "P"],
-    "variables": [
-      {"symbol":"F","meaning":"Fear forecast","role":"output"},
-      {"symbol":"T","meaning":"Threat","role":"amplifier"},
-      {"symbol":"U","meaning":"Uncertainty","role":"amplifier"},
-      {"symbol":"I","meaning":"Imagination","role":"amplifier"},
-      {"symbol":"S","meaning":"Safety signals","role":"buffer"},
-      {"symbol":"K","meaning":"Knowledge","role":"buffer"},
-      {"symbol":"P","meaning":"Support","role":"stabilizer"}
-    ],
-    "tagline": "Fear grows in the unknown; support gives the forecast edges.",
-    "derivation": "Threat and uncertainty are amplified by imagination, while safety, knowledge, and support ground the forecast.",
-    "theoreticalEcho": "Threat appraisal and uncertainty as narrative/reflective design references.",
-    "culturalScope": "Fear is deeply context-dependent; this is not universal or clinical.",
-    "temporalNote": "Fear can shift quickly when information or support changes.",
-    "reflectionPrompt": "What is known, what is imagined, and what support would make the next step safer?",
-    "useCases": ["horror design", "survival scenes", "reflection prompts"],
-    "exampleApplication": "A dark hallway feels worse before the character learns what the sound actually is.",
-    "crossReferences": ["drama_suspicious_silence_delta", "calm_grounding_loop"],
-    "posterVisual": "Radar, shadow, safety lantern.",
-    "visualMotif": "Deep blue, fog, lantern-gold clarity.",
-    "familyColor": "#5562D6",
-    "boundaryNote": "Creative metaphor only; not clinical anxiety guidance.",
-    "misuseWarning": "Do not use fear formulas to manipulate or intensify distress.",
-    "intensity": "high",
-    "version": "0.3.0",
-    "createdDate": "2026-05-31",
-    "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
-  },
-  {
-    "id": "love_bridge_equation",
-    "title": "The Love Bridge Equation",
-    "family": "love_bridge",
-    "familyLabel": "Love & Compassion",
-    "formula": "L = (A × P × T) + R",
-    "formulaPlaintext": "Love bridge equals attention times presence times trust, plus repair.",
-    "formulaSymbols": ["L", "A", "P", "T", "R"],
-    "variables": [
-      {"symbol":"L","meaning":"Love bridge","role":"output"},
-      {"symbol":"A","meaning":"Attention","role":"amplifier"},
-      {"symbol":"P","meaning":"Presence","role":"amplifier"},
-      {"symbol":"T","meaning":"Trust","role":"stabilizer"},
-      {"symbol":"R","meaning":"Repair","role":"stabilizer"}
-    ],
-    "tagline": "Love becomes visible where attention, presence, trust, and repair meet.",
-    "derivation": "Attention and presence make care visible; trust and repair keep the bridge from collapsing.",
-    "theoreticalEcho": "Attachment, repair, compassion, and relational storytelling as creative references.",
-    "culturalScope": "Love has many cultural languages and relational forms.",
-    "temporalNote": "The bridge strengthens through repeated trustworthy action.",
-    "reflectionPrompt": "What repair would make care believable again?",
-    "useCases": ["relationship arcs", "NPC trust", "compassion practices"],
-    "exampleApplication": "A character stops trying to win and starts trying to understand.",
-    "crossReferences": ["anger_boundary_engine", "sadness_grief_echo", "joy_wonder_lift"],
-    "posterVisual": "Bridge, heart, repair tools, warm light.",
-    "visualMotif": "Rose-gold bridge lines and soft halos.",
-    "familyColor": "#E66AA6",
-    "boundaryNote": "Creative metaphor only; not relationship therapy.",
-    "misuseWarning": "Do not use love language to excuse control, coercion, or harm.",
-    "intensity": "medium",
-    "version": "0.3.0",
-    "createdDate": "2026-05-31",
-    "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
-  },
-  {
-    "id": "shame_exposure_collapse",
-    "title": "The Shame Exposure Collapse",
-    "family": "social_mirror",
-    "familyLabel": "Social Mirror",
-    "formula": "Sh = (E × J × I) / (W + C)",
-    "formulaPlaintext": "Shame equals exposure times judgment times identity threat, divided by witness plus compassion.",
-    "formulaSymbols": ["Sh", "E", "J", "I", "W", "C"],
-    "variables": [
-      {"symbol":"Sh","meaning":"Shame pressure","role":"output"},
-      {"symbol":"E","meaning":"Exposure","role":"amplifier"},
-      {"symbol":"J","meaning":"Judgment","role":"amplifier"},
-      {"symbol":"I","meaning":"Identity threat","role":"amplifier"},
-      {"symbol":"W","meaning":"Witness","role":"buffer"},
-      {"symbol":"C","meaning":"Compassion","role":"stabilizer"}
-    ],
-    "tagline": "Shame shrinks in the presence of safe witness.",
-    "derivation": "Exposure and judgment threaten identity, while compassionate witness provides containment.",
-    "theoreticalEcho": "Social emotion, belonging threat, and repair arcs as nonclinical design references.",
-    "culturalScope": "Shame and honor are culturally loaded; do not universalize.",
-    "temporalNote": "Can soften through trusted witness and repair over time.",
-    "reflectionPrompt": "What part of the character needs safe witness instead of public judgment?",
-    "useCases": ["character arcs", "villain repair", "journaling prompts"],
-    "exampleApplication": "A character hides after a mistake until one person stays kind and honest.",
-    "crossReferences": ["love_bridge_equation", "sadness_grief_echo"],
-    "posterVisual": "Mirror crack, spotlight, compassion blanket.",
-    "visualMotif": "Mirror silver, violet shadow, warm witness light.",
-    "familyColor": "#8E7CC3",
-    "boundaryNote": "Creative metaphor only; not mental-health advice.",
-    "misuseWarning": "Do not weaponize shame or expose private pain for entertainment.",
-    "intensity": "high",
-    "version": "0.3.0",
-    "createdDate": "2026-05-31",
-    "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
-  },
-  {
-    "id": "calm_grounding_loop",
-    "title": "The Calm Grounding Loop",
-    "family": "calm_learning",
-    "familyLabel": "Calm & Learning",
-    "formula": "C = (B + O + S) / (T + N)",
-    "formulaPlaintext": "Calm equals breath plus orientation plus safety, divided by threat plus noise.",
-    "formulaSymbols": ["C", "B", "O", "S", "T", "N"],
-    "variables": [
-      {"symbol":"C","meaning":"Calm state","role":"output"},
-      {"symbol":"B","meaning":"Breath","role":"stabilizer"},
-      {"symbol":"O","meaning":"Orientation","role":"stabilizer"},
-      {"symbol":"S","meaning":"Safety","role":"stabilizer"},
-      {"symbol":"T","meaning":"Threat","role":"amplifier"},
-      {"symbol":"N","meaning":"Noise","role":"amplifier"}
-    ],
-    "tagline": "Calm is not emptiness; it is enough safety to perceive.",
-    "derivation": "Grounding inputs stabilize attention while threat and noise reduce available calm.",
-    "theoreticalEcho": "Nervous-system literacy, learning readiness, and environmental design as broad references.",
-    "culturalScope": "Calm practices vary; this is not a prescription.",
-    "temporalNote": "Often works as a repeated loop, not a single switch.",
-    "reflectionPrompt": "What signal of safety would help this scene or person perceive more clearly?",
-    "useCases": ["learning design", "cozy game pacing", "reflection prompts"],
-    "exampleApplication": "The player enters a quiet room where sound and light give the body permission to slow down.",
-    "crossReferences": ["fear_threat_forecast_loop", "joy_wonder_lift", "anger_boundary_engine"],
-    "posterVisual": "Breath rings, compass, safety lantern.",
-    "visualMotif": "Teal, soft grids, clean breath circles.",
-    "familyColor": "#4DB6AC",
-    "boundaryNote": "Creative metaphor only; not medical or therapeutic instruction.",
-    "misuseWarning": "Do not use calm language to silence valid anger, grief, or fear.",
+    "boundaryNote": "Use gently; joy cannot be forced.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
     "intensity": "low",
     "version": "0.3.0",
     "createdDate": "2026-05-31",
     "status": "draft-v0.3",
-    "license": "CC BY 4.0 recommended for text/data."
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "fire_boundary_anger_boundary_engine",
+    "title": "Anger Boundary Engine",
+    "canonicalTitle": "Anger Boundary Engine",
+    "alternateTitles": [],
+    "family": "fire_boundary",
+    "familyLabel": "Fire / Boundary",
+    "formula": "Ang = ((Boundary Violation + Injustice) x Frustration) / (Agency + Repair + Breath)",
+    "formulaLatex": "Ang = ((Boundary Violation + Injustice) \\times Frustration) / (Agency + Repair + Breath)",
+    "formulaPlaintext": "Ang equals  open parenthesis open parenthesis Boundary Violation plus Injustice close parenthesis times Frustration close parenthesis  divided by  open parenthesis Agency plus Repair plus Breath close parenthesis ",
+    "formulaSymbols": [
+      "Ang",
+      "Boundary Violation",
+      "Injustice",
+      "Frustration",
+      "Agency",
+      "Repair",
+      "Breath"
+    ],
+    "variables": [
+      {
+        "symbol": "Ang",
+        "meaning": "Anger Boundary Engine output",
+        "role": "output"
+      },
+      {
+        "symbol": "Boundary Violation",
+        "meaning": "Boundary Violation",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Injustice",
+        "meaning": "Injustice",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Frustration",
+        "meaning": "Frustration",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Agency",
+        "meaning": "Agency",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Repair",
+        "meaning": "Repair",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Breath",
+        "meaning": "Breath",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Anger is a boundary alarm looking for clean action.",
+    "derivation": "Boundary-oriented formulas place violation and frustration in the numerator, then route the output toward agency, repair, and breath rather than harm.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What boundary, repair, or clean action is this feeling asking for without turning into harm?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "An NPC refuses a quest until the player repairs a broken promise, turning anger into a boundary and then into a better path.",
+    "crossReferences": [
+      "social_mirror_guilt_repair_vector",
+      "fire_boundary_resentment_pressure_ledger",
+      "love_bridge_compassion_bridge_equation"
+    ],
+    "posterVisual": "Red pressure gauge, broken fence, repair tools.",
+    "visualMotif": "pressure gauges, fences, repair tools, clean boundary lines",
+    "familyColor": "#C94C4C",
+    "boundaryNote": "Not a license to harm; route toward repair and safety.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "fear_threat_fear_signal_map",
+    "title": "Fear Signal Map",
+    "canonicalTitle": "Fear Signal Map",
+    "alternateTitles": [],
+    "family": "fear_threat",
+    "familyLabel": "Fear / Threat",
+    "formula": "Fear = (Threat x Uncertainty x Imagination^2) / (Safety Signals + Knowledge + Support)",
+    "formulaLatex": "Fear = (Threat \\times Uncertainty \\times Imagination^{2}) / (Safety Signals + Knowledge + Support)",
+    "formulaPlaintext": "Fear equals  open parenthesis Threat times Uncertainty times Imagination squared close parenthesis  divided by  open parenthesis Safety Signals plus Knowledge plus Support close parenthesis ",
+    "formulaSymbols": [
+      "Fear",
+      "Threat",
+      "Uncertainty",
+      "Imagination",
+      "Safety Signals",
+      "Knowledge",
+      "Support"
+    ],
+    "variables": [
+      {
+        "symbol": "Fear",
+        "meaning": "Fear Signal Map output",
+        "role": "output"
+      },
+      {
+        "symbol": "Threat",
+        "meaning": "Threat",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Uncertainty",
+        "meaning": "Uncertainty",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Imagination",
+        "meaning": "Imagination",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Safety Signals",
+        "meaning": "Safety Signals",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Knowledge",
+        "meaning": "Knowledge",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Support",
+        "meaning": "Support",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Fear gets louder when the map is blank.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What information, safety signal, grounding step, or support would make the map less blank?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Dark forest, lantern, map, trusted hand.",
+    "visualMotif": "lanterns, maps, shadows, safety beacons",
+    "familyColor": "#7C5AA6",
+    "boundaryNote": "If danger is immediate, seek real-world safety first.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "fear_threat_anxiety_forecast_loop",
+    "title": "Anxiety Forecast Loop",
+    "canonicalTitle": "Anxiety Forecast Loop",
+    "alternateTitles": [],
+    "family": "fear_threat",
+    "familyLabel": "Fear / Threat",
+    "formula": "Anx = (Uncertainty x Imagination^2 + Body Charge) / (Plan + Grounding + Reassurance)",
+    "formulaLatex": "Anx = (Uncertainty \\times Imagination^{2} + Body Charge) / (Plan + Grounding + Reassurance)",
+    "formulaPlaintext": "Anx equals  open parenthesis Uncertainty times Imagination squared plus Body Charge close parenthesis  divided by  open parenthesis Plan plus Grounding plus Reassurance close parenthesis ",
+    "formulaSymbols": [
+      "Anx",
+      "Uncertainty",
+      "Imagination",
+      "Body Charge",
+      "Plan",
+      "Grounding",
+      "Reassurance"
+    ],
+    "variables": [
+      {
+        "symbol": "Anx",
+        "meaning": "Anxiety Forecast Loop output",
+        "role": "output"
+      },
+      {
+        "symbol": "Uncertainty",
+        "meaning": "Uncertainty",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Imagination",
+        "meaning": "Imagination",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Body Charge",
+        "meaning": "Body Charge",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Plan",
+        "meaning": "Plan",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Grounding",
+        "meaning": "Grounding",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Reassurance",
+        "meaning": "Reassurance",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Anxiety is the mind trying to simulate every storm at once.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What information, safety signal, grounding step, or support would make the map less blank?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "A journal prompt turns vague dread into three named unknowns, one plan, and one grounding step.",
+    "crossReferences": [
+      "fear_threat_fear_signal_map",
+      "calm_learning_calm_nervous_system_equation",
+      "joy_wonder_hope_horizon_lift"
+    ],
+    "posterVisual": "Weather radar over a calendar.",
+    "visualMotif": "lanterns, maps, shadows, safety beacons",
+    "familyColor": "#7C5AA6",
+    "boundaryNote": "Not clinical guidance; use as a naming/reflection aid.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "love_bridge_love_continuity_field",
+    "title": "Love Continuity Field",
+    "canonicalTitle": "Love Continuity Field",
+    "alternateTitles": [],
+    "family": "love_bridge",
+    "familyLabel": "Love / Bridge",
+    "formula": "Love = (Attention + Care + Trust + Time) / (Control + Performance)",
+    "formulaLatex": "Love = (Attention + Care + Trust + Time) / (Control + Performance)",
+    "formulaPlaintext": "Love equals  open parenthesis Attention plus Care plus Trust plus Time close parenthesis  divided by  open parenthesis Control plus Performance close parenthesis ",
+    "formulaSymbols": [
+      "Love",
+      "Attention",
+      "Care",
+      "Trust",
+      "Time",
+      "Control",
+      "Performance"
+    ],
+    "variables": [
+      {
+        "symbol": "Love",
+        "meaning": "Love Continuity Field output",
+        "role": "output"
+      },
+      {
+        "symbol": "Attention",
+        "meaning": "Attention",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Care",
+        "meaning": "Care",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Trust",
+        "meaning": "Trust",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Time",
+        "meaning": "Time",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Control",
+        "meaning": "Control",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Performance",
+        "meaning": "Performance",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Love strengthens when presence is bigger than performance.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "Where can attention, care, trust, or compassion become more present without control?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [
+      "love_bridge_compassion_bridge_equation"
+    ],
+    "posterVisual": "Warm orbit lines around two hearts or hands.",
+    "visualMotif": "hands, bridges, orbit lines, warm lamps",
+    "familyColor": "#D9789C",
+    "boundaryNote": "Avoid using this to score people; it is a design metaphor.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "sadness_grief_grief_echo_equation",
+    "title": "Grief Echo Equation",
+    "canonicalTitle": "Grief Echo Equation",
+    "alternateTitles": [],
+    "family": "sadness_grief",
+    "familyLabel": "Sadness / Grief",
+    "formula": "Grief = (Love x Absence x Memory) / (Ritual + Witness + Time)",
+    "formulaLatex": "Grief = (Love \\times Absence \\times Memory) / (Ritual + Witness + Time)",
+    "formulaPlaintext": "Grief equals  open parenthesis Love times Absence times Memory close parenthesis  divided by  open parenthesis Ritual plus Witness plus Time close parenthesis ",
+    "formulaSymbols": [
+      "Grief",
+      "Love",
+      "Absence",
+      "Memory",
+      "Ritual",
+      "Witness",
+      "Time"
+    ],
+    "variables": [
+      {
+        "symbol": "Grief",
+        "meaning": "Grief Echo Equation output",
+        "role": "output"
+      },
+      {
+        "symbol": "Love",
+        "meaning": "Love",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Absence",
+        "meaning": "Absence",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Memory",
+        "meaning": "Memory",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Ritual",
+        "meaning": "Ritual",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Witness",
+        "meaning": "Witness",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Time",
+        "meaning": "Time",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Grief is love looking for a new shape.",
+    "derivation": "Loss and attachment are treated as linked amplifiers, while witness, ritual, expression, and time provide humane containers rather than quick fixes.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What needs witness, ritual, expression, or time rather than a forced solution?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "A character revisits an old song and realizes the ache is not failure; it is love asking for a new ritual.",
+    "crossReferences": [
+      "sadness_grief_sadness_reservoir",
+      "joy_wonder_hope_horizon_lift",
+      "love_bridge_compassion_bridge_equation"
+    ],
+    "posterVisual": "Candle, photo frame, wave echo.",
+    "visualMotif": "rain windows, candles, soft echoes, memory waves",
+    "familyColor": "#5E82A8",
+    "boundaryNote": "Grief has no deadline; respect personal pace.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "social_mirror_shame_exposure_collapse",
+    "title": "Shame Exposure Collapse",
+    "canonicalTitle": "Shame Exposure Collapse",
+    "alternateTitles": [],
+    "family": "social_mirror",
+    "familyLabel": "Social Mirror",
+    "formula": "Shame = (Exposure x Self-Judgment x Belonging Threat) / (Compassion + Repair + Truth)",
+    "formulaLatex": "Shame = (Exposure \\times Self-Judgment \\times Belonging Threat) / (Compassion + Repair + Truth)",
+    "formulaPlaintext": "Shame equals  open parenthesis Exposure times Self minus Judgment times Belonging Threat close parenthesis  divided by  open parenthesis Compassion plus Repair plus Truth close parenthesis ",
+    "formulaSymbols": [
+      "Shame",
+      "Exposure",
+      "Self-Judgment",
+      "Belonging Threat",
+      "Compassion",
+      "Repair",
+      "Truth"
+    ],
+    "variables": [
+      {
+        "symbol": "Shame",
+        "meaning": "Shame Exposure Collapse output",
+        "role": "output"
+      },
+      {
+        "symbol": "Exposure",
+        "meaning": "Exposure",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Self-Judgment",
+        "meaning": "Self-Judgment",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Belonging Threat",
+        "meaning": "Belonging Threat",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Compassion",
+        "meaning": "Compassion",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Repair",
+        "meaning": "Repair",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Truth",
+        "meaning": "Truth",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Shame shrinks under compassion and honest repair.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What belongs to repair, what belongs to truth, and what belongs to inherited social pressure?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [
+      "social_mirror_guilt_repair_vector",
+      "love_bridge_compassion_bridge_equation",
+      "social_mirror_embarrassment_spotlight_curve"
+    ],
+    "posterVisual": "Spotlight, cracked mask, blanket of stars.",
+    "visualMotif": "mirrors, masks, receipts, spotlight curves",
+    "familyColor": "#78A0B7",
+    "boundaryNote": "Use non-shaming language; never weaponize this formula.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "social_mirror_guilt_repair_vector",
+    "title": "Guilt Repair Vector",
+    "canonicalTitle": "Guilt Repair Vector",
+    "alternateTitles": [],
+    "family": "social_mirror",
+    "familyLabel": "Social Mirror",
+    "formula": "Guilt = (Harm Awareness x Responsibility) / (Repair + Forgiveness + Learning)",
+    "formulaLatex": "Guilt = (Harm Awareness \\times Responsibility) / (Repair + Forgiveness + Learning)",
+    "formulaPlaintext": "Guilt equals  open parenthesis Harm Awareness times Responsibility close parenthesis  divided by  open parenthesis Repair plus Forgiveness plus Learning close parenthesis ",
+    "formulaSymbols": [
+      "Guilt",
+      "Harm Awareness",
+      "Responsibility",
+      "Repair",
+      "Forgiveness",
+      "Learning"
+    ],
+    "variables": [
+      {
+        "symbol": "Guilt",
+        "meaning": "Guilt Repair Vector output",
+        "role": "output"
+      },
+      {
+        "symbol": "Harm Awareness",
+        "meaning": "Harm Awareness",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Responsibility",
+        "meaning": "Responsibility",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Repair",
+        "meaning": "Repair",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Forgiveness",
+        "meaning": "Forgiveness",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Learning",
+        "meaning": "Learning",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Healthy guilt points toward repair.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What belongs to repair, what belongs to truth, and what belongs to inherited social pressure?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Compass needle pointing to apology and action.",
+    "visualMotif": "mirrors, masks, receipts, spotlight curves",
+    "familyColor": "#78A0B7",
+    "boundaryNote": "Distinguish guilt from shame: behavior can change without self-erasure.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "social_mirror_jealousy_attachment_alarm",
+    "title": "Jealousy Attachment Alarm",
+    "canonicalTitle": "Jealousy Attachment Alarm",
+    "alternateTitles": [],
+    "family": "social_mirror",
+    "familyLabel": "Social Mirror",
+    "formula": "Jealousy = (Attachment Fear x Comparison x Unknowns) / (Trust + Conversation + Self-Worth)",
+    "formulaLatex": "Jealousy = (Attachment Fear \\times Comparison \\times Unknowns) / (Trust + Conversation + Self-Worth)",
+    "formulaPlaintext": "Jealousy equals  open parenthesis Attachment Fear times Comparison times Unknowns close parenthesis  divided by  open parenthesis Trust plus Conversation plus Self minus Worth close parenthesis ",
+    "formulaSymbols": [
+      "Jealousy",
+      "Attachment Fear",
+      "Comparison",
+      "Unknowns",
+      "Trust",
+      "Conversation",
+      "Self-Worth"
+    ],
+    "variables": [
+      {
+        "symbol": "Jealousy",
+        "meaning": "Jealousy Attachment Alarm output",
+        "role": "output"
+      },
+      {
+        "symbol": "Attachment Fear",
+        "meaning": "Attachment Fear",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Comparison",
+        "meaning": "Comparison",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Unknowns",
+        "meaning": "Unknowns",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Trust",
+        "meaning": "Trust",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Conversation",
+        "meaning": "Conversation",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Self-Worth",
+        "meaning": "Self-Worth",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Jealousy asks: what feels unsafe, unseen, or uncertain?",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What belongs to repair, what belongs to truth, and what belongs to inherited social pressure?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Green warning light near a locked heart.",
+    "visualMotif": "mirrors, masks, receipts, spotlight curves",
+    "familyColor": "#78A0B7",
+    "boundaryNote": "Do not use as accusation; use as inquiry.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "social_mirror_envy_directional_signal",
+    "title": "Envy Directional Signal",
+    "canonicalTitle": "Envy Directional Signal",
+    "alternateTitles": [],
+    "family": "social_mirror",
+    "familyLabel": "Social Mirror",
+    "formula": "Envy = (Desire x Comparison) / (Gratitude + Path Clarity + Action)",
+    "formulaLatex": "Envy = (Desire \\times Comparison) / (Gratitude + Path Clarity + Action)",
+    "formulaPlaintext": "Envy equals  open parenthesis Desire times Comparison close parenthesis  divided by  open parenthesis Gratitude plus Path Clarity plus Action close parenthesis ",
+    "formulaSymbols": [
+      "Envy",
+      "Desire",
+      "Comparison",
+      "Gratitude",
+      "Path Clarity",
+      "Action"
+    ],
+    "variables": [
+      {
+        "symbol": "Envy",
+        "meaning": "Envy Directional Signal output",
+        "role": "output"
+      },
+      {
+        "symbol": "Desire",
+        "meaning": "Desire",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Comparison",
+        "meaning": "Comparison",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Gratitude",
+        "meaning": "Gratitude",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Path Clarity",
+        "meaning": "Path Clarity",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Action",
+        "meaning": "Action",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Envy can reveal a hidden desire path.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What belongs to repair, what belongs to truth, and what belongs to inherited social pressure?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Road sign, mirror, distant glowing goal.",
+    "visualMotif": "mirrors, masks, receipts, spotlight curves",
+    "familyColor": "#78A0B7",
+    "boundaryNote": "Turn comparison into direction, not self-punishment.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "joy_wonder_hope_horizon_lift",
+    "title": "Hope Horizon Lift",
+    "canonicalTitle": "Hope Horizon Lift",
+    "alternateTitles": [],
+    "family": "joy_wonder",
+    "familyLabel": "Joy / Wonder",
+    "formula": "Hope = (Possibility x Agency x Support) / (Despair + Isolation)",
+    "formulaLatex": "Hope = (Possibility \\times Agency \\times Support) / (Despair + Isolation)",
+    "formulaPlaintext": "Hope equals  open parenthesis Possibility times Agency times Support close parenthesis  divided by  open parenthesis Despair plus Isolation close parenthesis ",
+    "formulaSymbols": [
+      "Hope",
+      "Possibility",
+      "Agency",
+      "Support",
+      "Despair",
+      "Isolation"
+    ],
+    "variables": [
+      {
+        "symbol": "Hope",
+        "meaning": "Hope Horizon Lift output",
+        "role": "output"
+      },
+      {
+        "symbol": "Possibility",
+        "meaning": "Possibility",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Agency",
+        "meaning": "Agency",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Support",
+        "meaning": "Support",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Despair",
+        "meaning": "Despair",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Isolation",
+        "meaning": "Isolation",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Hope is possibility with a handle.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is alive, beautiful, playful, meaningful, or possible right now if hurry softens?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Sunrise over a bridge.",
+    "visualMotif": "sunbursts, golden spirals, open doors, tiny stars",
+    "familyColor": "#F4C95D",
+    "boundaryNote": "Hope should stay honest; no forced positivity.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "joy_wonder_awe_vastness_gate",
+    "title": "Awe Vastness Gate",
+    "canonicalTitle": "Awe Vastness Gate",
+    "alternateTitles": [],
+    "family": "joy_wonder",
+    "familyLabel": "Joy / Wonder",
+    "formula": "Awe = (Vastness x Mystery) / (Ego Grip + Need to Explain)",
+    "formulaLatex": "Awe = (Vastness \\times Mystery) / (Ego Grip + Need to Explain)",
+    "formulaPlaintext": "Awe equals  open parenthesis Vastness times Mystery close parenthesis  divided by  open parenthesis Ego Grip plus Need to Explain close parenthesis ",
+    "formulaSymbols": [
+      "Awe",
+      "Vastness",
+      "Mystery",
+      "Ego Grip",
+      "Need to Explain"
+    ],
+    "variables": [
+      {
+        "symbol": "Awe",
+        "meaning": "Awe Vastness Gate output",
+        "role": "output"
+      },
+      {
+        "symbol": "Vastness",
+        "meaning": "Vastness",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Mystery",
+        "meaning": "Mystery",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Ego Grip",
+        "meaning": "Ego Grip",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Need to Explain",
+        "meaning": "Need to Explain",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Awe opens when the self stops trying to own the sky.",
+    "derivation": "The joy/wonder family treats presence, meaning, play, beauty, or mystery as amplifiers and comparison, hurry, or ego grip as dampeners.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is alive, beautiful, playful, meaningful, or possible right now if hurry softens?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Cosmic cathedral, tiny person, starfield.",
+    "visualMotif": "sunbursts, golden spirals, open doors, tiny stars",
+    "familyColor": "#F4C95D",
+    "boundaryNote": "Symbolic and experiential, not proof of metaphysics.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "calm_learning_calm_nervous_system_equation",
+    "title": "Calm Nervous-System Equation",
+    "canonicalTitle": "Calm Nervous-System Equation",
+    "alternateTitles": [],
+    "family": "calm_learning",
+    "familyLabel": "Calm / Learning",
+    "formula": "Calm = (Safety Signals + Breath + Simplicity) / (Threat Load + Noise)",
+    "formulaLatex": "Calm = (Safety Signals + Breath + Simplicity) / (Threat Load + Noise)",
+    "formulaPlaintext": "Calm equals  open parenthesis Safety Signals plus Breath plus Simplicity close parenthesis  divided by  open parenthesis Threat Load plus Noise close parenthesis ",
+    "formulaSymbols": [
+      "Calm",
+      "Safety Signals",
+      "Breath",
+      "Simplicity",
+      "Threat Load",
+      "Noise"
+    ],
+    "variables": [
+      {
+        "symbol": "Calm",
+        "meaning": "Calm Nervous-System Equation output",
+        "role": "output"
+      },
+      {
+        "symbol": "Safety Signals",
+        "meaning": "Safety Signals",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Breath",
+        "meaning": "Breath",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Simplicity",
+        "meaning": "Simplicity",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Threat Load",
+        "meaning": "Threat Load",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Noise",
+        "meaning": "Noise",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Calm is not emptiness; it is a safe signal becoming believable.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What small simplification, breath, question, or choice would return agency?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Soft wave, simple room, lowered volume knob.",
+    "visualMotif": "breath waves, keys, simple rooms, open notebooks",
+    "familyColor": "#80B7A2",
+    "boundaryNote": "Not a substitute for trauma care or emergency support.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "social_mirror_embarrassment_spotlight_curve",
+    "title": "Embarrassment Spotlight Curve",
+    "canonicalTitle": "Embarrassment Spotlight Curve",
+    "alternateTitles": [],
+    "family": "social_mirror",
+    "familyLabel": "Social Mirror",
+    "formula": "Emb = (Public Mistake x Self-Focus) / (Humor + Kind Witness + Time)",
+    "formulaLatex": "Emb = (Public Mistake \\times Self-Focus) / (Humor + Kind Witness + Time)",
+    "formulaPlaintext": "Emb equals  open parenthesis Public Mistake times Self minus Focus close parenthesis  divided by  open parenthesis Humor plus Kind Witness plus Time close parenthesis ",
+    "formulaSymbols": [
+      "Emb",
+      "Public Mistake",
+      "Self-Focus",
+      "Humor",
+      "Kind Witness",
+      "Time"
+    ],
+    "variables": [
+      {
+        "symbol": "Emb",
+        "meaning": "Embarrassment Spotlight Curve output",
+        "role": "output"
+      },
+      {
+        "symbol": "Public Mistake",
+        "meaning": "Public Mistake",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Self-Focus",
+        "meaning": "Self-Focus",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Humor",
+        "meaning": "Humor",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Kind Witness",
+        "meaning": "Kind Witness",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Time",
+        "meaning": "Time",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "The spotlight fades faster than the mind predicts.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What belongs to repair, what belongs to truth, and what belongs to inherited social pressure?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Stage spotlight shrinking over a banana peel.",
+    "visualMotif": "mirrors, masks, receipts, spotlight curves",
+    "familyColor": "#78A0B7",
+    "boundaryNote": "Kindness beats mockery.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "sadness_grief_nostalgia_time_glow_equation",
+    "title": "Nostalgia Time-Glow Equation",
+    "canonicalTitle": "Nostalgia Time-Glow Equation",
+    "alternateTitles": [],
+    "family": "sadness_grief",
+    "familyLabel": "Sadness / Grief",
+    "formula": "Nos = (Memory x Warmth x Distance) / (Unresolved Pain + Idealization)",
+    "formulaLatex": "Nos = (Memory \\times Warmth \\times Distance) / (Unresolved Pain + Idealization)",
+    "formulaPlaintext": "Nos equals  open parenthesis Memory times Warmth times Distance close parenthesis  divided by  open parenthesis Unresolved Pain plus Idealization close parenthesis ",
+    "formulaSymbols": [
+      "Nos",
+      "Memory",
+      "Warmth",
+      "Distance",
+      "Unresolved Pain",
+      "Idealization"
+    ],
+    "variables": [
+      {
+        "symbol": "Nos",
+        "meaning": "Nostalgia Time-Glow Equation output",
+        "role": "output"
+      },
+      {
+        "symbol": "Memory",
+        "meaning": "Memory",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Warmth",
+        "meaning": "Warmth",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Distance",
+        "meaning": "Distance",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Unresolved Pain",
+        "meaning": "Unresolved Pain",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Idealization",
+        "meaning": "Idealization",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Nostalgia is a warm lamp pointed at yesterday.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What needs witness, ritual, expression, or time rather than a forced solution?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Old game cartridge, family photo, glowing dust.",
+    "visualMotif": "rain windows, candles, soft echoes, memory waves",
+    "familyColor": "#5E82A8",
+    "boundaryNote": "Honor memory without pretending the past was perfect.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "medium",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "calm_learning_curiosity_doorway_formula",
+    "title": "Curiosity Doorway Formula",
+    "canonicalTitle": "Curiosity Doorway Formula",
+    "alternateTitles": [],
+    "family": "calm_learning",
+    "familyLabel": "Calm / Learning",
+    "formula": "Cur = (Mystery x Safety x Permission) / (Fear of Being Wrong)",
+    "formulaLatex": "Cur = (Mystery \\times Safety \\times Permission) / (Fear of Being Wrong)",
+    "formulaPlaintext": "Cur equals  open parenthesis Mystery times Safety times Permission close parenthesis  divided by  open parenthesis Fear of Being Wrong close parenthesis ",
+    "formulaSymbols": [
+      "Cur",
+      "Mystery",
+      "Safety",
+      "Permission",
+      "Fear of Being Wrong"
+    ],
+    "variables": [
+      {
+        "symbol": "Cur",
+        "meaning": "Curiosity Doorway Formula output",
+        "role": "output"
+      },
+      {
+        "symbol": "Mystery",
+        "meaning": "Mystery",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Safety",
+        "meaning": "Safety",
+        "role": "stabilizer"
+      },
+      {
+        "symbol": "Permission",
+        "meaning": "Permission",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Fear of Being Wrong",
+        "meaning": "Fear of Being Wrong",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Curiosity opens when wrong answers are allowed to be beginnings.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What small simplification, breath, question, or choice would return agency?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Door with question mark and lantern.",
+    "visualMotif": "breath waves, keys, simple rooms, open notebooks",
+    "familyColor": "#80B7A2",
+    "boundaryNote": "Build learning systems around permission, not shame.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "love_bridge_compassion_bridge_equation",
+    "title": "Compassion Bridge Equation",
+    "canonicalTitle": "Compassion Bridge Equation",
+    "alternateTitles": [],
+    "family": "love_bridge",
+    "familyLabel": "Love / Bridge",
+    "formula": "Comp = (Suffering Noticed x Shared Humanity) / (Blame + Distance)",
+    "formulaLatex": "Comp = (Suffering Noticed \\times Shared Humanity) / (Blame + Distance)",
+    "formulaPlaintext": "Comp equals  open parenthesis Suffering Noticed times Shared Humanity close parenthesis  divided by  open parenthesis Blame plus Distance close parenthesis ",
+    "formulaSymbols": [
+      "Comp",
+      "Suffering Noticed",
+      "Shared Humanity",
+      "Blame",
+      "Distance"
+    ],
+    "variables": [
+      {
+        "symbol": "Comp",
+        "meaning": "Compassion Bridge Equation output",
+        "role": "output"
+      },
+      {
+        "symbol": "Suffering Noticed",
+        "meaning": "Suffering Noticed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Shared Humanity",
+        "meaning": "Shared Humanity",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Blame",
+        "meaning": "Blame",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Distance",
+        "meaning": "Distance",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Compassion crosses the gap without needing to win.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "Where can attention, care, trust, or compassion become more present without control?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Bridge between two islands, soft light.",
+    "visualMotif": "hands, bridges, orbit lines, warm lamps",
+    "familyColor": "#D9789C",
+    "boundaryNote": "Compassion includes boundaries; it is not enabling harm.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "fire_boundary_disgust_boundary_chemistry",
+    "title": "Disgust Boundary Chemistry",
+    "canonicalTitle": "Disgust Boundary Chemistry",
+    "alternateTitles": [],
+    "family": "fire_boundary",
+    "familyLabel": "Fire / Boundary",
+    "formula": "Disg = (Violation Signal x Sensory Charge) / (Context + Safety + Choice)",
+    "formulaLatex": "Disg = (Violation Signal \\times Sensory Charge) / (Context + Safety + Choice)",
+    "formulaPlaintext": "Disg equals  open parenthesis Violation Signal times Sensory Charge close parenthesis  divided by  open parenthesis Context plus Safety plus Choice close parenthesis ",
+    "formulaSymbols": [
+      "Disg",
+      "Violation Signal",
+      "Sensory Charge",
+      "Context",
+      "Safety",
+      "Choice"
+    ],
+    "variables": [
+      {
+        "symbol": "Disg",
+        "meaning": "Disgust Boundary Chemistry output",
+        "role": "output"
+      },
+      {
+        "symbol": "Violation Signal",
+        "meaning": "Violation Signal",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Sensory Charge",
+        "meaning": "Sensory Charge",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Context",
+        "meaning": "Context",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Safety",
+        "meaning": "Safety",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Choice",
+        "meaning": "Choice",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Disgust protects the threshold between yes and no.",
+    "derivation": "Boundary-oriented formulas place violation and frustration in the numerator, then route the output toward agency, repair, and breath rather than harm.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What boundary, repair, or clean action is this feeling asking for without turning into harm?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Warning label, sour face, boundary line.",
+    "visualMotif": "pressure gauges, fences, repair tools, clean boundary lines",
+    "familyColor": "#C94C4C",
+    "boundaryNote": "Use carefully; disgust is easily weaponized socially.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "social_mirror_surprise_expectation_gap",
+    "title": "Surprise Expectation Gap",
+    "canonicalTitle": "Surprise Expectation Gap",
+    "alternateTitles": [],
+    "family": "social_mirror",
+    "familyLabel": "Social Mirror",
+    "formula": "Sur = (Expectation Gap x Novelty) / Preparation",
+    "formulaLatex": "Sur = (Expectation Gap \\times Novelty) / Preparation",
+    "formulaPlaintext": "Sur equals  open parenthesis Expectation Gap times Novelty close parenthesis  divided by Preparation",
+    "formulaSymbols": [
+      "Sur",
+      "Expectation Gap",
+      "Novelty",
+      "Preparation"
+    ],
+    "variables": [
+      {
+        "symbol": "Sur",
+        "meaning": "Surprise Expectation Gap output",
+        "role": "output"
+      },
+      {
+        "symbol": "Expectation Gap",
+        "meaning": "Expectation Gap",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Novelty",
+        "meaning": "Novelty",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Preparation",
+        "meaning": "Preparation",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Surprise is the moment the script slips.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What belongs to repair, what belongs to truth, and what belongs to inherited social pressure?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Jack-in-the-box, lightning bolt, popped balloon.",
+    "visualMotif": "mirrors, masks, receipts, spotlight curves",
+    "familyColor": "#78A0B7",
+    "boundaryNote": "Can become joy or fear depending on safety.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "calm_learning_boredom_agency_drain",
+    "title": "Boredom Agency Drain",
+    "canonicalTitle": "Boredom Agency Drain",
+    "alternateTitles": [],
+    "family": "calm_learning",
+    "familyLabel": "Calm / Learning",
+    "formula": "Bor = (Understimulation x No Agency) / (Curiosity + Challenge + Choice)",
+    "formulaLatex": "Bor = (Understimulation \\times No Agency) / (Curiosity + Challenge + Choice)",
+    "formulaPlaintext": "Bor equals  open parenthesis Understimulation times No Agency close parenthesis  divided by  open parenthesis Curiosity plus Challenge plus Choice close parenthesis ",
+    "formulaSymbols": [
+      "Bor",
+      "Understimulation",
+      "No Agency",
+      "Curiosity",
+      "Challenge",
+      "Choice"
+    ],
+    "variables": [
+      {
+        "symbol": "Bor",
+        "meaning": "Boredom Agency Drain output",
+        "role": "output"
+      },
+      {
+        "symbol": "Understimulation",
+        "meaning": "Understimulation",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "No Agency",
+        "meaning": "No Agency",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Curiosity",
+        "meaning": "Curiosity",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Challenge",
+        "meaning": "Challenge",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Choice",
+        "meaning": "Choice",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Boredom is often curiosity without a doorway.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What small simplification, breath, question, or choice would return agency?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Empty room with one glowing key.",
+    "visualMotif": "breath waves, keys, simple rooms, open notebooks",
+    "familyColor": "#80B7A2",
+    "boundaryNote": "Design with choice before blaming motivation.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "calm_learning_confidence_evidence_stack",
+    "title": "Confidence Evidence Stack",
+    "canonicalTitle": "Confidence Evidence Stack",
+    "alternateTitles": [],
+    "family": "calm_learning",
+    "familyLabel": "Calm / Learning",
+    "formula": "Conf = (Skill x Evidence x Self-Trust) / (Impostor Noise + Comparison)",
+    "formulaLatex": "Conf = (Skill \\times Evidence \\times Self-Trust) / (Impostor Noise + Comparison)",
+    "formulaPlaintext": "Conf equals  open parenthesis Skill times Evidence times Self minus Trust close parenthesis  divided by  open parenthesis Impostor Noise plus Comparison close parenthesis ",
+    "formulaSymbols": [
+      "Conf",
+      "Skill",
+      "Evidence",
+      "Self-Trust",
+      "Impostor Noise",
+      "Comparison"
+    ],
+    "variables": [
+      {
+        "symbol": "Conf",
+        "meaning": "Confidence Evidence Stack output",
+        "role": "output"
+      },
+      {
+        "symbol": "Skill",
+        "meaning": "Skill",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Evidence",
+        "meaning": "Evidence",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Self-Trust",
+        "meaning": "Self-Trust",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Impostor Noise",
+        "meaning": "Impostor Noise",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Comparison",
+        "meaning": "Comparison",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Confidence gets stronger when it can point to proof.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What small simplification, breath, question, or choice would return agency?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Stacked blocks, mirror, checklist.",
+    "visualMotif": "breath waves, keys, simple rooms, open notebooks",
+    "familyColor": "#80B7A2",
+    "boundaryNote": "Confidence is not arrogance; anchor it in evidence.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "joy_wonder_relief_exhale_drop",
+    "title": "Relief Exhale Drop",
+    "canonicalTitle": "Relief Exhale Drop",
+    "alternateTitles": [],
+    "family": "joy_wonder",
+    "familyLabel": "Joy / Wonder",
+    "formula": "Rel = (Threat Removed x Body Exhale) / Residual Worry",
+    "formulaLatex": "Rel = (Threat Removed \\times Body Exhale) / Residual Worry",
+    "formulaPlaintext": "Rel equals  open parenthesis Threat Removed times Body Exhale close parenthesis  divided by Residual Worry",
+    "formulaSymbols": [
+      "Rel",
+      "Threat Removed",
+      "Body Exhale",
+      "Residual Worry"
+    ],
+    "variables": [
+      {
+        "symbol": "Rel",
+        "meaning": "Relief Exhale Drop output",
+        "role": "output"
+      },
+      {
+        "symbol": "Threat Removed",
+        "meaning": "Threat Removed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Body Exhale",
+        "meaning": "Body Exhale",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Residual Worry",
+        "meaning": "Residual Worry",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Relief is the body realizing the alarm can power down.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is alive, beautiful, playful, meaningful, or possible right now if hurry softens?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Storm cloud clearing, chest exhale icon.",
+    "visualMotif": "sunbursts, golden spirals, open doors, tiny stars",
+    "familyColor": "#F4C95D",
+    "boundaryNote": "Residual worry may lag behind reality.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "joy_wonder_gratitude_gift_lens",
+    "title": "Gratitude Gift Lens",
+    "canonicalTitle": "Gratitude Gift Lens",
+    "alternateTitles": [],
+    "family": "joy_wonder",
+    "familyLabel": "Joy / Wonder",
+    "formula": "Grat = (Gift Noticed x Meaning) / (Entitlement + Speed)",
+    "formulaLatex": "Grat = (Gift Noticed \\times Meaning) / (Entitlement + Speed)",
+    "formulaPlaintext": "Grat equals  open parenthesis Gift Noticed times Meaning close parenthesis  divided by  open parenthesis Entitlement plus Speed close parenthesis ",
+    "formulaSymbols": [
+      "Grat",
+      "Gift Noticed",
+      "Meaning",
+      "Entitlement",
+      "Speed"
+    ],
+    "variables": [
+      {
+        "symbol": "Grat",
+        "meaning": "Gratitude Gift Lens output",
+        "role": "output"
+      },
+      {
+        "symbol": "Gift Noticed",
+        "meaning": "Gift Noticed",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Meaning",
+        "meaning": "Meaning",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Entitlement",
+        "meaning": "Entitlement",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Speed",
+        "meaning": "Speed",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Gratitude appears when the gift is actually seen.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is alive, beautiful, playful, meaningful, or possible right now if hurry softens?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Hands holding a small sun.",
+    "visualMotif": "sunbursts, golden spirals, open doors, tiny stars",
+    "familyColor": "#F4C95D",
+    "boundaryNote": "Not forced politeness; real gratitude needs consent.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "fire_boundary_resentment_pressure_ledger",
+    "title": "Resentment Pressure Ledger",
+    "canonicalTitle": "Resentment Pressure Ledger",
+    "alternateTitles": [],
+    "family": "fire_boundary",
+    "familyLabel": "Fire / Boundary",
+    "formula": "Res = (Unrepaired Hurt x Repetition x Silence) / (Boundary + Honesty + Repair)",
+    "formulaLatex": "Res = (Unrepaired Hurt \\times Repetition \\times Silence) / (Boundary + Honesty + Repair)",
+    "formulaPlaintext": "Res equals  open parenthesis Unrepaired Hurt times Repetition times Silence close parenthesis  divided by  open parenthesis Boundary plus Honesty plus Repair close parenthesis ",
+    "formulaSymbols": [
+      "Res",
+      "Unrepaired Hurt",
+      "Repetition",
+      "Silence",
+      "Boundary",
+      "Honesty",
+      "Repair"
+    ],
+    "variables": [
+      {
+        "symbol": "Res",
+        "meaning": "Resentment Pressure Ledger output",
+        "role": "output"
+      },
+      {
+        "symbol": "Unrepaired Hurt",
+        "meaning": "Unrepaired Hurt",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Repetition",
+        "meaning": "Repetition",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Silence",
+        "meaning": "Silence",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Boundary",
+        "meaning": "Boundary",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Honesty",
+        "meaning": "Honesty",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Repair",
+        "meaning": "Repair",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Resentment is an unpaid emotional invoice.",
+    "derivation": "The equation is an intentionally symbolic design pattern: amplifying forces are placed above or before the operator, while stabilizing forces provide buffering, context, or repair.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What boundary, repair, or clean action is this feeling asking for without turning into harm?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [],
+    "posterVisual": "Ledger book, steam valve, boundary sign.",
+    "visualMotif": "pressure gauges, fences, repair tools, clean boundary lines",
+    "familyColor": "#C94C4C",
+    "boundaryNote": "Handle with honesty; do not let it become revenge math.",
+    "misuseWarning": "Do not use this formula to diagnose, shame, manipulate, or override lived experience. If immediate danger or clinical distress is present, seek appropriate real-world support.",
+    "intensity": "high",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
+  },
+  {
+    "id": "joy_wonder_wonder_golden_joy_spiral",
+    "title": "Wonder Golden Joy Spiral",
+    "canonicalTitle": "Wonder Golden Joy Spiral",
+    "alternateTitles": [],
+    "family": "joy_wonder",
+    "familyLabel": "Joy / Wonder",
+    "formula": "Won = (Curiosity x Beauty x Mystery) / (Cynicism + Hurry)",
+    "formulaLatex": "Won = (Curiosity \\times Beauty \\times Mystery) / (Cynicism + Hurry)",
+    "formulaPlaintext": "Won equals  open parenthesis Curiosity times Beauty times Mystery close parenthesis  divided by  open parenthesis Cynicism plus Hurry close parenthesis ",
+    "formulaSymbols": [
+      "Won",
+      "Curiosity",
+      "Beauty",
+      "Mystery",
+      "Cynicism",
+      "Hurry"
+    ],
+    "variables": [
+      {
+        "symbol": "Won",
+        "meaning": "Wonder Golden Joy Spiral output",
+        "role": "output"
+      },
+      {
+        "symbol": "Curiosity",
+        "meaning": "Curiosity",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Beauty",
+        "meaning": "Beauty",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Mystery",
+        "meaning": "Mystery",
+        "role": "amplifier"
+      },
+      {
+        "symbol": "Cynicism",
+        "meaning": "Cynicism",
+        "role": "buffer"
+      },
+      {
+        "symbol": "Hurry",
+        "meaning": "Hurry",
+        "role": "buffer"
+      }
+    ],
+    "tagline": "Wonder is golden joy finding a new doorway.",
+    "derivation": "The joy/wonder family treats presence, meaning, play, beauty, or mystery as amplifiers and comparison, hurry, or ego grip as dampeners.",
+    "theoreticalEcho": "appraisal-style emotion framing and affective design pattern language. This is an influence/analogy note, not a scientific validation claim.",
+    "culturalScope": "Drafted from a Western/English-language comedy, drama, game-design, and reflective-writing context; not universal and not clinical.",
+    "temporalNote": "A static symbolic snapshot of a dynamic process; future versions may add temporal and relational state models.",
+    "reflectionPrompt": "What is alive, beautiful, playful, meaningful, or possible right now if hurry softens?",
+    "useCases": [
+      "creative writing",
+      "NPC emotion design",
+      "story/dialogue design",
+      "reflective journaling prompt"
+    ],
+    "exampleApplication": "Use this card as a writing, design, or reflection prompt that names the pattern while preserving agency and care.",
+    "crossReferences": [
+      "joy_wonder_awe_vastness_gate",
+      "calm_learning_curiosity_doorway_formula",
+      "joy_wonder_happiness_joy_spark"
+    ],
+    "posterVisual": "Golden spiral, stars, open window.",
+    "visualMotif": "sunbursts, golden spirals, open doors, tiny stars",
+    "familyColor": "#F4C95D",
+    "boundaryNote": "Preserve wonder without overclaiming.",
+    "misuseWarning": "Use as a creative metaphor only; do not turn people into scores.",
+    "intensity": "low",
+    "version": "0.3.0",
+    "createdDate": "2026-05-31",
+    "status": "draft-v0.3",
+    "license": "CC BY 4.0 recommended for formula text/data; poster art may use separate terms."
   }
 ]

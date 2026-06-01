@@ -1,123 +1,315 @@
 {
   "meta": {
-    "title": "Cross-Reference Map",
-    "version": "0.3.0",
+    "title": "Full Dataset Cross-Reference Map",
+    "version": "0.5.0-candidate",
     "boundary": "This map shows symbolic design relationships, not psychological measurements, diagnosis, prediction, or human scoring."
   },
   "relationshipTypes": {
     "mirror": "Similar structure, different emotional payload.",
-    "buffer": "One formula softens, stabilizes, or repairs another.",
-    "amplifier": "One formula can increase the pressure of another.",
-    "repair_path": "One formula suggests a healthier or clearer next step.",
+    "buffer": "One formula softens, stabilizes, or contextualizes another.",
+    "amplifier": "One formula can increase the pressure or story force of another.",
+    "repair_path": "One formula suggests a clearer, kinder, or more accountable next step.",
     "contrast": "The formulas help define each other by difference.",
-    "sequence": "One formula often leads into the next.",
+    "sequence": "One formula often leads into the next in story, dialogue, or reflection.",
     "family_bridge": "The formulas connect two families.",
     "example_pair": "Strong pair for compare mode or teaching examples."
   },
   "edges": [
     {
-      "source": "comedy_deadpan_delta",
-      "target": "drama_suspicious_silence_delta",
-      "relationship": "mirror",
-      "label": "Same division structure, different emotional payload: absurdity over emotional reaction in comedy, assumptions over evidence in drama.",
-      "strength": "high",
-      "recommendedForCompare": true
-    },
-    {
-      "source": "comedy_giant_hat_disruption",
-      "target": "drama_overreaction_theorem",
-      "relationship": "mirror",
-      "label": "Both model format collapse: one through playful disruption, the other through public emotional escalation.",
-      "strength": "high",
-      "recommendedForCompare": true
-    },
-    {
-      "source": "fear_threat_forecast_loop",
-      "target": "calm_grounding_loop",
-      "relationship": "buffer",
-      "label": "Calm provides breath, orientation, and safety against threat forecasting and uncertainty spirals.",
-      "strength": "high",
-      "recommendedForCompare": true
-    },
-    {
-      "source": "anger_boundary_engine",
-      "target": "love_bridge_equation",
-      "relationship": "repair_path",
-      "label": "Anger names harm, violation, and need; love and repair can rebuild trust without erasing the boundary.",
-      "strength": "high",
-      "recommendedForCompare": true
-    },
-    {
-      "source": "sadness_grief_echo",
-      "target": "joy_wonder_lift",
-      "relationship": "family_bridge",
-      "label": "Memory, witness, safety, and presence can carry both ache and lift without forcing either feeling away.",
-      "strength": "medium",
-      "recommendedForCompare": true
-    },
-    {
-      "source": "shame_exposure_collapse",
-      "target": "love_bridge_equation",
-      "relationship": "repair_path",
-      "label": "Shame pressure can soften through compassion, witness, trust, and repair.",
-      "strength": "high",
-      "recommendedForCompare": true
-    },
-    {
-      "source": "calm_grounding_loop",
-      "target": "joy_wonder_lift",
-      "relationship": "buffer",
-      "label": "Calm can create enough safety and orientation for joy and wonder to become noticeable.",
-      "strength": "medium",
-      "recommendedForCompare": false
-    },
-    {
-      "source": "drama_suspicious_silence_delta",
-      "target": "fear_threat_forecast_loop",
+      "source": "comedy_the_turd_ferguson_equation",
+      "target": "comedy_the_callback_loop",
       "relationship": "sequence",
-      "label": "Assumptions over evidence can feed uncertainty, imagination, and threat forecasting.",
+      "label": "The Giant Hat Disruption Equation connects to The Callback Loop as a symbolic sequence for creative comparison.",
       "strength": "medium",
-      "recommendedForCompare": false
+      "recommendedForCompare": true
     },
     {
-      "source": "anger_boundary_engine",
-      "target": "calm_grounding_loop",
-      "relationship": "buffer",
-      "label": "Calm does not erase anger; it can help turn boundary fire into clearer action.",
+      "source": "comedy_the_turd_ferguson_equation",
+      "target": "comedy_the_authority_collapse_formula",
+      "relationship": "sequence",
+      "label": "The Giant Hat Disruption Equation connects to The Authority Collapse Formula as a symbolic sequence for creative comparison.",
       "strength": "medium",
-      "recommendedForCompare": false
+      "recommendedForCompare": true
     },
     {
-      "source": "sadness_grief_echo",
-      "target": "love_bridge_equation",
+      "source": "comedy_the_turd_ferguson_equation",
+      "target": "drama_the_overreaction_theorem",
+      "relationship": "mirror",
+      "label": "The Giant Hat Disruption Equation connects to The Overreaction Theorem as a symbolic mirror for creative comparison.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_deadpan_delta",
+      "target": "drama_the_suspicious_silence_delta",
+      "relationship": "mirror",
+      "label": "The Deadpan Delta connects to The Suspicious Silence Delta as a symbolic mirror for creative comparison.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_deadpan_delta",
+      "target": "comedy_the_social_contract_violation_index",
+      "relationship": "sequence",
+      "label": "The Deadpan Delta connects to The Social Contract Violation Index as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_deadpan_delta",
+      "target": "drama_the_social_contract_violation_index",
       "relationship": "family_bridge",
-      "label": "Grief echoes attachment and memory; love gives witness, repair, and continuity language.",
+      "label": "The Deadpan Delta connects to The Social Contract Violation Index as a symbolic family bridge for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_escalation_spiral",
+      "target": "comedy_the_rule_of_three_detonation",
+      "relationship": "sequence",
+      "label": "The Escalation Spiral connects to The Rule of Three Detonation as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_escalation_spiral",
+      "target": "drama_the_rule_of_three_retellings",
+      "relationship": "family_bridge",
+      "label": "The Escalation Spiral connects to The Rule of Three Retellings as a symbolic family bridge for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_callback_loop",
+      "target": "drama_the_grudge_callback_loop",
+      "relationship": "mirror",
+      "label": "The Callback Loop connects to The Grudge Callback Loop as a symbolic mirror for creative comparison.",
+      "strength": "high",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_callback_loop",
+      "target": "comedy_the_escalation_spiral",
+      "relationship": "sequence",
+      "label": "The Callback Loop connects to The Escalation Spiral as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "comedy_the_callback_loop",
+      "target": "drama_the_escalation_spiral",
+      "relationship": "family_bridge",
+      "label": "The Callback Loop connects to The Escalation Spiral as a symbolic family bridge for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "drama_the_escalation_spiral",
+      "target": "comedy_the_rule_of_three_detonation",
+      "relationship": "family_bridge",
+      "label": "The Escalation Spiral connects to The Rule of Three Detonation as a symbolic family bridge for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "drama_the_escalation_spiral",
+      "target": "drama_the_rule_of_three_retellings",
+      "relationship": "sequence",
+      "label": "The Escalation Spiral connects to The Rule of Three Retellings as a symbolic sequence for creative comparison.",
       "strength": "medium",
       "recommendedForCompare": false
+    },
+    {
+      "source": "fire_boundary_anger_boundary_engine",
+      "target": "social_mirror_guilt_repair_vector",
+      "relationship": "repair_path",
+      "label": "Anger Boundary Engine connects to Guilt Repair Vector as a symbolic repair path for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "fire_boundary_anger_boundary_engine",
+      "target": "fire_boundary_resentment_pressure_ledger",
+      "relationship": "sequence",
+      "label": "Anger Boundary Engine connects to Resentment Pressure Ledger as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "fire_boundary_anger_boundary_engine",
+      "target": "love_bridge_compassion_bridge_equation",
+      "relationship": "repair_path",
+      "label": "Anger Boundary Engine connects to Compassion Bridge Equation as a symbolic repair path for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "fear_threat_anxiety_forecast_loop",
+      "target": "fear_threat_fear_signal_map",
+      "relationship": "sequence",
+      "label": "Anxiety Forecast Loop connects to Fear Signal Map as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "fear_threat_anxiety_forecast_loop",
+      "target": "calm_learning_calm_nervous_system_equation",
+      "relationship": "repair_path",
+      "label": "Anxiety Forecast Loop connects to Calm Nervous-System Equation as a symbolic repair path for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "fear_threat_anxiety_forecast_loop",
+      "target": "joy_wonder_hope_horizon_lift",
+      "relationship": "family_bridge",
+      "label": "Anxiety Forecast Loop connects to Hope Horizon Lift as a symbolic family bridge for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "love_bridge_love_continuity_field",
+      "target": "love_bridge_compassion_bridge_equation",
+      "relationship": "repair_path",
+      "label": "Love Continuity Field connects to Compassion Bridge Equation as a symbolic repair path for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "sadness_grief_grief_echo_equation",
+      "target": "sadness_grief_sadness_reservoir",
+      "relationship": "sequence",
+      "label": "Grief Echo Equation connects to Sadness Reservoir as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "sadness_grief_grief_echo_equation",
+      "target": "joy_wonder_hope_horizon_lift",
+      "relationship": "family_bridge",
+      "label": "Grief Echo Equation connects to Hope Horizon Lift as a symbolic family bridge for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "sadness_grief_grief_echo_equation",
+      "target": "love_bridge_compassion_bridge_equation",
+      "relationship": "repair_path",
+      "label": "Grief Echo Equation connects to Compassion Bridge Equation as a symbolic repair path for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "social_mirror_shame_exposure_collapse",
+      "target": "social_mirror_guilt_repair_vector",
+      "relationship": "repair_path",
+      "label": "Shame Exposure Collapse connects to Guilt Repair Vector as a symbolic repair path for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "social_mirror_shame_exposure_collapse",
+      "target": "love_bridge_compassion_bridge_equation",
+      "relationship": "repair_path",
+      "label": "Shame Exposure Collapse connects to Compassion Bridge Equation as a symbolic repair path for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "social_mirror_shame_exposure_collapse",
+      "target": "social_mirror_embarrassment_spotlight_curve",
+      "relationship": "sequence",
+      "label": "Shame Exposure Collapse connects to Embarrassment Spotlight Curve as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "joy_wonder_wonder_golden_joy_spiral",
+      "target": "joy_wonder_awe_vastness_gate",
+      "relationship": "sequence",
+      "label": "Wonder Golden Joy Spiral connects to Awe Vastness Gate as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "joy_wonder_wonder_golden_joy_spiral",
+      "target": "calm_learning_curiosity_doorway_formula",
+      "relationship": "buffer",
+      "label": "Wonder Golden Joy Spiral connects to Curiosity Doorway Formula as a symbolic buffer for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "joy_wonder_wonder_golden_joy_spiral",
+      "target": "joy_wonder_happiness_joy_spark",
+      "relationship": "sequence",
+      "label": "Wonder Golden Joy Spiral connects to Happiness / Joy Spark as a symbolic sequence for creative comparison.",
+      "strength": "medium",
+      "recommendedForCompare": false
+    },
+    {
+      "source": "fear_threat_fear_signal_map",
+      "target": "calm_learning_calm_nervous_system_equation",
+      "relationship": "buffer",
+      "label": "Calm offers safety, breath, and simplicity as a symbolic buffer for fear mapping.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "sadness_grief_grief_echo_equation",
+      "target": "love_bridge_love_continuity_field",
+      "relationship": "family_bridge",
+      "label": "Grief and love share memory, absence, care, and continuity language.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "joy_wonder_happiness_joy_spark",
+      "target": "joy_wonder_wonder_golden_joy_spiral",
+      "relationship": "family_bridge",
+      "label": "Joy and wonder both grow when presence slows enough to notice what is alive.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "calm_learning_curiosity_doorway_formula",
+      "target": "calm_learning_confidence_evidence_stack",
+      "relationship": "sequence",
+      "label": "Curiosity can create the first safe steps that later become evidence and confidence.",
+      "strength": "medium",
+      "recommendedForCompare": true
+    },
+    {
+      "source": "fire_boundary_resentment_pressure_ledger",
+      "target": "social_mirror_guilt_repair_vector",
+      "relationship": "repair_path",
+      "label": "Resentment tracks unpaid harm; guilt repair can move the ledger toward accountability.",
+      "strength": "high",
+      "recommendedForCompare": true
     }
   ],
   "learningPaths": [
     {
       "id": "fear_to_calm_path",
       "title": "Fear to Calm Path",
-      "description": "A gentle path from threat forecasting toward safety, orientation, and possible hope.",
+      "description": "A gentle symbolic path from threat mapping toward grounding, support, and possible relief.",
       "formulaIds": [
-        "fear_threat_forecast_loop",
-        "drama_suspicious_silence_delta",
-        "calm_grounding_loop",
-        "joy_wonder_lift"
+        "fear_threat_fear_signal_map",
+        "fear_threat_anxiety_forecast_loop",
+        "calm_learning_calm_nervous_system_equation",
+        "joy_wonder_relief_exhale_drop"
       ],
       "boundaryNote": "This path is a symbolic reflection/design sequence, not clinical anxiety guidance."
     },
     {
       "id": "boundary_to_repair_path",
       "title": "Boundary to Repair Path",
-      "description": "A path from violated need toward clarity, repair, trust, and compassionate bridging.",
+      "description": "A path from violated need toward clarity, accountability, compassion, and repair.",
       "formulaIds": [
-        "anger_boundary_engine",
-        "calm_grounding_loop",
-        "love_bridge_equation",
-        "shame_exposure_collapse"
+        "fire_boundary_anger_boundary_engine",
+        "fire_boundary_resentment_pressure_ledger",
+        "social_mirror_guilt_repair_vector",
+        "love_bridge_compassion_bridge_equation"
       ],
       "boundaryNote": "This path does not excuse harm or force reconciliation."
     },
@@ -126,10 +318,10 @@
       "title": "Comedy / Drama Mirror Path",
       "description": "A path showing how similar structures can become laughter or tension depending on context.",
       "formulaIds": [
-        "comedy_deadpan_delta",
-        "drama_suspicious_silence_delta",
-        "comedy_giant_hat_disruption",
-        "drama_overreaction_theorem"
+        "comedy_the_deadpan_delta",
+        "drama_the_suspicious_silence_delta",
+        "comedy_the_rule_of_three_detonation",
+        "drama_the_rule_of_three_retellings"
       ],
       "boundaryNote": "These are craft mirrors, not emotional rankings."
     },
@@ -138,12 +330,24 @@
       "title": "Grief to Wonder Path",
       "description": "A gentle path where memory, witness, presence, and wonder can coexist without forced positivity.",
       "formulaIds": [
-        "sadness_grief_echo",
-        "love_bridge_equation",
-        "calm_grounding_loop",
-        "joy_wonder_lift"
+        "sadness_grief_grief_echo_equation",
+        "love_bridge_love_continuity_field",
+        "calm_learning_calm_nervous_system_equation",
+        "joy_wonder_wonder_golden_joy_spiral"
       ],
       "boundaryNote": "Grief has no deadline; this path is not a schedule or solution."
+    },
+    {
+      "id": "learning_confidence_path",
+      "title": "Curiosity to Confidence Path",
+      "description": "A learning path from mystery and permission into evidence, skill, and earned confidence.",
+      "formulaIds": [
+        "calm_learning_curiosity_doorway_formula",
+        "calm_learning_boredom_agency_drain",
+        "calm_learning_confidence_evidence_stack",
+        "joy_wonder_gratitude_gift_lens"
+      ],
+      "boundaryNote": "This is a learning-design path, not a productivity score or diagnosis."
     }
   ]
 }
